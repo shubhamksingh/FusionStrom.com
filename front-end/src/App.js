@@ -1,14 +1,16 @@
+
+// import logo from './logo.svg';
 import './App.css';
-import Footer from './components/Footer';
-
-
+import MainRoutes from './Routes/MainRoutes';
+import React from 'react';
 
 function App() {
   return (
-    <div className="App">
 
-      <Footer/>
-    </div>
+    <MainRoutes/>
+    
+
+
   );
 }
 
