@@ -1,13 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
-import MenPage from './components/ProductPage/MenPage';
-import MensAccordion from './components/ProductPage/MensAccordion';
+
+
+import MainRoutes from './Routes/MainRoutes';
+import React from 'react';
 
 function App() {
   return (
-    <div >
-      <MenPage />
-    </div>
+
+    <MainRoutes/>
+    
+
+
+
   );
 }
 
