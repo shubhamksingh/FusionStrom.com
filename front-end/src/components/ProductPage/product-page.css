@@ -1,0 +1,47 @@
+.mensmain{
+    border: 1px solid red;
+    width: 99%;
+    margin: auto;
+    height:100rem;
+}
+.mensmain1{
+    border: 1px solid red;
+    width: 99%;
+    
+    margin: auto;
+   
+    
+    height: 90rem;
+    display: flex;
+}
+.accordion{
+    border: 2px solid teal;
+    overflow-y: auto;
+    width: 15%;
+    height: 500px;
+    
+    
+}
+.item{
+    border: 2px solid rebeccapurple;
+    width: 84%;
+}
+.crum1{
+    border: 1px solid red;
+    width: auto;
+   margin-bottom: 0%;
+}
+.br{
+    color: black;
+    text-decoration: none;
+
+}
+.br:hover{
+    color: black;
+
+}
+.hr{
+    border: 1px solid red;
+    
+    height: 500px;
+}
