@@ -1,14 +1,16 @@
-import React, { useState } from "react";
+import React from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "./navbar.module.css";
 import { cyan } from "@mui/material/colors";
-import { shouldSkipGeneratingVar, styled } from "@mui/material/styles";
+import {  styled } from "@mui/material/styles";
 import Button from "@mui/material/Button";
 // import { mainState_true, signout } from "../../Redux/Data/Action";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 // import { mainState_false } from "../../Redux/Data/Action";
 // import Modals from "./Modals";
 // import Megha from "../Meghamenu/Megha";
+/* added by janaki */
+import logo from "../../images/logoName.png";
 
 
 
@@ -59,7 +61,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div>
+      <div id="navbar">
         <div className={styles.darkcyan_1}>
           <p>
           Shipping outside of the U.S. or Canada?{" "}
@@ -77,7 +79,8 @@ const Navbar = () => {
           <div onClick={() => navigate("/")}>
             <img
               style={{ width: "100%", height: "100%" }}
-              src="../FusionStrom.jpg"
+              // src="../FusionStrom.jpg"
+              src={logo}
               alt="logo"
             />
           </div>
@@ -480,7 +483,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      <hr style={{ marginBottom: "0px" }} />
+      <hr style={{ marginBottom: "0px",marginLeft:"20px",marginRight:"20px" }} />
       {/* <Modals /> */}
     </>
   );

@@ -17,14 +17,13 @@ const Navbar2 = () => {
               <i className="fa fa-times"></i>
             </label>
 
-            
             <li>
               <Link
                 to=""
                 className="desktop-item"
                 onClick={() => setHover((prev) => !prev)}
               >
-               Holiday Gifts
+                Holiday Gifts
               </Link>
               <input type="checkbox" id="showMega" />
               <label htmlFor="showMega" className="mobile-item">

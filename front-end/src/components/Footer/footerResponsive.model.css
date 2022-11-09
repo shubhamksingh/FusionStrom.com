@@ -1,0 +1,71 @@
+@media screen and (max-width: 1000px) {
+    .footer{
+        width: 100%;
+    }
+    .footer>.foo-p1>.foo-form{
+        width: 60%;
+        margin-left: 39%;
+        padding: 5px 20px;
+    }
+    .footer>.foo-p1>.foo-form>.foo-email-head{
+        font-size: 12px;
+        width: 25%;
+    }
+    .footer>.foo-p1>.foo-form>.foo-email-form>input{
+        width: 46%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .foo-p2>.app>.social>.foo-s-icon{
+        height: 20px;
+        width: 20px;
+        padding:0px 0px 0px 0px !important;
+        margin: 0px 5px;
+    }
+    .foo-p2>.app>.social>.foo-s-icon>#social-fa{
+        font-size: 17px;
+        color: #393939;
+    }
+    .foo-p2>.app>.pageup{
+        position: absolute;
+        margin-top: 15px;
+    }
+    .foo-p2>.foo>p{
+        font-size: 12px;
+    }
+    .foo-p3>p{
+        padding-right: 10px;
+        padding-left: 5px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .foo-p2>.app>.social{
+        flex-direction: column;
+    }
+    .foo-p2>.app>.social>.foo-s-icon{
+        margin: 5px 10px 5px 30px;
+        cursor: pointer;
+        height: 30px;
+        width: 30px;
+        border: 1px solid #000;
+        border-radius: 100%;
+        padding: 3px 0px 0px 3px!important;
+    }
+    .foo-p2>.app>.social>.foo-s-icon>#social-fa{
+        font-size: 20px;
+    }
+    .foo-p2>.app>.social>.foo-s-plus{
+        margin-left: 30px;
+        margin-top: 5px;
+    }
+    .foo-p2>.foo>p{
+        font-size: 12px;
+    }
+    .foo-p2>.foo>p{
+        font-size: 10px;
+    }
+    .foo-p3>p{
+        padding-right: 5px;
+        padding-left: 2px;
+    }
+}
