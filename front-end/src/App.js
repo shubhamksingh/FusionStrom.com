@@ -1,6 +1,5 @@
 
-// import logo from './logo.svg';
-import './App.css';
+
 import MainRoutes from './Routes/MainRoutes';
 import React from 'react';
 
@@ -9,6 +8,7 @@ function App() {
 
     <MainRoutes/>
     
+
 
 
   );
