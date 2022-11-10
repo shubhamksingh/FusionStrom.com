@@ -164,3 +164,64 @@
     font-size: 13px;
     margin-top: -18px;
 }
+/* product gifts and more info css */
+.p-info{
+    width: 60%;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: row;
+}
+.p-info>.p-sizeinfo,.p-info>.p-gift{
+    width: 50%;
+    padding: 2px 10px 2px 2px;
+}
+.p-info>.p-sizeinfo>h2,
+.p-info>.p-gift>h2{
+    font-size: 17px;
+    font-size: 700;
+    color: #2f2f2f;
+}
+.p-info>.p-sizeinfo>ul>li,
+.p-info>.p-sizeinfo>p,
+.p-info>.p-gift>p,
+.p-info>.p-gift>ul>li{
+    font-size: 11px;
+    color: #464646;
+}
+.p-info>.p-sizeinfo>p:nth-child(6){
+    font-weight: 600;
+    color: black;
+}
+.p-info>.p-sizeinfo>p>a{
+    color: #464646;
+}
+.p-info>.p-gift{
+    padding-left: 20px;
+}
+.p-info>.p-gift>ul>li{
+    list-style: none;
+    padding: 5px 0px;
+}
+.p-info>.p-gift>h3{
+    font-size: 15px;
+}
+.p-info>.p-gift>p:nth-child(7){
+    font-weight: 600;
+    color: black;
+}
+.p-info>.p-gift>.shop-gift{
+    padding: 8px 100px;
+    border: 1px solid gray;
+    outline: none;
+    background-color: #bbb9b930;
+    font-size: 13px;
+    margin-bottom: 30px;
+}
+.p-info>.p-gift>a{
+    padding-right: 30px;
+    color: #464646;
+    font-weight: 700;
+}
+.p-info>.p-gift>p{
+    padding-top: 20px;
+}

@@ -5,7 +5,11 @@ import "./productView.model.css";
 import { MdOutlineStar, MdStarHalf, MdStarOutline } from "react-icons/md";
 import { HiOutlineChevronDown } from "react-icons/hi";
 import { IoBag } from "react-icons/io5";
-import { AiOutlinePlus } from "react-icons/ai";
+import { AiOutlinePlus,AiOutlineMail } from "react-icons/ai";
+import {ImGift} from "react-icons/im";
+import {BsCardText} from "react-icons/bs";
+import {TfiGift,TfiDropbox} from "react-icons/tfi";
+import {TiGift} from "react-icons/ti";
 
 const likeData = [
   {
@@ -156,6 +160,47 @@ const ProductView = () => {
               </p>
             </div>
           </div>
+        </div>
+      </div>
+      <div className="p-info">
+        <div className="p-sizeinfo">
+          <h2>SIZE INFO</h2>
+          <ul><li>True to size.</li></ul>
+          <h2>DETAILS & CARE</h2>
+          <p>Signature wrinkle-resistant cotton keeps you looking crisp and neat all day in a dress shirt tailored for versatility from solid oxford cloth.</p>
+          <ul>
+            <li>Raised placket</li>
+            <li>Point collar</li>
+            <li>Rounded, adjustable button cuffs</li>
+            <li>Chest patch pocket</li>
+            <li>100% cotton</li>
+            <li>Machine wash, tumble dry</li>
+            <li>Imported</li>
+            <li>Item #1083758</li>
+          </ul>
+          <p>Free Shipping & Returns <a href="#">See more</a></p>
+        </div>
+        <div className="p-gift">
+          <h2><ImGift/> GIFT OPTIONS</h2>
+          <p>Choose your gift options at Checkout. Some items may not be eligible for all gift options.</p>
+          <h3>Free Pickup</h3>
+          <ul>
+            <li><BsCardText/>Printed gift message (free)</li>
+            <li><ImGift/>Nordstrom gift box (free)</li>
+            <li><TfiGift/>Signature gift wrap ($5)</li>
+            <li><TiGift/>Fabric gift bag ($5)</li>
+          </ul>
+          <h3>Delivery</h3>
+          <ul>
+            <li><AiOutlineMail/>Email gift message (free)</li>
+            <li><BsCardText/>Printed gift message (free)</li>
+            <li><TiGift/>Fabric gift bag ($5)</li>
+            <li><TfiDropbox/>DIY Nordstrom gift box ($5)</li>
+          </ul>
+          <p>Need help finding the perfect gift? We've got you covered.</p>
+          <button className="shop-gift">Shop Gifts</button>
+          <a href="/">FUSIONSTROM</a>
+          <p>The Nordstrom line of high-quality clothing, shoes and accessories offers just the right pieces for women, men and kids seeking timeless, classic items to complement and polish their wardrobe. Versatility, ease and affordability are hallmarks of the Nordstrom collection. Available exclusively at Nordstrom.</p>
         </div>
       </div>
     </div>
