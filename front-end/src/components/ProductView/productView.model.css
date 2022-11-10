@@ -1,5 +1,166 @@
 .product-view{
-    margin-top: 4rem;
+    padding: 4rem 30px 20px 30px;
     width: 100%;
     height: auto;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif!important;
+}
+.pv-overview{
+    width: 100%;
+    display: flex;
+}
+/* product images */
+.ov-images{
+    width: 60%;
+    padding-right: 20px;
+}
+.ov-images>div{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+}
+.ov-images>div>.ov-img{
+    padding: 2px;
+    overflow: hidden;
+}
+.ov-images>div>.ov-img>img{
+    width: 100%;
+    transition: transform .5s ease;
+}
+.ov-images>div>.ov-img>img:hover{
+    transform: scale(1.5);
+    cursor:crosshair;
+}
+
+/* product description */
+.ov-desc{
+    width:30% ;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif!important;
+}
+.ov-desc>.o-stars{
+    padding: 5px 5px 5px 0px;
+    display: flex;
+    flex-direction: row;
+}
+.ov-desc>.o-stars>div>p{
+    font-size: 14px;
+    padding: 5px;
+    color:#636161;
+}
+.ov-desc p{
+    color:#636161;
+}
+.ov-desc>.product-name{
+    margin-top: -30px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif!important;
+    font-size: 21px;
+    font-weight: 100;
+}
+.ov-desc>.p-ugg,.mlike-container>.mlc-down>p{
+    margin-top: -12px;
+    font-size: 12px;
+}
+.ov-desc>.p-ugg>sup,.mlike-container>.mlc-down>p>sup{
+    font-size: 13px;
+}
+.ov-desc>.product-price{
+    color: rgb(48, 48, 48);
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 18px;
+}
+.ov-desc>.product-desc{
+    margin-top: -15px;
+    font-size: 12px;
+}
+.ov-desc>#product-size,.ov-desc>#product-color{
+    padding: 10px 10px;
+    width: 98%!important;
+    border: 1px thin #636161;
+    font-size: 13px;
+    color: #2f2f2f;
+    font-weight: 500;
+    outline: none;
+    cursor: pointer;
+}
+.ov-desc>#product-size:hover,.ov-desc>#product-color{
+    border-bottom: 3px solid #636161;
+}
+.ov-desc>.ps-guide{
+    text-align: right;
+    font-size: 13px;
+    text-decoration: underline;
+    margin-right: 10px;
+    padding-top: 20px;
+    margin-bottom: 5px;
+    color: #464646;
+}
+.ov-desc>.p-view{
+    font-size: 12px;
+    color: rgb(234, 50, 50);
+    padding-top: 1.5rem;
+}
+.ov-desc>.p-view>span{
+    font-weight: 600;
+}
+.ov-desc>.pv-addToBag{
+    padding: 5px 5px;
+    width: 98%!important;
+    border: 1px thin #636161;
+    font-size: 12px;
+    border: none;
+    outline: none;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.ov-desc>.pv-addToBag>#pv-bag{
+    padding-right: 10px;
+    font-size: 29px;
+}
+.ov-desc>.p-wish{
+    font-size: 13px;
+    color: #464646;
+}
+
+/* You might like portion*/
+.ov-mLike{
+    width: 10%;
+    padding: 5px 10px;
+}
+.ov-mLike-head{
+    padding: 0px 10px;
+    font-size: 14px;
+    text-align: center;
+    color: #464646;
+}
+.mlike-container{
+    padding: 5px 10px;
+}
+.mlike-container>.mlc-up>img{
+    width: 100%;
+}
+.mlike-container>.mlc-up>.mlike-popular{
+    background-color: rgba(239, 245, 251, 0.542);
+    font-size: 12px;
+    overflow:hidden;
+}
+.mlike-container>.mlc-up>button{
+    position: absolute;
+    display: none;
+    font-size: 12px;
+    padding: 10px 16px;
+    margin-top: -40px;
+    background-color: rgba(239, 245, 251, 0.542);
+}
+.mlike-container>.mlc-up:hover>button{
+    display: block;
+    border: 1px solid gainsboro;
+    outline: none;
+}
+.mlike-container>.mlc-down>p:nth-child(2){
+    color: #d32525;
+    font-weight: 600;
+    font-size: 13px;
+    margin-top: -18px;
 }
