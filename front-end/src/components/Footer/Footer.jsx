@@ -1,4 +1,9 @@
-import flag from "../images/indiaFlag.png";
+// image
+import flag from "../../images/indiaFlag.png";
+// css
+import "./footer.model.css";
+import "./footerResponsive.model.css";
+// icons
 import { FcSmartphoneTablet } from "react-icons/fc";
 import { AiOutlineInstagram, AiOutlinePlus } from "react-icons/ai";
 import {
@@ -7,7 +12,6 @@ import {
   TiSocialFacebook,
 } from "react-icons/ti";
 import { BsChevronUp } from "react-icons/bs";
-import "../css/footer.model.css";
 import {MdOutlineClose} from "react-icons/md";
 import { useState } from "react";
 
@@ -15,12 +19,13 @@ function Footer() {
     const [isShown,setIsShown]=useState(false);
 
     const handleDisplay=()=>{
-        setIsShown(c=>!c);
+        setIsShown((c)=>!c);
     }
   return (
     <div className="footer">
+      {/* footer email part */}
       <div className="foo-p1">
-        <div className="foo-email-grid" style={{display: isShown ? 'block' : 'none'}}>
+        <div className="foo-email-grid" style={{display: isShown ? 'block' : 'none'}} onClick={handleDisplay}>
           <div>
             <MdOutlineClose id="foo-close" onClick={handleDisplay}/>
             <h2>You're in!</h2>
@@ -46,6 +51,7 @@ function Footer() {
             </form>
         </div>
       </div>
+      {/* footer down part*/}
       <div id="foo-down">
         <div className="foo-p2">
           <div className="foo service">
