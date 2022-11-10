@@ -9,18 +9,24 @@ import Navbar2 from "../components/Navbar/Navbar2";
 import Navbar from "../components/Navbar/navbar";
 import Footer from "../components/Footer/Footer";
 import ProductView from "../components/ProductView/ProductView";
+import Signin from "../components/Auth/Signin/Signin"
+import Signup from "../components/Auth/Signup/Signup"
+import  Checkout from "../components/Checkout/Checkout";
 
 const MainRoutes = () => {
   return (
     <>
-      <Navbar />
-      <Navbar2 />
+      {/* <Navbar /> */}
+      {/* <Navbar2 /> */}
       <Routes>
         <Route path="/" element={<h3></h3>} />
         <Route path="/" element={<h3>Checkout</h3>} />
         <Route path="payment" element={<h3>Payment </h3>} />
-        <Route path="signin" element={<h3>Singin</h3>} />
-        <Route path="createacc" element={<h3>Createacc</h3>} />
+        <Route path="/signin" element={<Signin/>} />
+        <Route path="/signup" element={<Signup/>} />
+
+        <Route path="/checkout" element={<Checkout/>} />
+
         <Route
           path="cart"
           element={
@@ -77,6 +83,7 @@ const MainRoutes = () => {
         <Route path="flash/home" element={<Home />} />
         <Route path="flash/beauty" element={<Beauty />} />
       </Routes>
+
       <Footer />
     </>
   );

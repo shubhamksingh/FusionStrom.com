@@ -4,15 +4,21 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.1",
     "express": "^4.18.2",
     "expresss": "0.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^4.11.0",
     "mongoose": "^6.7.2",
-    "nodemon": "^2.0.20"
+    "nodemon": "^2.0.20",
+    "validator": "^13.7.0"
   }
 }

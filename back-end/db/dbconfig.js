@@ -1,5 +1,9 @@
 const mongoose = require('mongoose');
 
-export default async function dbconnect(){
-    return  await mongoose.connect('mongodb://localhost:27017/fusionstrom');
-}
+const MONGO_URL = "mongodb://127.0.0.1:27017/strom"
+
+const dbconnect = mongoose.connect(MONGO_URL, () => { 
+    console.log('Database is connected!')
+})
+
+module.exports = dbconnect
