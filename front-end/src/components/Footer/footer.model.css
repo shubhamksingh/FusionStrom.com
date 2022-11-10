@@ -1,0 +1,196 @@
+.footer{
+    margin:40px 0px 0px 0px;
+    padding: 0;
+    width: 100%;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif!important;
+    position: -webkit-sticky;
+    position: sticky;
+    height: auto;
+}
+.footer p{
+    cursor: pointer;
+}
+.footer p:hover{
+    text-decoration-color: #000;
+    text-decoration-line: underline;
+    text-decoration-thickness: 1.5px;
+}
+.footer>.foo-p1>.foo-form{
+    padding: 5px 40px;
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    margin-left: 49%;
+}
+.footer>.foo-p1>.foo-form>.foo-email-head{
+    font-size: 13px;
+    font-weight: 600;
+    color: #393939;
+    padding: 5px 5px;
+    margin-top: 12px;
+    width: 20%;
+}
+.footer>.foo-p1>.foo-form>.foo-email-form{
+    padding: 5px 0px;
+    width: 80%;
+}
+.footer>.foo-p1>.foo-form>.foo-email-form>input{
+    padding: 8px;
+    font-size: 16px;
+    width: 45%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.footer>.foo-p1>.foo-form>.foo-email-form>.foo-submit{
+    background-color: #000;
+    color: white;
+    margin-left: 5px;
+}
+.foo-email-grid{
+    position: relative;
+    margin-left: 60%;
+    max-width: 550px;
+    height: auto;
+    box-shadow: 1px 2px 5px 2px gainsboro;
+    padding: 10px 10px 30px 30px;
+    box-sizing: border-box;
+    text-align: left;
+    margin-bottom: 30px;
+    font-size: 12px;
+    
+}
+.foo-email-grid:after{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-top: 0px solid #636161;
+    border-left: 0px solid #636161;
+    border-bottom: 0px solid #636161;
+    border-right: 0px solid #636161;
+    top: 100%;
+    left: 90%;
+    margin-left: -25px;
+    content: '';
+    transform: rotate(45deg);
+    margin-top: -16px;
+    background-color: white;
+    box-shadow: 2px 3px 4px rgba(220,220,220,0.5); 
+}
+.foo-email-grid>div>#foo-close{
+    margin-left: 95%;
+    font-size: 15px;
+    color: #636161;
+    cursor: pointer;
+}
+.foo-email-grid>div>h2{
+    font-size: 12px;
+}
+.foo-email-grid>div>p{
+    font-size: 10px;
+}
+.foo-email-grid>div>a{
+    color: #393939;
+    font-size: 9px;
+    font-weight: 600;
+}
+#foo-down{
+    background-color:#f9f9f9 ;
+}
+#foo-down>.foo-p2{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(5 , 15%) 20% ;
+    text-align: left;
+    gap: 5px;
+}
+.foo-p2>.foo>.foo-head{
+    color: #000;
+    font-weight: 600;
+}
+.foo-p2>.foo>p{
+    font: weight 100px, !important;;
+    color: rgb(104, 102, 102);
+    font-size: 14px;
+    line-height: 1.5em;
+    padding-right: 20px;
+
+}
+#iflag{
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    margin-right: 5px;
+}
+.foo-p2>.service>.iflg{
+    display: flex;
+    flex-direction: row;
+}
+.foo-p2>.foo>p>p{
+    margin-top: 1px;
+}
+.foo-p2>.app>.foo-head{
+    display: flex;
+    flex-direction: row;
+}
+.foo-p2>.app>.foo-head>#foo-tablet{
+    color: #000;
+    font-size: 30px;
+    margin-right: 10px;
+}
+.foo-p2>.app>.foo-head>p{
+    font-weight: 100;
+}
+.foo-p2>.app>.social{
+    display: flex;
+    flex-direction: row;
+}
+.foo-p2>.app>.social>.foo-s-icon{
+    height: 30px;
+    width: 30px;
+    border: 1px solid #000;
+    border-radius: 100%;
+    padding: 1px 0px 0px 4px;
+    margin: 0px 5px;
+    cursor: pointer;
+}
+.foo-p2>.app>.social>.foo-s-icon>#social-fa{
+    font-size: 20px;
+    color: #393939;
+}
+.foo-p2>.app>.social>.foo-s-icon:hover>#social-fa:nth-child(1){
+    color: rgb(0, 157, 255);
+}
+
+.foo-p2>.app>.social>.foo-s-plus{
+    padding-top: 0px;
+    padding-left: 5px;
+}
+.foo-p2>.app>.pageup{
+    position: absolute;
+    right: 20px;
+    margin-top: -60px;
+}
+.foo-p2>.app>.pageup>button{
+    width: 40px;
+    padding: 5px 5px 10px 5px;
+    font-size: 12px;
+    background-color: rgb(247, 247, 247);
+    border: none;
+    outline: none;
+    color: #636161;
+    cursor: pointer;
+}
+.foo-p2>.app>.pageup>button>#pageup-chev{
+    font-size: 25px;
+    color: #727272;
+}
+.foo-p3{
+    display: flex;
+    flex-direction: row;
+    padding:5px 20px 10px 20px;
+    font-size: 11px;
+    color: rgb(104, 102, 102);
+}
+.foo-p3>p{
+    padding-right: 20px;
+    padding-left: 10px;
+}
