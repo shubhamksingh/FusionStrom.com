@@ -10,9 +10,11 @@ import {
     AccordionIcon,
     Box,
   } from '@chakra-ui/react'
+import Mensitem from "./Mensitem";
 const MenPage = () => {
   return (
     <div className="mensmain">
+      <br />
       <br />
       <div className="crum1">
         <Mensbredcrum />
@@ -22,7 +24,10 @@ const MenPage = () => {
         <div className="accordion">
           <MensAccordion />
         </div>
-        <div className="item"></div>
+        <div className="item">
+          <Mensitem />
+
+        </div>
       </div>
     </div>
    
