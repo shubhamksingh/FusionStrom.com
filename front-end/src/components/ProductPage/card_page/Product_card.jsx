@@ -1,9 +1,12 @@
 import { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import ProductView from "../../ProductView/ProductView";
 import BasicUsage from "../Model/ModalComponent";
 // import ModalComponent from "../Model/ModalComponent";
 
 
 const Product_card = (props) => {
+  const Navigate=useNavigate()
     const [isModalVisible, setIsModalVisible] = useState(false);
   const [selectedBox, setSelectedBox] = useState({});
     console.log(props)
@@ -13,17 +16,26 @@ const Product_card = (props) => {
         setIsModalVisible(true);
         setSelectedBox(item);
       };
+      // const handleClick1=(item)=>{
+      //   setSelectedBox(item);
+      //   Navigate("products/:id")
+
+      // }
   
     return (
         <>
-      <div className='item_card' onClick={() => handleClick(props)}>
+      <div className='item_card'  >
+      <Link to={`products/${props.id}`}>
         <div className='img_div'>
+        
           <img src={props.image} />
           {/* <div className='hid_box' >Quick View</div> */}
-          <div className='hid_box'  onClick={() => handleClick(props)}>
+        
+          <div className='hid_box'  onMouseOver={() => handleClick(props)}>
           Quick View
             </div>
         </div>
+        </Link>
         <div className='item_card_sub'>
           <div className='title_div'>
             <h4 className='new_markdown'>New Markdown</h4>
@@ -33,7 +45,7 @@ const Product_card = (props) => {
             <p className='discription'>{props.description}</p>
           </div>
           <div className='price_info'>
-            <p className='price'>INR {props.price}</p>
+            <p className='price'>INR {props.strprice-0.1*props.strprice}</p>
           </div>
           <div className='strike_price_div'>
             <p className='strike_price'>INR {props.strprice}</p>
@@ -54,6 +66,7 @@ const Product_card = (props) => {
           isModalVisible={isModalVisible}
           setIsModalVisible={setIsModalVisible}
         />
+       
       
 </>
     );
