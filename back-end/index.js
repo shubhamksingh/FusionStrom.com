@@ -7,13 +7,24 @@ const userRouter = require('./routes/user')
 
 dotenv.config();
 
-const app = express()
+const app = express();
+
+
+
 
 
 app.use(urlencoded({extended: true}));
 app.use(express.json());
 
+
+
+
+
 app.use('/api/user', userRouter);
+
+
+
+
 
 
 app.get('/', (req, res) => {
