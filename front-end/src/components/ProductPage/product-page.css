@@ -635,3 +635,17 @@
     margin-right: 20px;
     cursor: pointer;
 }
+
+/* @media screen and (min-width: 480px) {
+    .display_item{
+        grid-template-columns: repeat(1,1fr);
+    }
+   
+  } */
+
+  @media all and (max-width: 600px) {
+    .display_item{
+        grid-template-columns: repeat(1,1fr);
+    }
+   
+  }
