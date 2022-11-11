@@ -44,6 +44,7 @@ const Alltshirt = () => {
         {data.map((ele) => {
           return (
             <Product_card
+            id={ele.id}
               key={ele.id}
               name={ele.name}
               price={ele.price}

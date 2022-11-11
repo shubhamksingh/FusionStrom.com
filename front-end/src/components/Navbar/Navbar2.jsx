@@ -605,7 +605,7 @@ const Navbar2 = () => {
             </li>
             <li>
               <Link
-                to=""
+                to="mens"
                 className="desktop-item"
                 onClick={() => setHover((prev) => !prev)}
               >
