@@ -1,0 +1,38 @@
+.App {
+    font-family: sans-serif;
+    display: flex;
+    
+    height: 100%;
+    /* border: 1px solid; */
+    width: 100%;
+  }
+  .slidePic{
+    /* border: 1px solid red; */
+    height: 70%;
+    width: 100%;
+    /* margin-top: -100%; */
+  }
+  .slidpicture{
+    /* border: 1px solid; */
+    width: 100%;
+    height: 100%;
+  }
+  .itemDetails{
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 30%;
+  }
+  .redP{
+    
+    text-align: left;
+    color: #df2247;
+    font-size: 13px;
+    
+
+  }
+  .blackP{
+    text-align: left;
+    
+    font-size: 13px;
+
+  }
