@@ -1,5 +1,6 @@
 const mongoose = require('mongoose')
 const validator = require('validator')
+const jwt = require("jsonwebtoken")
 
 const userSchema = mongoose.Schema({
     name: {
@@ -29,7 +30,13 @@ const userSchema = mongoose.Schema({
                 throw new Error('Password cannot contain "Password"')
             }
         }
-    }
+    },
+    tokens: [{
+        token: {
+            type: String,
+            required: true
+        }
+    }]
 
 })
 
@@ -59,29 +66,20 @@ userSchema.methods.generateAuthToken = async function () {
 }
 
 
-userSchema.statics.findByCredentials = async ({ user_id, password }) => {
-    const user = await User.findOne({
-        $or:
-            [{ "email": user_id },
-            { "user_id": user_id }
-            ]
-    }
-    )
 
-    if (!user) {
-        throw new Error('Invalid Credentials!')
+userSchema.statics.findByCredentials = async (email, password) => {
+    const user = await User.findOne ({ email })
+    if(!user) {
+        throw new Error('Unable to Signin')
     }
-
     const isMatch = await bcrypt.compare(password, user.password)
-
-    if (!isMatch) {
-        throw new Error('Invalid Credentials!')
+    if(!isMatch) {
+         throw new Error('Unable to Signin')
     }
-    
     return user
 }
 
-const User = mongoose.model('user', userSchema)
+const User = mongoose.model('User', userSchema)
 
 module.exports = User
 

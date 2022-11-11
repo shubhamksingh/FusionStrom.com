@@ -9,7 +9,7 @@ const port = 8080
 app.use(express.json());
 
 // parse application/x-www-form-urlencoded
-app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.urlencoded({ extended: true }))
 
 // parse application/json
 app.use(bodyParser.json())
@@ -22,8 +22,8 @@ app.get('/', (req, res) => {
 })
 
 app.listen(port, () => {
-  console.log('Server is up to '+ port)
+  console.log('Server is running at '+ port)
   
   dbconnect.then(x=> console.log('dbconnected and server started at http://localhost:8080'))
-//   console.log(`Example app listening on port ${port}`)
+
 })
