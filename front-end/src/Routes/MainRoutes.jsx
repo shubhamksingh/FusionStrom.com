@@ -9,6 +9,7 @@ import Navbar2 from "../components/Navbar/Navbar2";
 import Navbar from "../components/Navbar/navbar";
 import Footer from "../components/Footer/Footer";
 import ProductView from "../components/ProductView/ProductView";
+import CartPage from "../components/Cart/cart";
 
 const MainRoutes = () => {
   return (
@@ -25,7 +26,7 @@ const MainRoutes = () => {
           path="cart"
           element={
             // <RequiredAuth>
-            <h3>Cart</h3>
+            <CartPage/>
             // {/* </RequiredAuth> */}
           }
         />

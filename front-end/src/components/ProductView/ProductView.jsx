@@ -1,5 +1,5 @@
 // styles
-import "./productView.model.css";
+import "./productView.css";
 
 //icons
 import { MdOutlineStar, MdStarHalf, MdStarOutline } from "react-icons/md";
