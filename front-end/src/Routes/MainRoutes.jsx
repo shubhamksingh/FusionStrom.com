@@ -12,6 +12,7 @@ import ProductView from "../components/ProductView/ProductView";
 import Signin from "../components/Auth/Signin/Signin"
 import Signup from "../components/Auth/Signup/Signup"
 import  Checkout from "../components/Checkout/Checkout";
+import Profile from "../components/Auth/Profile/Profile";
 
 const MainRoutes = () => {
   return (
@@ -24,6 +25,7 @@ const MainRoutes = () => {
         <Route path="payment" element={<h3>Payment </h3>} />
         <Route path="/signin" element={<Signin/>} />
         <Route path="/signup" element={<Signup/>} />
+        <Route path="/profile" element={<Profile/>} />
 
         <Route path="/checkout" element={<Checkout/>} />
 
