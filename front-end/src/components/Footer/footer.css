@@ -9,6 +9,7 @@
 }
 .footer p{
     cursor: pointer;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif!important;
 }
 .footer p:hover{
     text-decoration-color: #000;
@@ -108,7 +109,7 @@
 }
 .foo-p2>.foo>p{
     font: weight 100px, !important;;
-    color: rgb(104, 102, 102);
+    color: rgb(127, 126, 126);
     font-size: 14px;
     line-height: 1.5em;
     padding-right: 20px;

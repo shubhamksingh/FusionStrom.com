@@ -66,7 +66,11 @@ display:flex;
 }
 .save70{
 position: absolute;
+
   top: 18%;
+
+ // top: 39%;
+
   left: 32%;
 
 }
@@ -76,6 +80,7 @@ position: absolute;
     /* border: 1px solid; */
     height:2rem;
     justify-content: space-around;
+
     position:relative;
   top: 70%;
   left: 12%;
@@ -84,6 +89,16 @@ position: absolute;
 }
 .thirdDiv{
     /* border: 1px solid; */
+
+  // commented while merging
+ //   position: absolute;
+ // top: 42%;
+ // left: 12%;
+ // text-decoration: none;
+// }
+// .thirdDiv{
+// border: 1px solid;
+
     width: 100%;
     height: auto;
     display: flex;
@@ -112,7 +127,11 @@ position: absolute;
     font-weight: 700;
 }
 .viewProducts{
+
     border: 1px solid;
+
+    /* border: 1px solid; */
+
     text-decoration: none;
     padding: 10px 20px 10px 10px;
 }
@@ -122,6 +141,7 @@ position: absolute;
     background-color: rgb(179, 178, 178);
    text-decoration-color: black;
 }
+
 
 .carosalNavbar{
     /* border: 1px solid; */
@@ -226,6 +246,7 @@ border: 1px solid white;
 .AutoCarosal{
     margin-top: 5%;
 }
+
 
 
 
