@@ -66,7 +66,11 @@ display:flex;
 }
 .save70{
 position: absolute;
-  top: 39%;
+
+  top: 18%;
+
+ // top: 39%;
+
   left: 32%;
 
 }
@@ -76,13 +80,25 @@ position: absolute;
     /* border: 1px solid; */
     height:2rem;
     justify-content: space-around;
-    position: absolute;
-  top: 42%;
+
+    position:relative;
+  top: 70%;
   left: 12%;
+  text-align: center;
   text-decoration: none;
 }
 .thirdDiv{
-    border: 1px solid;
+    /* border: 1px solid; */
+
+  // commented while merging
+ //   position: absolute;
+ // top: 42%;
+ // left: 12%;
+ // text-decoration: none;
+// }
+// .thirdDiv{
+// border: 1px solid;
+
     width: 100%;
     height: auto;
     display: flex;
@@ -111,7 +127,11 @@ position: absolute;
     font-weight: 700;
 }
 .viewProducts{
+
+    border: 1px solid;
+
     /* border: 1px solid; */
+
     text-decoration: none;
     padding: 10px 20px 10px 10px;
 }
@@ -121,6 +141,113 @@ position: absolute;
     background-color: rgb(179, 178, 178);
    text-decoration-color: black;
 }
+
+
+.carosalNavbar{
+    /* border: 1px solid; */
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+
+}
+.carosalNavbar>p:hover{
+
+    cursor: pointer;
+    text-decoration: underline;
+    font-weight: 700;
+    /* text-decoration: none; */
+    text-decoration-color: black;
+
+}
+.carosal{
+    /* border: 1px solid; */
+    width: 100%;
+    height: 27rem;
+    margin-top: 2%;
+}
+.fifth_Div{
+    background-image: url("https://n.nordstrommedia.com/id/222433e7-c339-48c2-b05c-d994d87a4a97.jpeg?h=200&w=1608");
+    width: 100%;
+    height: 10rem;
+    margin-top: 2%;
+    background-size: 100%;
+background-repeat: no-repeat;
+background-position: calc(0% + 140px) ;
+background-position-x: calc(0% + 5px);
+border: 1px solid white
+}
+.fifth_Div>div{
+    width: 50%;
+    /* position: absolute; */
+    height: 8rem;
+    /* border: 1px solid; */
+    margin-top: 3%;
+    margin-left: 8%;
+    
+
+}
+.fifth_Div_text{
+    font-size: 21px;
+    
+}
+.fifth_Div_text_two{
+    /* border: 1px solid; */
+    width: 70%;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+    text-decoration-color: black;
+    
+}
+.line{
+    width: 100%;
+    height: 12px;
+    margin-top: 5%;
+
+}
+.line>img{
+    width: 100%;
+    height: 100%;
+}
+
+.sixth_div{
+    background-image: url("https://n.nordstrommedia.com/id/706917ad-140f-4af0-94f3-cbe08a9f9c9d.png?h=300&w=1608");
+    width: 100%;
+    height: 16rem;
+    margin-top: 5%;
+    background-size: 100%;
+background-repeat: no-repeat;
+background-position: calc(0% + 140px) ;
+background-position-x: calc(0% + 5px);
+border: 1px solid white;
+}
+.sixth_div>div{
+    /* border: 1px solid; */
+    width: 50%;
+    height: 6.8rem;
+    margin: auto;
+    margin-top: 12%;
+    text-align: center;
+    
+}
+.buttons{
+    /* border: 1px solid; */
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin-top: 2%;
+    justify-content: space-between;
+}
+.buttons>button{
+    padding: 10px 20px 10px 20px;
+    border: 1px solid;
+
+}
+.AutoCarosal{
+    margin-top: 5%;
+}
+
+
 
 
 
