@@ -1,8 +1,8 @@
 // image
 import flag from "../../images/indiaFlag.png";
 // css
-import "./footer.model.css";
-import "./footerResponsive.model.css";
+import "./footer.css";
+import "./footerResponsive.css";
 // icons
 import { FcSmartphoneTablet } from "react-icons/fc";
 import { AiOutlineInstagram, AiOutlinePlus } from "react-icons/ai";
