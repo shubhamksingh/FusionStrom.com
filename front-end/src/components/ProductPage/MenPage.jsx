@@ -11,10 +11,14 @@ import {
     Box,
   } from '@chakra-ui/react'
 import Mensitem from "./Mensitem";
+import Hamberger from "./ProductHamberger/Hamberger";
 const MenPage = () => {
   return (
     <div className="mensmain">
-      <br />
+      <div className="hamberger">
+          <Hamberger/>
+
+        </div>
       <br />
       <div className="crum1">
         <Mensbredcrum />
@@ -24,6 +28,10 @@ const MenPage = () => {
         <div className="accordion">
           <MensAccordion />
         </div>
+        {/* <div className="hamberger">
+          <Hamberger/>
+
+        </div> */}
         <div className="item">
           <Mensitem />
 

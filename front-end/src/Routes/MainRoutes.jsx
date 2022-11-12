@@ -6,12 +6,16 @@ import ProductView from "../components/ProductView/ProductView";
 import Dashboard from "../components/dashboard/dashboard";
 import CartPage from "../components/Cart/cart";
 import MenPage from "../components/ProductPage/MenPage";
+
+
+
 import Signin from "../components/Auth/Signin/Signin"
 import Signup from "../components/Auth/Signup/Signup"
 import Profile from "../components/Auth/Profile/Profile"
 import Checkout from "../components/Checkout/Checkout"
 import Flash from "../components/Flash/Flash";
 import Adminlogin from "../components/Auth/AdminLogin/Adminlogin";
+
 
 
 const MainRoutes = () => {
@@ -80,6 +84,7 @@ const MainRoutes = () => {
             // </RequiredAuth>
           }
         />
+       
         <Route path="gift" element={<h3>Gift</h3>} />
         <Route path="products/:id" element={<ProductView/>} />
         <Route path="flash/women" element={<Flash />} />
