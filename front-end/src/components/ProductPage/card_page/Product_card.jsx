@@ -13,8 +13,12 @@ const Product_card = (props) => {
 
 
     const handleClick = (item) => {
+      setTimeout(()=>{
         setIsModalVisible(true);
         setSelectedBox(item);
+
+      },500)
+        
       };
       // const handleClick1=(item)=>{
       //   setSelectedBox(item);
@@ -25,27 +29,30 @@ const Product_card = (props) => {
     return (
         <>
       <div className='item_card'  >
-      <Link to={`products/${props.id}`}>
+      
         <div className='img_div'>
-        
+        <Link to={`products/${props.id}` } className='img_div'>
           <img src={props.image} />
           {/* <div className='hid_box' >Quick View</div> */}
-        
-          <div className='hid_box'  onMouseOver={() => handleClick(props)}>
+          </Link>
+          {/* onMouseOver */}
+          <div className='hid_box'  onClick={() => handleClick(props)}>
           Quick View
             </div>
         </div>
-        </Link>
+       
         <div className='item_card_sub'>
           <div className='title_div'>
-            <h4 className='new_markdown'>New Markdown</h4>
+           
+            <h4 className='new_markdown'>New</h4>
+
             <h4 className='product_name'>{props.name}</h4>
           </div>
           <div className='discription_div'>
             <p className='discription'>{props.description}</p>
           </div>
           <div className='price_info'>
-            <p className='price'>INR {props.strprice-0.1*props.strprice}</p>
+            <p className='price'>INR {Math.ceil(props.strprice-0.2*props.strprice)}</p>
           </div>
           <div className='strike_price_div'>
             <p className='strike_price'>INR {props.strprice}</p>
@@ -53,8 +60,9 @@ const Product_card = (props) => {
               <span className='no_rating'>{props.rating}</span>
             </p>
           </div>
+          
           <div className='last_div'>
-            <p className='free_shiping'>★ ★ ★</p>
+            <p className='free_shiping'>{props.id%2==0?"★ ★":"★ ★ ★"}</p>
             {/* <button className='add_to_cart' >
               Add to Bag
             </button> */}
@@ -66,6 +74,7 @@ const Product_card = (props) => {
           isModalVisible={isModalVisible}
           setIsModalVisible={setIsModalVisible}
         />
+      
        
       
 </>

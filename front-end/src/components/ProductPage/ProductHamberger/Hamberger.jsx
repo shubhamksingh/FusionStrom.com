@@ -1,27 +1,37 @@
+import { HamburgerIcon } from "@chakra-ui/icons";
 import React from "react";
+import { Button, Drawer, DrawerBody, DrawerContent, DrawerHeader, DrawerOverlay, useDisclosure } from '@chakra-ui/react'
 import {
-  Accordion,
-  AccordionItem,
-  AccordionButton,
-  AccordionPanel,
-  AccordionIcon,
-  Box,
-  Checkbox,
-} from "@chakra-ui/react";
-import { AddIcon, MinusIcon } from "@chakra-ui/icons";
-import { IoMdAdd } from "react-icons/io";
-import { AiOutlineMinus } from "react-icons/ai";
-import { Link } from "react-router-dom";
-
-const MensAccordion = ({ order,setOrderBy}) => {
-  console.log(order)
+    Accordion,
+    AccordionItem,
+    AccordionButton,
+    AccordionPanel,
+    AccordionIcon,
+    Box,
+    Checkbox,
+  } from "@chakra-ui/react";
+  import { AddIcon, MinusIcon } from "@chakra-ui/icons";
+  import { IoMdAdd } from "react-icons/io";
+  import { AiOutlineMinus } from "react-icons/ai";
+const Hamberger = () => {
+  const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <div>
-      <Accordion allowMultiple>
+      <Button onClick={onOpen}>
+        <HamburgerIcon />
+      </Button>
+      <Drawer placement="left" onClose={onClose} isOpen={isOpen}>
+        <DrawerOverlay />
+        <DrawerContent>
+          <DrawerHeader fontSize={"30px"}>FusionStrom</DrawerHeader>
+          <DrawerBody>
+
+            {/* -------------------------------accordian------------------------------------------- */}
+          <Accordion allowMultiple>
         <AccordionItem
           style={{
-            borderTop: "0.5px solid #8c8c8c",
-            borderBottom: "0.5px solid #8c8c8c",
+            borderTop: "0.1px solid #8c8c8c",
+            borderBottom: "0.1px solid #8c8c8c",
           }}
         >
           {({ isExpanded }) => (
@@ -44,24 +54,24 @@ const MensAccordion = ({ order,setOrderBy}) => {
               </AccordionButton>
 
               <AccordionPanel pb={4}>
-                <div>
+                <div >
                   <input type="checkbox" />
-                  {"  "}
+                  {"   "}
                   <label>L</label>
                 </div>
                 <div>
                   <input type="checkbox" />
-                  {"  "}
+                  {"   "}
                   <label>M</label>
                 </div>
                 <div>
                   <input type="checkbox" />
-                  {"  "}
+                  {"   "}
                   <label>XL</label>
                 </div>
                 <div>
                   <input type="checkbox" />
-                  {"  "}
+                  {"   "}
                   <label>XXL</label>
                 </div>
               </AccordionPanel>
@@ -70,8 +80,8 @@ const MensAccordion = ({ order,setOrderBy}) => {
         </AccordionItem>
         <AccordionItem
           style={{
-            borderTop: "0.5px solid #8c8c8c",
-            borderBottom: "0.5px solid #8c8c8c",
+            borderTop: "0.1px solid #8c8c8c",
+            borderBottom: "0.1px solid #8c8c8c",
           }}
         >
           {({ isExpanded }) => (
@@ -96,17 +106,17 @@ const MensAccordion = ({ order,setOrderBy}) => {
               <AccordionPanel pb={4}>
               <div>
                   <input type="checkbox" />
-                  {"  "}
+                  {"   "}
                   <label>Red</label>
                 </div>
                 <div>
                   <input type="checkbox" />
-                  {"  "}
+                  {"   "}
                   <label>White</label>
                 </div>
                 <div>
                   <input type="checkbox" />
-                  {"  "}
+                  {"   "}
                   <label>black</label>
                 </div>
               </AccordionPanel>
@@ -115,8 +125,8 @@ const MensAccordion = ({ order,setOrderBy}) => {
         </AccordionItem>
         <AccordionItem
           style={{
-            borderTop: "0.5px solid #8c8c8c",
-            borderBottom: "0.5px solid #8c8c8c",
+            borderTop: "0.1px solid #8c8c8c",
+            borderBottom: "0.1px solid #8c8c8c",
           }}
         >
           {({ isExpanded }) => (
@@ -141,22 +151,22 @@ const MensAccordion = ({ order,setOrderBy}) => {
               <AccordionPanel pb={4}>
                 <div>
                   <input type="checkbox" />
-                  {"  "}
+                  {"   "}
                   <label>Adidas</label>
                 </div>
                 <div>
                   <input type="checkbox" />
-                  {"  "}
+                  {"   "}
                   <label>Adidas Golf</label>
                 </div>
                 <div>
                   <input type="checkbox" />
-                  {"  "}
+                  {"   "}
                   <label>5000-7000</label>
                 </div>
                 <div>
                   <input type="checkbox" />
-                  {"  "}
+                  {"   "}
                   <label>7000-15000</label>
                 </div>
               </AccordionPanel>
@@ -166,8 +176,8 @@ const MensAccordion = ({ order,setOrderBy}) => {
 
         <AccordionItem
           style={{
-            borderTop: "0.5px solid #8c8c8c",
-            borderBottom: "0.5px solid #8c8c8c",
+            borderTop: "0.1px solid #8c8c8c",
+            borderBottom: "0.1px solid #8c8c8c",
           }}
         >
           {({ isExpanded }) => (
@@ -192,17 +202,17 @@ const MensAccordion = ({ order,setOrderBy}) => {
               <AccordionPanel pb={4}>
               <div>
                   <input type="checkbox" />
-                  {"  "}
+                  {"   "}
                   <label>Classic Fit</label>
                 </div>
                 <div>
                   <input type="checkbox" />
-                  {"  "}
+                  {"   "}
                   <label>Regular Fit</label>
                 </div>
                 <div>
                   <input type="checkbox" />
-                  {"  "}
+                  {"   "}
                   <label>Slim Fit</label>
                 </div>
               </AccordionPanel>
@@ -211,8 +221,8 @@ const MensAccordion = ({ order,setOrderBy}) => {
         </AccordionItem>
         <AccordionItem
           style={{
-            borderTop: "0.5px solid #8c8c8c",
-            borderBottom: "0.5px solid #8c8c8c",
+            borderTop: "0.1px solid #8c8c8c",
+            borderBottom: "0.1px solid #8c8c8c",
           }}
         >
           {({ isExpanded }) => (
@@ -237,17 +247,17 @@ const MensAccordion = ({ order,setOrderBy}) => {
               <AccordionPanel pb={4}>
               <div>
                   <input type="checkbox" />
-                  {"  "}
+                  {"   "}
                   <label>100% Cotten</label>
                 </div>
                 <div>
                   <input type="checkbox" />
-                  {"  "}
+                  {"   "}
                   <label>100% Wool</label>
                 </div>
                 <div>
                   <input type="checkbox" />
-                  {"  "}
+                  {"   "}
                   <label>100% Linen</label>
                 </div>
               </AccordionPanel>
@@ -256,8 +266,8 @@ const MensAccordion = ({ order,setOrderBy}) => {
         </AccordionItem>
         <AccordionItem
           style={{
-            borderTop: "0.5px solid #8c8c8c",
-            borderBottom: "0.5px solid #8c8c8c",
+            borderTop: "0.1px solid #8c8c8c",
+            borderBottom: "0.1px solid #8c8c8c",
           }}
         >
           {({ isExpanded }) => (
@@ -283,26 +293,27 @@ const MensAccordion = ({ order,setOrderBy}) => {
                 <div>
                   <input
                     type="checkbox"
-                    checked={order === "asc"}
+                    // checked={order === "asc"}
                     // onChange={(e) =>
                     //   setOrderBy(e.target.checked ? "asc" : "desc")
                     // }
                   />
+                   {"   "}
                   <label>0-1000</label>
                 </div>
                 <div>
                   <input type="checkbox" />
-                  {"  "}
+                  {"   "}
                   <label>1000-5000</label>
                 </div>
                 <div>
                   <input type="checkbox" />
-                  {"  "}
+                  {"   "}
                   <label>5000-7000</label>
                 </div>
                 <div>
                   <input type="checkbox" />
-                  {"  "}
+                  {"   "}
                   <label>7000-15000</label>
                 </div>
               </AccordionPanel>
@@ -311,8 +322,8 @@ const MensAccordion = ({ order,setOrderBy}) => {
         </AccordionItem>
         <AccordionItem
           style={{
-            borderTop: "0.5px solid #8c8c8c",
-            borderBottom: "0.5px solid #8c8c8c",
+            borderTop: "0.1px solid #8c8c8c",
+            borderBottom: "0.1px solid #8c8c8c",
           }}
         >
           {({ isExpanded }) => (
@@ -337,12 +348,12 @@ const MensAccordion = ({ order,setOrderBy}) => {
               <AccordionPanel pb={4}>
               <div>
                   <input type="checkbox" />
-                  {"  "}
+                  {"   "}
                   <label>Regular</label>
                 </div>
                 <div>
                   <input type="checkbox" />
-                  {"  "}
+                  {"   "}
                   <label>Sale</label>
                 </div>
               </AccordionPanel>
@@ -351,8 +362,8 @@ const MensAccordion = ({ order,setOrderBy}) => {
         </AccordionItem>
         <AccordionItem
           style={{
-            borderTop: "0.5px solid #8c8c8c",
-            borderBottom: "0.5px solid #8c8c8c",
+            borderTop: "0.1px solid #8c8c8c",
+            borderBottom: "0.1px solid #8c8c8c",
           }}
         >
           {({ isExpanded }) => (
@@ -377,17 +388,17 @@ const MensAccordion = ({ order,setOrderBy}) => {
               <AccordionPanel pb={4}>
               <div>
                   <input type="checkbox" />
-                  {"  "}
+                  {"   "}
                   <label>Sleev less</label>
                 </div>
                 <div>
                   <input type="checkbox" />
-                  {"  "}
+                  {"   "}
                   <label>Sort</label>
                 </div>
                 <div>
                   <input type="checkbox" />
-                  {"  "}
+                  {"   "}
                   <label>Long</label>
                 </div>
               </AccordionPanel>
@@ -396,8 +407,8 @@ const MensAccordion = ({ order,setOrderBy}) => {
         </AccordionItem>
         <AccordionItem
           style={{
-            borderTop: "0.5px solid #8c8c8c",
-            borderBottom: "0.5px solid #8c8c8c",
+            borderTop: "0.1px solid #8c8c8c",
+            borderBottom: "0.1px solid #8c8c8c",
           }}
         >
           {({ isExpanded }) => (
@@ -422,17 +433,17 @@ const MensAccordion = ({ order,setOrderBy}) => {
               <AccordionPanel pb={4}>
               <div>
                   <input type="checkbox" />
-                  {"  "}
+                  {"   "}
                   <label>Coolage</label>
                 </div>
                 <div>
                   <input type="checkbox" />
-                  {"  "}
+                  {"   "}
                   <label>Golf</label>
                 </div>
                 <div>
                   <input type="checkbox" />
-                  {"  "}
+                  {"   "}
                   <label>NBA</label>
                 </div>
               </AccordionPanel>
@@ -441,8 +452,8 @@ const MensAccordion = ({ order,setOrderBy}) => {
         </AccordionItem>
         <AccordionItem
           style={{
-            borderTop: "0.5px solid #8c8c8c",
-            borderBottom: "0.5px solid #8c8c8c",
+            borderTop: "0.1px solid #8c8c8c",
+            borderBottom: "0.1px solid #8c8c8c",
           }}
         >
           {({ isExpanded }) => (
@@ -475,8 +486,8 @@ const MensAccordion = ({ order,setOrderBy}) => {
         </AccordionItem>
         <AccordionItem
           style={{
-            borderTop: "0.5px solid #8c8c8c",
-            borderBottom: "0.5px solid #8c8c8c",
+            borderTop: "0.1px solid #8c8c8c",
+            borderBottom: "0.1px solid #8c8c8c",
           }}
         >
           {({ isExpanded }) => (
@@ -507,9 +518,19 @@ const MensAccordion = ({ order,setOrderBy}) => {
             </>
           )}
         </AccordionItem>
-      </Accordion>
+        </Accordion>
+
+     
+       
+        
+
+
+        {/* -----------------------------------Accordion end------------------------------- */}
+          </DrawerBody>
+        </DrawerContent>
+      </Drawer>
     </div>
   );
 };
 
-export default MensAccordion;
+export default Hamberger;

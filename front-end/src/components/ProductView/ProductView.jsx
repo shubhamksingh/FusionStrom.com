@@ -32,6 +32,8 @@ const likeData = [
 
 
 const ProductView = () => {
+  
+  
   return (
     <div className="product-view">
       <div className="pv-overview">
