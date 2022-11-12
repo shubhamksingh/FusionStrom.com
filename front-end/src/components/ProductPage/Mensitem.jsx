@@ -11,7 +11,10 @@ const Mensitem = () => {
   return (
     <div className='item1'>
       <h1>Men's T-Shirts</h1>
+      <div className='itemmenscrum'>
       <Mensitemcrum/>
+      </div>
+     
       <div className='item2'>
         <Alltshirt/>
        

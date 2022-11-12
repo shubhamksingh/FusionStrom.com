@@ -4,11 +4,13 @@ import "../../ProductPage/product-page.css";
 import { mendata } from "./womens_data";
 import React, { useState, useEffect } from "react";
 import ModalComponent from '../Model/ModalComponent';
+import MensAccordion from '../MensAccordion';
 
 const Alltshirt = () => {
     const [data, setData] = useState([]);
     const [sortType, setSortType] = useState("");
     const [isModalVisible, setIsModalVisible] = useState(false);
+    const [orderBy, setOrderBy] = useState("asc");
   const [selectedBox, setSelectedBox] = useState({});
     useEffect(() => {
       const sortArray = (type) => {
@@ -24,7 +26,11 @@ const Alltshirt = () => {
         setData(sorted);
       };
       sortArray(sortType);
-    }, [sortType]);
+    }, [sortType,orderBy]);
+    // if(mendata.price<1000){
+    //   setData(mendata)
+    // }
+    //
   return (
     <>
       <div className="total_item">
@@ -44,6 +50,7 @@ const Alltshirt = () => {
         {data.map((ele) => {
           return (
             <Product_card
+            id={ele.id}
               key={ele.id}
               name={ele.name}
               price={ele.price}
@@ -55,6 +62,7 @@ const Alltshirt = () => {
             />
           );
         })}
+       
        
       </div>
     </>
