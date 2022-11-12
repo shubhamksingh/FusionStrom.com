@@ -10,6 +10,7 @@ import Navbar from "../components/Navbar/navbar";
 import Footer from "../components/Footer/Footer";
 import ProductView from "../components/ProductView/ProductView";
 import MenPage from "../components/ProductPage/MenPage";
+import Crewneck from "../components/ProductPage/item/Crewneck";
 
 const MainRoutes = () => {
   return (
@@ -72,6 +73,7 @@ const MainRoutes = () => {
             // </RequiredAuth>
           }
         />
+       
         <Route path="gift" element={<h3>Gift</h3>} />
         <Route path="products/:id" element={<ProductView/>} />
         <Route path="flash/women" element={<Flash />} />

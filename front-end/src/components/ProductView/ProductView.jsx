@@ -8,6 +8,8 @@ import {IoBag} from "react-icons/io5";
 import {AiOutlinePlus} from "react-icons/ai";
 
 const ProductView = () => {
+  
+  
   return (
     <div className="product-view">
       <div className="pv-overview">
