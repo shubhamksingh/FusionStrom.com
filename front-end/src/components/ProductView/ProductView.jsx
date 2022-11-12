@@ -5,11 +5,16 @@ import "./productView.css";
 import { MdOutlineStar, MdStarHalf, MdStarOutline } from "react-icons/md";
 import { HiOutlineChevronDown } from "react-icons/hi";
 import { IoBag } from "react-icons/io5";
-import { AiOutlinePlus,AiOutlineMail } from "react-icons/ai";
-import {ImGift} from "react-icons/im";
-import {BsCardText} from "react-icons/bs";
-import {TfiGift,TfiDropbox} from "react-icons/tfi";
-import {TiGift} from "react-icons/ti";
+import { AiOutlinePlus, AiOutlineMail } from "react-icons/ai";
+import { ImGift } from "react-icons/im";
+import { BsCardText } from "react-icons/bs";
+import { TfiGift, TfiDropbox } from "react-icons/tfi";
+import { TiGift } from "react-icons/ti";
+import { useParams } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { mendata } from "../ProductPage/item/womens_data";
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 const likeData = [
   {
@@ -30,36 +35,66 @@ const likeData = [
   },
 ];
 
-
 const ProductView = () => {
+  const id = useParams();
+  const [productData, setProductData] = useState({});
+  const [cartItem, setCartItem] = useState(JSON.parse(localStorage.getItem("cart"))||[])
+  const navigate = useNavigate();
+
+  // console.log("id",id.id);
+  // console.log("men data",mendata)
+  // console.log("productData",productData.images)
+  //this code is used for before the deployment
+
+  //for getting single product from db after deployment
+  // let url=`http://localhost:8080/product/${id}`
+  // const getData=()=>{
+  //   fetch(url)
+  //     .then((res) => res.json())
+  //     .then((data) => {
+  //       setProductData(data.res);
+  //     });
+  // }
+  // getData();
+
+
+  useEffect(() => {
+    localStorage.setItem("cart", JSON.stringify(cartItem));
+    mendata.map((e) => {
+      if (e.id == id.id) {
+        console.log(e);
+        setProductData(e);
+      } else {
+        console.log("error");
+      }
+    });
+  }, [cartItem]);
+
+  //for getting single product from db after deployment
+
+  // let url="http://localhost:8080/cart";
+  const handleCart = (e) => {
+    e.preventDefault();
+    setCartItem([...cartItem, productData]);
+    //   axios
+    //   .post(url, productData)
+    //   .then((res) => {
+    //     console.log(res.data);
+    navigate(`/cart`);
+    //   })
+    //   .catch((err) => {
+    //     console.log(err);
+    //   });
+  };
+
+
   return (
     <div className="product-view">
       <div className="pv-overview">
         <div className="ov-images">
           <div>
             <div className="ov-img">
-              <img
-                src="https://n.nordstrommedia.com/id/sr3/2bd75271-056d-4eb2-95d1-6c269eb8e2bf.jpeg?crop=pad&pad_color=FFF&format=jpeg&trim=color&trimcolor=FFF&w=780&h=838"
-                alt="img1"
-              />
-            </div>
-            <div className="ov-img">
-              <img
-                src="https://n.nordstrommedia.com/id/sr3/d251006c-442a-41de-a9c1-8ad9710e22b0.jpeg?crop=pad&pad_color=FFF&format=jpeg&trim=color&trimcolor=FFF&w=780&h=838"
-                alt="img2"
-              />
-            </div>
-            <div className="ov-img">
-              <img
-                src="https://n.nordstrommedia.com/id/sr3/1ed21d9c-e1fd-415c-b4ef-c917ba762250.jpeg?crop=pad&pad_color=FFF&format=jpeg&trim=color&trimcolor=FFF&w=780&h=838"
-                alt="img3"
-              />
-            </div>
-            <div className="ov-img">
-              <img
-                src="https://n.nordstrommedia.com/id/sr3/1ed21d9c-e1fd-415c-b4ef-c917ba762250.jpeg?crop=pad&pad_color=FFF&format=jpeg&trim=color&trimcolor=FFF&w=780&h=838"
-                alt="img4"
-              />
+              <img src={productData.images} alt="img1" />
             </div>
           </div>
           <hr />
@@ -83,24 +118,24 @@ const ProductView = () => {
               {/* <div className="ov-rev-chev-up"><HiOutlineChevronUp/></div> */}
             </div>
           </div>
-          <p className="product-name">Ultra Mini Classic Boot</p>
+          <p className="product-name">{productData.name}</p>
           <p className="p-ugg">
-            UGG <sup>&#174;</sup>
+            {productData.brand}
+            {/* UGG <sup>&#174;</sup> */}
           </p>
           <p className="product-price">
-            INR <span>12,357.56</span>
+            INR <span>{productData.price}</span>
           </p>
-          <p className="product-desc">
-            An ultra-short shaft adds a twist to this abbreviated version of a
-            classic UGG boot.
+          <p className="origin-p">
+            INR <span>{productData.origPrice}</span>
           </p>
-          <select name="product-size" id="product-size">
+          <p className="product-desc">{productData.description}</p>
+          <select name="product-size" id="p-size">
             <option>Size</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
           </select>
           <p className="ps-guide">Size guides</p>
           {/* <select name="product-width" id="product-width">
@@ -110,18 +145,22 @@ const ProductView = () => {
             <option value="XL">XL</option>
           </select> */}
           <select name="product-color" id="product-color">
-            <option value="">Carnation</option>
-            <option value=""></option>
+            <option value="">Colours</option>
+            <option value="white">White</option>
+            <option value="blue">Blue</option>
+            <option value="black">Black</option>
+            <option value="red">Red</option>
+            <option value="gray">Gray</option>
           </select>
           <p className="p-view">
             <span>1893</span> people are viewing
           </p>
-          <button className="pv-addToBag">
+          <button className="pv-addToBag" onClick={handleCart}>
             <IoBag id="pv-bag" />
-            Add to Bag
+            <p>Add to Bag</p> 
           </button>
           <a href="#" className="p-wish">
-            <AiOutlinePlus id="pv-plus" /> Add to Wish List
+            <AiOutlinePlus id="pv-plus" /> <p>Add to Wish List</p> 
           </a>
         </div>
         <div className="ov-mLike">
@@ -165,9 +204,15 @@ const ProductView = () => {
       <div className="p-info">
         <div className="p-sizeinfo">
           <h2>SIZE INFO</h2>
-          <ul><li>True to size.</li></ul>
+          <ul>
+            <li>True to size.</li>
+          </ul>
           <h2>DETAILS & CARE</h2>
-          <p>Signature wrinkle-resistant cotton keeps you looking crisp and neat all day in a dress shirt tailored for versatility from solid oxford cloth.</p>
+          <p>
+            Signature wrinkle-resistant cotton keeps you looking crisp and neat
+            all day in a dress shirt tailored for versatility from solid oxford
+            cloth.
+          </p>
           <ul>
             <li>Raised placket</li>
             <li>Point collar</li>
@@ -178,29 +223,66 @@ const ProductView = () => {
             <li>Imported</li>
             <li>Item #1083758</li>
           </ul>
-          <p>Free Shipping & Returns <a href="#">See more</a></p>
+          <p>
+            Free Shipping & Returns <a href="#">See more</a>
+          </p>
         </div>
         <div className="p-gift">
-          <h2><ImGift/> GIFT OPTIONS</h2>
-          <p>Choose your gift options at Checkout. Some items may not be eligible for all gift options.</p>
+          <h2>
+            <ImGift /> <p>GIFT OPTIONS</p>
+          </h2>
+          <p>
+            Choose your gift options at Checkout. Some items may not be eligible
+            for all gift options.
+          </p>
           <h3>Free Pickup</h3>
           <ul>
-            <li><BsCardText/>Printed gift message (free)</li>
-            <li><ImGift/>Nordstrom gift box (free)</li>
-            <li><TfiGift/>Signature gift wrap ($5)</li>
-            <li><TiGift/>Fabric gift bag ($5)</li>
+            <li>
+              <BsCardText />
+              <p>Printed gift message (free)</p>
+            </li>
+            <li>
+              <ImGift />
+              <p>Nordstrom gift box (free)</p>
+            </li>
+            <li>
+              <TfiGift />
+              <p>Signature gift wrap ($5)</p>
+            </li>
+            <li>
+              <TiGift />
+              <p>Fabric gift bag ($5)</p>
+            </li>
           </ul>
           <h3>Delivery</h3>
           <ul>
-            <li><AiOutlineMail/>Email gift message (free)</li>
-            <li><BsCardText/>Printed gift message (free)</li>
-            <li><TiGift/>Fabric gift bag ($5)</li>
-            <li><TfiDropbox/>DIY Nordstrom gift box ($5)</li>
+            <li>
+              <AiOutlineMail />
+              <p>Email gift message (free)</p>
+            </li>
+            <li>
+              <BsCardText />
+              <p>Printed gift message (free)</p>
+            </li>
+            <li>
+              <TiGift />
+              <p>Fabric gift bag ($5)</p>
+            </li>
+            <li>
+              <TfiDropbox />
+              <p>DIY Nordstrom gift box ($5)</p>
+            </li>
           </ul>
           <p>Need help finding the perfect gift? We've got you covered.</p>
           <button className="shop-gift">Shop Gifts</button>
           <a href="/">FUSIONSTROM</a>
-          <p>The Nordstrom line of high-quality clothing, shoes and accessories offers just the right pieces for women, men and kids seeking timeless, classic items to complement and polish their wardrobe. Versatility, ease and affordability are hallmarks of the Nordstrom collection. Available exclusively at Nordstrom.</p>
+          <p>
+            The Nordstrom line of high-quality clothing, shoes and accessories
+            offers just the right pieces for women, men and kids seeking
+            timeless, classic items to complement and polish their wardrobe.
+            Versatility, ease and affordability are hallmarks of the Nordstrom
+            collection. Available exclusively at Nordstrom.
+          </p>
         </div>
       </div>
     </div>

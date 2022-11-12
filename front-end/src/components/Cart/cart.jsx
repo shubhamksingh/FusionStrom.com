@@ -1,10 +1,13 @@
 import "./cart.css";
+import "./cartResponsive.css";
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from "@chakra-ui/react";
 import { ImGift } from "react-icons/im";
 import { BsTruck } from "react-icons/bs";
 import { MdDoNotDisturbAlt } from "react-icons/md";
 import { FaRegDotCircle } from "react-icons/fa";
 import {useNavigate} from "react-router-dom";
+import axios from "axios";
+import { useState } from "react";
 
 const viewed = [
   {
@@ -44,6 +47,18 @@ const viewed = [
 
 const CartPage = () => {
   const navigate = useNavigate();
+  const [items,setItems]=useState([]);
+  const cList=JSON.parse(localStorage.getItem("cart")) || [];
+  console.log(cList);
+
+  // const url=`http://localhost:4500/cart`;
+  // const getCartItems = () => {
+  //   axios.get(url).then((res) => {
+  //      setItems(res.data);
+  //     console.log(res.data);
+  //   });
+  // };
+  // getCartItems();
 
   const handleCheckout=()=>{
     navigate(`/checkout`);
@@ -87,14 +102,14 @@ const CartPage = () => {
                   <p>Items in your bag are not on hold.</p>
                   <p>
                     <ImGift id="c-gift" />
-                    Choose gift options when you check out.
+                    <span>Choose gift options when you check out.</span>
                   </p>
                 </div>
                 <hr />
                 <div className="cart-delivery">
                   <h4>
                     <BsTruck id="c-truck" />
-                    Delivery (1 item) to <span>India</span>
+                    <p>Delivery (1 item) to <span>India</span></p>
                   </h4>
                   <p>International shipping</p>
                 </div>
@@ -131,12 +146,14 @@ const CartPage = () => {
                     </div>
                   </div>
                   <div className="c-delivery">
+                    <div>
                     <p>
-                      <MdDoNotDisturbAlt id="d-logo" /> Not available for pickup
+                      <MdDoNotDisturbAlt id="d-logo" /> <span>Not available for pickup</span>
                     </p>
                     <p>
-                      <FaRegDotCircle id="d-logo" /> Delivery
+                      <FaRegDotCircle id="d-logo" /> <span>Delivery</span>
                     </p>
+                    </div>
                     <p>
                       Delivery International orders usually arrive within 5–13
                       business days. We'll give you delivery dates in checkout.
@@ -204,13 +221,14 @@ const CartPage = () => {
                     <p>Size: X-Small</p>
                     <p>Color: BLACK</p>
                     <p>Item: 6031488</p>
+                    
                     <div className="c-actions">
                       <button>Remove</button>
                       <button>Move to bag</button>
                     </div>
                   </div>
                   <div className="c-delivery">
-                    <p>Qty:1</p>
+                    <p>QTY :1</p>
                   </div>
                   <div className="c-price">
                     <p>$17.70</p>

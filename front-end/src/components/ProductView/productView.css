@@ -1,5 +1,5 @@
 .product-view{
-    padding: 4rem 30px 20px 30px;
+    padding: 0rem 30px 20px 30px;
     width: 100%;
     height: auto;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif!important;
@@ -10,8 +10,8 @@
 }
 /* product images */
 .ov-images{
-    width: 60%;
-    padding-right: 20px;
+    width: 45%;
+    padding-right: 5%;
 }
 .ov-images>div{
     display: grid;
@@ -33,13 +33,21 @@
 
 /* product description */
 .ov-desc{
-    width:30% ;
+    width:45% ;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif!important;
+    padding:0px 6% 0px 10px;
 }
 .ov-desc>.o-stars{
     padding: 5px 5px 5px 0px;
     display: flex;
     flex-direction: row;
+}
+.ov-desc>.o-stars>.ov-star{
+    display: flex;
+    flex-direction: row;
+}
+.ov-desc>.o-stars>div:nth-child(2){
+    margin-top: -5px;
 }
 .ov-desc>.o-stars>div>p{
     font-size: 14px;
@@ -50,13 +58,12 @@
     color:#636161;
 }
 .ov-desc>.product-name{
-    margin-top: -30px;
+    margin-top: -6px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif!important;
     font-size: 21px;
     font-weight: 100;
 }
 .ov-desc>.p-ugg,.mlike-container>.mlc-down>p{
-    margin-top: -12px;
     font-size: 12px;
 }
 .ov-desc>.p-ugg>sup,.mlike-container>.mlc-down>p>sup{
@@ -68,21 +75,28 @@
     font-weight: 600;
     font-size: 18px;
 }
-.ov-desc>.product-desc{
-    margin-top: -15px;
-    font-size: 12px;
+.ov-desc>.origin-p{
+    text-decoration: line-through;
+    color: rgb(213, 52, 52);
+    margin-top: 5px;
+    font-weight: 600;
+    font-size: 15px;
 }
-.ov-desc>#product-size,.ov-desc>#product-color{
+.ov-desc>.product-desc{
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+.ov-desc>#p-size,.ov-desc>#product-color{
     padding: 10px 10px;
     width: 98%!important;
-    border: 1px thin #636161;
+    border: 1px solid #bcbcbc;
     font-size: 13px;
     color: #2f2f2f;
     font-weight: 500;
     outline: none;
     cursor: pointer;
 }
-.ov-desc>#product-size:hover,.ov-desc>#product-color{
+.ov-desc>#p-size:hover,.ov-desc>#product-color:hover{
     border-bottom: 3px solid #636161;
 }
 .ov-desc>.ps-guide{
@@ -103,24 +117,37 @@
     font-weight: 600;
 }
 .ov-desc>.pv-addToBag{
-    padding: 5px 5px;
+    padding: 10px 5px;
     width: 98%!important;
+    display: flex;
     border: 1px thin #636161;
     font-size: 12px;
     border: none;
     outline: none;
     background-color: black;
+    margin-bottom: 20px;
+}
+.ov-desc>.pv-addToBag>p{
     color: white;
     font-weight: 600;
-    margin-bottom: 20px;
+    padding-top: 6px;
 }
 .ov-desc>.pv-addToBag>#pv-bag{
     padding-right: 10px;
     font-size: 29px;
+    color: white;
+    margin-left: 40%;
 }
 .ov-desc>.p-wish{
+    display: flex;
     font-size: 13px;
     color: #464646;
+}
+.ov-desc>.p-wish>p{
+    margin-left: 5px;
+}
+.ov-desc>.p-wish>#pv-plus{
+    font-size: 18px;
 }
 
 /* You might like portion*/
@@ -162,7 +189,6 @@
     color: #d32525;
     font-weight: 600;
     font-size: 13px;
-    margin-top: -18px;
 }
 /* product gifts and more info css */
 .p-info{
@@ -177,14 +203,19 @@
 }
 .p-info>.p-sizeinfo>h2,
 .p-info>.p-gift>h2{
-    font-size: 17px;
-    font-size: 700;
+    font-size: 17px!important;
+    font-size: 700!important;
     color: #2f2f2f;
+    padding: 10px 0px;
 }
 .p-info>.p-sizeinfo>ul>li,
-.p-info>.p-sizeinfo>p,
-.p-info>.p-gift>p,
 .p-info>.p-gift>ul>li{
+    font-size: 11px;
+    color: #464646;
+    margin-left: 20px;
+}
+.p-info>.p-sizeinfo>p,
+.p-info>.p-gift>p{
     font-size: 11px;
     color: #464646;
 }
@@ -198,9 +229,16 @@
 .p-info>.p-gift{
     padding-left: 20px;
 }
+.p-info>.p-gift>h2{
+    display: flex;
+}
+.p-info>.p-gift>h2>p{
+    margin-left: 5px;
+}
 .p-info>.p-gift>ul>li{
     list-style: none;
     padding: 5px 0px;
+    display: flex;
 }
 .p-info>.p-gift>h3{
     font-size: 15px;

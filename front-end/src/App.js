@@ -7,11 +7,6 @@ import dashboard from './components/dashboard/dashboard';
 
 import Index from "./components/dashboard/Carosal/Index";
 
-
-
-
-
-
 import MainRoutes from './Routes/MainRoutes';
 import React from 'react';
 
@@ -23,12 +18,12 @@ function App() {
     {/* <Index/> */}
     
 
-  /*  <Routes>
+    {/* <Routes>
      
       <Route path="/" element={<dashboard/>} />
       
 
-    </Routes> */
+    </Routes>  */}
 
     </>
   );
