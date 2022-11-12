@@ -1,5 +1,5 @@
 const express = require('express');
-const { default: dbconnect } = require('./db/dbconfig');
+const { default: dbconnect } = require('./src/db/dbconfig');
 const app = express()
 const port = 8080
 

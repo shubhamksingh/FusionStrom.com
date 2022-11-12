@@ -39,6 +39,9 @@
     }
 }
 @media screen and (max-width: 500px) {
+    .product-view{
+        display: none;
+    }
     .foo-p2>.app>.social{
         flex-direction: column;
     }
