@@ -30,6 +30,7 @@ const Alltshirt = () => {
     // if(mendata.price<1000){
     //   setData(mendata)
     // }
+    //
   return (
     <>
       <div className="total_item">
