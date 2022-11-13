@@ -1,0 +1,596 @@
+
+.fst_div{
+    width: 100%;
+    /* height: auto; */
+    width: 90%;
+    height: auto;
+    /* border: 1px solid black; */
+    margin: auto;
+}
+.fst_div_start{
+    display: flex;
+    width: 100%;
+    height: 8rem;
+    /* border: 1px solid red; */
+    /* justify-content: space-between; */
+    /* margin: auto; */
+}
+.imgdiv{
+    display: flex;
+    width: 100%;
+    height: 1rem;
+    justify-content: space-between;
+
+    /* border: 1px solid; */
+    
+}
+.imgdiv>div{
+    /* border: 1px solid; */
+    width: 32%;
+    /* margin: auto; */
+    
+}
+.img1{
+    width: 100%;
+    height: 10px;
+ 
+}
+.p1{
+    font-size: 21px;
+    font-weight: 700;
+}
+.middlediv{
+    
+    /* border: 1px solid; */
+    text-align: center;
+    height: 7rem;
+}
+.secondDiv{
+    width: 100%;
+    height: 19rem;
+    /* border: 1px solid; */
+    
+    background-image: url("https://n.nordstrommedia.com/id/86cb85ca-559d-45c7-b276-7945fa02d93c.png?h=400&w=1608");
+    background-size: 100%;
+background-repeat: no-repeat;
+background-position: calc(0% + 140px) ;
+background-position-x: calc(0% + 5px);
+
+/* background-position-y: bottom; */
+/* width: 100%; */
+/* height:425px; */
+/* border-bottom: 1px solid rgba(250,93,0,100%); */
+
+display:flex;
+    
+}
+.save70{
+position: absolute;
+
+  top: 10%;
+
+
+ 
+
+ /* // top: 39%; */
+
+
+  left: 32%;
+
+}
+.link{
+    display: flex;
+    width: 80%;
+    /* border: 1px solid; */
+    height:2rem;
+    justify-content: space-around;
+
+    position:relative;
+  top: 70%;
+  left: 12%;
+  text-align: center;
+  text-decoration: none;
+}
+.thirdDiv{
+    /* border: 1px solid; */
+
+  /* // commented while merging
+ //   position: absolute;
+ // top: 42%;
+ // left: 12%;
+ // text-decoration: none;
+// }
+// .thirdDiv{
+// border: 1px solid; */
+
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-top: 4%;
+}
+.thirdDiv>div{
+    width: 50%;
+}
+.blackbackground{
+    background-color: black;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    
+}
+.fourth_div{
+    /* border: 1px solid; */
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin-top: 4%;
+    justify-content: space-between;
+}
+.p3{
+    font-size: 25px;
+    font-weight: 700;
+}
+.viewProducts{
+
+    border: 1px solid;
+
+    /* border: 1px solid; */
+
+    text-decoration: none;
+    padding: 10px 20px 10px 10px;
+}
+.viewProducts:hover{
+    cursor: pointer;
+    border: none;
+    background-color: rgb(179, 178, 178);
+   text-decoration-color: black;
+}
+
+
+.carosalNavbar{
+    /* border: 1px solid; */
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+
+}
+.carosalNavbar>p:hover{
+
+    cursor: pointer;
+    text-decoration: underline;
+    font-weight: 700;
+    /* text-decoration: none; */
+    text-decoration-color: black;
+
+}
+.carosal{
+    /* border: 1px solid; */
+    width: 100%;
+    height: 27rem;
+    margin-top: 2%;
+}
+.fifth_Div{
+    background-image: url("https://n.nordstrommedia.com/id/222433e7-c339-48c2-b05c-d994d87a4a97.jpeg?h=200&w=1608");
+    width: 100%;
+    height: 10rem;
+    margin-top: 2%;
+    background-size: 100%;
+background-repeat: no-repeat;
+background-position: calc(0% + 140px) ;
+background-position-x: calc(0% + 5px);
+border: 1px solid white
+}
+.fifth_Div>div{
+    width: 50%;
+    /* position: absolute; */
+    height: 8rem;
+    /* border: 1px solid; */
+    margin-top: 3%;
+    margin-left: 8%;
+    
+
+}
+.fifth_Div_text{
+    font-size: 21px;
+    
+}
+.fifth_Div_text_two{
+    /* border: 1px solid; */
+    width: 70%;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+    text-decoration-color: black;
+    
+}
+.line{
+    width: 100%;
+    height: 12px;
+    margin-top: 5%;
+
+}
+.line1{
+    width: 100%;
+    height: 12px;
+    margin-top: 5%;
+
+}
+.line>img{
+    width: 100%;
+    height: 100%;
+}
+
+.sixth_div{
+    background-image: url("https://n.nordstrommedia.com/id/706917ad-140f-4af0-94f3-cbe08a9f9c9d.png?h=300&w=1608");
+    width: 100%;
+    height: 16rem;
+    margin-top: 5%;
+    background-size: 100%;
+background-repeat: no-repeat;
+background-position: calc(0% + 140px) ;
+background-position-x: calc(0% + 5px);
+border: 1px solid white;
+}
+.sixth_div>div{
+    /* border: 1px solid; */
+    width: 50%;
+    height: 6.8rem;
+    margin: auto;
+    margin-top: 12%;
+    text-align: center;
+    
+}
+.buttons{
+    /* border: 1px solid; */
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin-top: 2%;
+    justify-content: space-between;
+}
+.buttons>button{
+    padding: 10px 20px 10px 20px;
+    border: 1px solid;
+
+}
+.AutoCarosal{
+    margin-top: 5%;
+}
+
+.title{
+    /* border: 1px solid; */
+    width: 50%;
+    height: 5rem;
+    margin: auto;
+    text-align: center;
+    margin-top: 4%;
+}
+
+.seventh_div{
+    /* border: 1px solid; */
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    justify-content: space-between;
+}
+.seventh_div>div{
+    /* border: 1px solid; */
+    height: 100%;
+    width: 100%;
+   
+}
+
+.img_div{
+    /* border: 1px solid; */
+    width: 100%;
+    height: 90%;
+}
+.content_div{
+    display: flex;
+    /* border: 1px solid red; */
+    width: 100%;
+    height: auto;
+    justify-content: space-around;
+}
+.theThread{
+    /* border: 1px solid; */
+    width: 100%;
+    height: 7rem;
+    margin-top: 5%;
+    text-align: center;
+}
+.threadImg_div{
+    /* margin-top: 2%; */
+    /* border: 1px solid; */
+    width: 100%;
+    height: 29rem;
+    display: flex;
+    justify-content: space-between;
+}
+.threadImg_div>div{
+    
+   
+    /* border: 1px solid red; */
+    width: 34%;
+    height: 100%;
+}
+.threadImg{
+    /* border: 1px solid teal; */
+    width: 100%;
+    height: 78%;
+}
+/* .text_div{
+  
+    
+} */
+.imgset{
+    width: 100%;
+    height: 100%;
+}
+.p4{
+    color: #393939;
+    font-size: 21px;
+    font-weight: 600;
+}
+.serviceImg_div{
+       /* border: 1px solid; */
+       width: 100%;
+       height: 25rem;
+       display: flex;
+       justify-content: space-between;
+
+}
+.serviceImg_div>div{
+     /* border: 1px solid red; */
+     width: 25%;
+     height: 100%;
+
+}
+.servicetext_div{
+      /* border: 1px solid teal; */
+      width: 95%;
+      height: 30%;
+
+}
+.serviceImg{
+    /* border: 1px solid teal; */
+    width: 100%;
+    height: 70%;
+
+}
+.p5{
+    font-size: 15px;
+    color: #393939;
+}
+@media screen and (min-width:950px) and (max-width:1200px) {
+    .fst_div_start{
+        display: block;
+        /* border: 1px solid black; */
+    }
+    .fst_div{
+        width: 90%;
+    }
+    .save70{
+        display: block;
+        top: 10%;
+        left: 29%;
+        text-align: center;
+    }
+    .link{
+        display: block;
+        top: 90%;
+    }
+    .thirdDiv{
+        display: block;
+        margin: auto;
+        /* border: 1px solid; */
+        width: 100%;
+        margin-top: 18%;
+    }
+    .thirdDiv>div{
+        width: 100%;
+    }
+    .imgmove{
+        width: 100%;
+    }
+    /* .fourth_div{
+            border: 1px solid;
+    } */
+    /* .fifth_Div{
+        border: 1px solid;
+    } */
+    .fifth_Div_text_two{
+        width: 100%;
+        /* border: 1px solid; */
+
+
+    }
+    /* .sixth_div{
+        border: 1px solid;
+       
+       
+        
+    } */
+    .sixth_div>div{
+        width: 70%;
+        margin-top: 15%;
+
+    }
+    .move{
+        /* border: 1px solid; */
+        width: 100%;
+    }
+    .carosalNavbar{
+        /* border: 1px solid; */
+        width: 70%;
+    }
+    .threadImg_div{
+        /* border: 1px solid; */
+        /* display: block; */
+        height: auto;
+        margin-top: 2%;
+    }
+    .linemove{
+        margin-top: 12%;
+        /* border: 1px solid; */
+    }
+
+
+
+}
+
+@media screen and (min-width:350px) and (max-width:950px) {
+
+    .fst_div_start{
+        display: block;
+        /* border: 1px solid black; */
+    }
+    .fst_div{
+        width: 90%;
+        /* border: 1px solid; */
+    }
+    /* .middlediv{
+        border: 1px solid;
+        width: 60%;
+    } */
+    .save70{
+        display: block;
+        /* border: 1px solid; */
+        width: 90%;
+        top: 7.5%;
+        left: 5%;
+        text-align: center;
+    }
+    .link{
+        display: block;
+        top: 90%;
+    }
+    .thirdDiv{
+        display: block;
+        margin: auto;
+        /* border: 1px solid; */
+        width: 100%;
+        margin-top:45%;
+    }
+    .thirdDiv>div{
+        width: 100%;
+    }
+    .imgmove{
+        width: 100%;
+    }
+    .fifth_Div{
+        /* border: 1px solid; */
+        /* width: 100%; */
+    }
+    .fifth_Div>div{
+        /* border: 1px solid; */
+        width: 100%;
+        margin-left: -1.02%;
+        margin-top: 30%;
+    }
+
+    .fifth_Div_text{
+        font-size: 18px;
+    }
+    .fifth_Div_text_two{
+        display: block;
+        text-align: center;
+        /* border: 1px solid red; */
+        margin-top: 7%;
+    }
+    .line1{
+        margin-top: 50%;
+    }
+    /* .fourth_div{
+            border: 1px solid;
+    } */
+    /* .fifth_Div{
+        border: 1px solid;
+    } */
+    .fifth_Div_text_two{
+        width: 100%;
+        /* border: 1px solid; */
+
+
+    }
+    .sixth_div{
+        /* border: 1px solid; */
+        margin-top: -20%;
+       
+       
+        
+    }
+    .AutoCarosal{
+        /* border: 1px solid; */
+        margin-top: 20%;
+    }
+    .sixth_div>div{
+        width: 100%;
+        height: auto;
+        margin-top: 47%;
+        /* border: 1px solid; */
+
+    }
+    .move{
+        /* border: 1px solid; */
+        width: 100%;
+    }
+    .carosalNavbar{
+        /* border: 1px solid; */
+        width: 100%;
+        margin-top: 2%;
+    }
+    .threadImg_div{
+        /* border: 1px solid; */
+        display: block;
+        height: auto;
+        margin-top: 15%;
+        
+    }
+    .threadImg_div>div{
+        width: 100%;
+        margin-top: 5%;
+    }
+    .threadImg{
+        /* border: 1px solid; */
+        width: 100%;
+    }
+    .linemove{
+        margin-top: 12%;
+        /* border: 1px solid; */
+    }
+    .content_div{
+        /* border: 1px solid; */
+        margin-top: -52%;
+    }
+    /* .p3{
+        font-weight: 600;
+        font-size: 15px;
+    } */
+    .title{
+        /* border: 1px solid; */
+        width: 100%;
+    }
+    .serviceImg_div{
+        /* border: 1px solid; */
+        height: auto;
+        display: block;
+    }
+    .serviceImg_div>div{
+        /* border: 1px solid; */
+        width: 100%;
+        height: auto;
+        /* display: block; */
+        margin-top: 5%;
+    }
+
+
+
+}
+
+
+
+
+
+
+
