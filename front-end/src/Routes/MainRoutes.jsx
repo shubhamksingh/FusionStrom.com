@@ -8,7 +8,7 @@ import CartPage from "../components/Cart/cart";
 import MenPage from "../components/ProductPage/MenPage";
 
 import Crewneck from "../components/ProductPage/item/Crewneck";
-import Womens from "../components/ProductPage/Womens";
+
 
 
 
@@ -19,6 +19,8 @@ import Profile from "../components/Auth/Profile/Profile"
 import Checkout from "../components/Checkout/Checkout"
 import Flash from "../components/Flash/Flash";
 import Adminlogin from "../components/Auth/AdminLogin/Adminlogin";
+import Womens from "../components/ProductPage/Womens";
+
 
 
 
@@ -101,6 +103,7 @@ const MainRoutes = () => {
        
         <Route path="gift" element={<h3>Gift</h3>} />
         <Route path="mens/products/:id" element={<ProductView />} />
+        {/* <Route path="womens/products/:id" element={<ProductView />} /> */}
         {/* <Route path="flash/women" element={<Flash />} />
         <Route path="flash/kids" element={<Kids />} /> */}
         <Route path="flash/women" element={<h1>Flash</h1>} />

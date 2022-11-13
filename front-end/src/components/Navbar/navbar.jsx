@@ -56,7 +56,7 @@ const Navbar = () => {
         </span>
         <span
           onClick={() => {
-            nav("/women");
+            nav("womens");
           }}
         >
           Women
