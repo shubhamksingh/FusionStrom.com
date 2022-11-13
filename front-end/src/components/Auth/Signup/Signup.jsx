@@ -1,14 +1,14 @@
 import React, { useState } from 'react'
-import { Button, Flex, Text, Stack, Center, Input, Box, Link } from '@chakra-ui/react'
+import { Button, Flex, Text, Stack, Center, Input, Box, Link, useToast } from '@chakra-ui/react'
 import { useNavigate } from "react-router-dom"
 import axios from "axios"
 
 const Signup = () => {
+  const toast = useToast()
   const navigate = useNavigate()
 
   const [user, Setuser] = useState({
-    first_name: "",
-    last_name: "",
+    username: "",
     email: "",
     password: ""
 
@@ -22,20 +22,36 @@ const Signup = () => {
     })
   }
 
-  const register=()=>{
-    const {first_name,last_name,email,password} = user
+  const register =() => {
+    const { username, email, password } = user
+    
+    // console.log(username, email, password);
 
-    if(first_name && last_name && email && password ){
-      axios.post("http://localhost:8080/signup", user)
-      .then(res=>{
-        // console(res)
-        alert("Registation Successfull")
-       navigate("/signin")
-      }
-        )
+    if (username && email && password) {
+      // axios.post("http://localhost:8080/api/auth/register", user)
+      // .then(res=>{
+      //   // console(res)
+        // alert("Login Successfull")
+        toast({
+          title: 'Account created.',
+          description: "We've created your account for you.",
+          status: "success",
+          position: "top",
+          duration: 1000,
+          isClosable: true,
+        })
+           setTimeout(()=>{
+        navigate("/signin")
+      },1000) 
     }
-    else{
-      alert("Fill all inputs")
+    else {
+      toast({
+        title: "Fill all details",
+        status: "warning",
+        position: "top",
+        duration: 1000,
+        isClosable: true,
+      });
     }
   }
 
@@ -56,6 +72,15 @@ const Signup = () => {
 
         <Box w={["300px", "400px", "500px"]} mt={5} style={{ display: "flex", flexDirection: "column" }}>
 
+
+        <Text fontSize='0.8rem'>Username*</Text>
+          <Input style={{ border: "1px solid black" }} w={["300px", "300px", "400px"]} mb={5} type="text"
+            placeholder='Username'
+            name='username'
+            value={user.username}
+            onChange={handleChange}
+          />
+
           <Text fontSize='0.8rem'>Email*</Text>
           <Input style={{ border: "1px solid black" }} w={["300px", "300px", "400px"]} mb={5} type="email"
             placeholder='Email'
@@ -64,22 +89,14 @@ const Signup = () => {
             onChange={handleChange}
           />
 
-          <Text fontSize='0.8rem'>First name*</Text>
-          <Input style={{ border: "1px solid black" }} w={["300px", "300px", "400px"]} mb={5} type="text"
-            placeholder='First name'
-            name='first_name'
-            value={user.first_name}
-            onChange={handleChange}
-          />
 
-
-          <Text fontSize='0.8rem'>Last name*</Text>
+          {/* <Text fontSize='0.8rem'>Last name*</Text>
           <Input style={{ border: "1px solid black" }} w={["300px", "300px", "400px"]} mb={5} type="text"
             placeholder='Last name'
             name='last_name'
             value={user.last_name}
-            onChange={handleChange}
-          />
+            // onChange={handleChange}
+          /> */}
 
 
           <Text fontSize='0.8rem'>Create password*</Text>
