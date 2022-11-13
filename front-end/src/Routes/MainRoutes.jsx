@@ -21,26 +21,26 @@ import Adminlogin from "../components/Auth/AdminLogin/Adminlogin";
 const MainRoutes = () => {
   return (
     <>
-      <Navbar/>
+      <Navbar />
+      <br />
       {/* <Navbar2 /> */}
-
       <Routes>
-        <Route path="/" element={<Dashboard/>} />
-
+        <Route path="/" element={<Dashboard />} />
+        <Route path="/checkout" element={<h3>Checkout</h3>} />
         <Route path="payment" element={<h3>Payment </h3>} />
-
-        <Route path="/signin" element={<Signin/>} />
-        <Route path="/signup" element={<Signup/>} />
-        <Route path="/profile" element={<Profile/>} />
-        <Route path="/checkout" element={<Checkout/>} />
-        <Route path="mens" element={<MenPage/>} />
-        <Route path="/adminlogin" element={<Adminlogin/>} />
-
+        {/* //<Route path="signin" element={<h3>Singin</h3>} />
+        //<Route path="createacc" element={<h3>Createacc</h3>} /> */}
+        {/* <Navbar2 /> */}
+        //<Route path="/" element={<h3></h3>} />
+        <Route path="/signin" element={<Signin />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="mens" element={<MenPage />} />
         <Route
           path="cart"
           element={
             // <RequiredAuth>
-            <CartPage/>
+            <CartPage />
             // {/* </RequiredAuth> */}
           }
         />
@@ -86,15 +86,19 @@ const MainRoutes = () => {
         />
        
         <Route path="gift" element={<h3>Gift</h3>} />
-        <Route path="products/:id" element={<ProductView/>} />
-        <Route path="flash/women" element={<Flash />} />
-        {/* <Route path="flash/kids" element={<Kids />} />
-        <Route path="flash/mens" element={<Mens />} />
-        <Route path="flash/home" element={<Home />} />
+        <Route path="mens/products/:id" element={<ProductView />} />
+        {/* <Route path="flash/women" element={<Flash />} />
+        <Route path="flash/kids" element={<Kids />} /> */}
+        <Route path="flash/women" element={<h1>Flash</h1>} />
+        <Route path="flash/kids" element={<h1>Kids</h1>} />
+        <Route path="flash/mens" element={<MenPage />} />
+        <Route path="flash/home" element={<Dashboard/>} />
+        <Route path="flash/beauty" element={<h1>Beauty</h1>} />
+        {/* <Route path="flash/home" element={<Home />} />
         <Route path="flash/beauty" element={<Beauty />} /> */}
 
       </Routes>
-  
+
       <Footer />
     </>
   );

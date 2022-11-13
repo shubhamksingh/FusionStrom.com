@@ -1,5 +1,5 @@
 .cart-part{
-    padding: 4rem 30px 20px 30px;
+    padding: 1rem 30px 20px 30px;
     width: 80%;
     margin: auto;
     height: auto;
@@ -36,6 +36,9 @@
     font-size: 13px;
     color: 	#585858;
 }
+.ct-info-one .bag-gift>p:nth-child(3){
+    display: flex;
+}
 .ct-info-one .bag-gift p>#c-gift{
     margin-right: 10px;
     font-size: 18px;
@@ -44,6 +47,9 @@
     margin-top: 40px;
     font-size: 18px;
     font-weight: 100;
+}
+.ct-info-one .cart-delivery>h4{
+    display: flex;
 }
 .ct-info-one .cart-delivery>h4>#c-truck{
     margin-right: 10px;
@@ -57,8 +63,9 @@
     font-size: 13px;
     color: #818080;
 }
+
 .ct-info-one>.cart-items{
-    padding: 0px 10px;
+    padding: 5px 10px;
     display: flex;
     flex-direction: row;
 }
@@ -82,7 +89,6 @@
 }
 .ct-info-one>.cart-items>.c-info>p{
     font-size: 13px;
-    margin-top: -12px;
     color: #393939;
     font-weight: 100;
 }
@@ -108,19 +114,24 @@
     font-size: 13px;
     color: #393939;
 }
-.ct-info-one>.cart-items>.c-delivery>p>#d-logo{
+.ct-info-one>.cart-items>.c-delivery>div>p{
+    display: flex;
+}
+.ct-info-one>.cart-items>.c-delivery>div>p>span{
+    margin-left: 10px;
+}
+.ct-info-one>.cart-items>.c-delivery>div>p>#d-logo{
     font-size: 23px;
     margin-right: 10px;
 }
-.ct-info-one>.cart-items>.c-delivery>p:nth-child(1){
+.ct-info-one>.cart-items>.c-delivery>div>p:nth-child(1){
     font-weight: 600;
 }
-.ct-info-one>.cart-items>.c-delivery>p:nth-child(2){
+.ct-info-one>.cart-items>.c-delivery>div>p:nth-child(2){
     color: black;
     font-weight: 600;
 }
-.ct-info-one>.cart-items>.c-delivery>p:nth-child(3){
-    margin-top: -15px;
+.ct-info-one>.cart-items>.c-delivery>p:nth-child(2){
     margin-left: 39px;
 }
 .ct-info-one>.c-check-part{
@@ -152,7 +163,7 @@
 .ct-info-one>.c-check-part>.c-checkout>.c-total{
     display: flex;
     flex-direction: row;
-    margin-bottom: -20px;
+    margin-bottom: 10px;
     color: #515151;
 }
 .ct-info-one>.c-check-part>.c-checkout>.c-total>p:nth-child(2){
@@ -166,6 +177,9 @@
     color: white;
     padding: 15px 20px;
     font-size: 13px;
+}
+.ct-info-one>.c-check-part>.c-payments>.payImgDiv{
+    display: flex;
 }
 
 
@@ -206,7 +220,6 @@
     /* line-height: 5px; */
     margin-left: 5px;
     font-size: 13px;
-    margin-top: -10px;
   }
   .smallDiv {
     margin-bottom: 8px;

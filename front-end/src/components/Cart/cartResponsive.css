@@ -1,0 +1,30 @@
+
+@media screen and (max-width: 900px) {
+    .cart-part{
+        padding: 1rem 20px 20px 20px;
+    }
+    .ct-info-one .bag-gift>h3{
+        font-size: 20px;
+    }
+    .ct-info-one .bag-gift p{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cart-part{
+        padding: 1rem 20px 20px 20px;
+    }
+    .ct-info-one .bag-gift>h3{
+        font-size: 19px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .cart-part{
+        padding: 1rem 20px 20px 20px;
+        flex-direction: column;
+    }
+    .ct-info-one .bag-gift>h3{
+        font-size: 16px;
+    }
+}

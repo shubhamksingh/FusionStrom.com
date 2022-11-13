@@ -72,7 +72,7 @@ position: absolute;
 
  
 
- top: 39%;
+ /* // top: 39%; */
 
 
   left: 32%;
@@ -93,8 +93,8 @@ position: absolute;
 }
 .thirdDiv{
     /* border: 1px solid; */
-/* 
-  // commented while merging
+
+  /* // commented while merging
  //   position: absolute;
  // top: 42%;
  // left: 12%;
