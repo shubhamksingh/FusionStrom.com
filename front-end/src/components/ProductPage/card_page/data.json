@@ -1,0 +1,307 @@
+{
+    
+
+ "mendata": [
+    {
+        "id": 1,
+        "name": "Karl Lagerfeld Paris",
+        "brand": "LUCKY BRAND",
+      
+        "price":  5976.78,
+        "images": [
+            "https://n.nordstrommedia.com/id/sr3/ea872fc8-9371-4add-9971-983c516d8261.jpeg?h=365&w=240&dpr=2"
+        ],
+        "description": "This lightweight cotton-blend shirt features a henley neckline and a faded finish so you can enjoy all the worn-in comfort without any of the work.",
+        "rating": 4.2,
+        "categories":["men","adult","tshirt","shortsleeve"],
+        "colors":["red","black","white"],
+        "size":["S","M","L"]
+    },
+    {
+        "id": 2,
+        "name": "Hybrid Walk Shorts",
+        "brand": "HURELY",
+        "price":  1885.91,
+        "origPrice":  3353.88,
+        "images": [
+            "https://n.nordstrommedia.com/id/sr3/e3e8457d-a04b-436e-8b02-6d94bb8b20d5.jpeg?h=365&w=240&dpr=2"
+        ],
+        "description": "Made for versatile styling, these Hybrid Walk Shorts feature an allover print for comfort and style.",
+        "rating": 3.8,
+        "categories":["men","adult","tshirt","shortsleeve"],
+        "colors":["red","black","white"],
+        "size":["S","M","L"]
+    },
+    {
+        "id": 3,
+        "name": "Calvin Klein",
+        "brand": "TOMMY BAHAMA",
+        "price": 39.97,
+        "origPrice": 99.50,
+        "images": [
+            "https://n.nordstrommedia.com/id/sr3/80379c73-bee5-437b-a59b-6f6118a2ba08.jpeg?h=365&w=240&dpr=2"
+        ],
+        "description": "Some cotton blended shorts with a solid colorway offers a casual chic style.",
+        "rating": 4.2,
+        "categories":["men","adult","tshirt","longsleeve"],
+        "colors":["red","black","white"],
+        "size":["S","M","L"]
+    },
+    {
+        "id": 4,
+        "name": "Essentials Oversize Long Sleeve Logo T-Shirt",
+        "brand": "BROOKS BROTHERS",
+        "price": 3869.86,
+        "origPrice": 5869.86,
+        "images": [
+            "https://n.nordstrommedia.com/id/sr3/788e718d-52fa-4041-98b1-6cf80eb0b9d2.jpeg?h=365&w=240&dpr=2"
+        ],
+        "description": "A classic cotton polo pairs well with anything in your wardrobe for a preppy yet laid back look.",
+        "rating": 4.5,
+        "categories":["men","adult","tshirt","shortsleeve"],
+        "colors":["red","black","white"],
+        "size":["S","M","L"]
+    },
+    {
+        "id": 5,
+        "name": "121 Heritage Slim Straight Leg Jeans",
+        "brand": "LUCKY BRAND",
+        "price": 3405.48,
+        "origPrice": 4256.85,
+        "images": [
+            "https://n.nordstrommedia.com/id/sr3/4664a52d-25f1-443e-9c97-38183c9e0c46.jpeg?h=365&w=240&dpr=2"
+        ],
+        "description": "Sport a laid-back look in these slim, straight-leg jeans woven from stretch cotton for comfort any day of the week.",
+        "rating": 4.3,
+        "categories":["men","adult","tshirt","shortsleeve"],
+        "colors":["red","black","white"],
+        "size":["S","M","L"]
+    },
+    {
+        "id": 6,
+        "name": "Cabo Bay Pocket T-Shirt",
+        "brand": "TOMMY BAHAMA",
+        "price": 3005.48,
+        "origPrice": 4405.48,
+        "images": [
+            "https://n.nordstrommedia.com/id/sr3/ba8b5555-165d-4def-a47b-199a42f73493.jpeg?h=365&w=240&dpr=2"
+           
+        ],
+        "description": "A classic pocket T-shirt is a wardrobe essential.",
+        "rating": 4.9,
+        "categories":["men","adult","tshirt","shortsleeve"],
+        "colors":["red","black","white"],
+        "size":["S","M","L"]
+    },
+    {
+        "id": 7,
+        "name": "Shoreline Surf Polo Shirt",
+        "brand": "TOMMY BAHAMA",
+        "price": 1405.48,
+        "origPrice": 2405.48,
+        "images": [
+            "https://n.nordstrommedia.com/id/sr3/0bb03055-9499-452d-86b2-c0c72b3d665f.jpeg?h=365&w=240&dpr=2"
+        ],
+        "description": "This knit polo shirt is perfect for casual days.",
+        "rating": 4.3,
+        "categories":["men","adult","tshirt","longsleeve"],
+        "colors":["red","black","white"],
+        "size":["S","M","L"]
+    },
+    {
+        "id": 8,
+        "name": "The Wallin Stretch Twill Trim Fit Chino Pants - 30-34 Insem",
+        "brand": "14th & UNION",
+        "price": 3405.48,
+        "origPrice": 5405.48,
+        "images": [
+            "https://n.nordstrommedia.com/id/sr3/db8fb444-d157-42aa-b01e-e14e5a9b64c6.jpeg?h=365&w=240&dpr=2"
+        ],
+        "description": "The Wallin Chino Pants are a versatile, everyday classic staple for your closet.",
+        "rating": 4,
+        "categories":["men","adult","tshirt","shortsleeve"],
+        "colors":["red","black","white"],
+        "size":["S","M","L"]
+    },
+    {
+        "id": 9,
+        "name": "Kentville Short Sleeve T-Shirt",
+        "brand": "ROBERT BARAKETT",
+        "price": 1405.48,
+        "origPrice": 2405.48,
+        "images": [
+            "https://n.nordstrommedia.com/id/sr3/8d886e48-5a30-4f6a-b3ed-4446b48158c3.jpeg?h=365&w=240&dpr=2"
+        ],
+        "description": "A classic crew neck T-shirt in soft washed knit is a must-have for every man's closet.",
+        "rating": 3.8,
+        "categories":["men","adult","tshirt","longsleeve"],
+        "colors":["red","black","white"],
+        "size":["S","M","L"]
+    },
+    {
+        "id": 10,
+        "name": "Monty Stretch Shorts",
+        "brand": "VOLCOM",
+        "price": 3405.48,
+        "origPrice": 5405.48,
+        "images": [
+            "https://n.nordstrommedia.com/id/sr3/48ddad80-e547-4ff0-b5b4-018123234a17.jpeg?h=365&w=240&dpr=2"
+        ],
+        "description": "Stretchy cotton-blend shorts are styled in a longer fit for a polished yet laid-back vibe.",
+        "rating": 4.1,
+        "categories":["men","adult","tshirt","shortsleeve"],
+        "colors":["red","black","white"],
+        "size":["S","M","L"]
+    },
+    {
+        "id": 11,
+        "name": "Callaway Golf 9 Flat Front Shorts",
+        "brand": "CALLAWAY GOLF",
+        "price": 3405.48,
+        "origPrice": 6405.48,
+        "images": [
+            "https://n.nordstrommedia.com/id/sr3/ab073e83-11bb-4ec7-8ddc-f1749423f909.jpeg?h=365&w=240&dpr=2"
+        ],
+        "description": "Stretchy, durable fabric means flexible comfort in smart golf shorts that won't impede your swing, and the active waistband flexes with you to keep your shirt tucked in.",
+        "rating": 4.9,
+        "categories":["men","adult","tshirt","longsleeve"],
+        "colors":["red","black","white"],
+        "size":["S","M","L"]
+    },
+    {
+        "id": 12,
+        "name": "Dri-FIT Training T-Shirt",
+        "brand": "NIKE",
+        "price": 3405.48,
+        "origPrice": 5405.48,
+        "images": [
+            "https://n.nordstrommedia.com/id/sr3/7e5c8bbf-e16e-4e6f-85c2-6d55f7ca6772.jpeg?h=365&w=240&dpr=2"
+        ],
+        "description": "Breathable, sweat-wicking fabric keeps you comfortable in any activity in a T-shirt made with soft cotton and a fit that lets you move.",
+        "rating": 4,
+        "categories":["men","adult","tshirt","shortsleeve"],
+        "colors":["red","black","white"],
+        "size":["S","M","L"]
+    },
+    {
+        "id": 13,
+        "name": "Embroidered T-Shirt",
+        "brand": "BROOKS BROTHERS",
+        "price": 3405.48,
+        "origPrice": 4405.48,
+        "images": [
+            "https://n.nordstrommedia.com/id/sr3/a55f31b9-b029-4471-8e74-cc3b2b71a282.jpeg?h=365&w=240&dpr=2"
+        ],
+        "description": "Classic and cool, this cotton T-shirt with Brooks Brothers embroidery at the chest updates your casual wardrobe.",
+        "rating": 4.7,
+        "categories":["men","adult","tshirt","longsleeve"],
+        "colors":["red","black","white"],
+        "size":["S","M","L"]
+    },
+    {
+        "id": 14,
+        "name": "Party Breezer Short Sleeve Woven Shirt",
+        "brand": "TOMMY BAHAMA",
+        "price": 1105.48,
+        "origPrice": 2405.48,
+        "images": [
+            "https://n.nordstrommedia.com/id/sr3/5d8fe557-6e3f-4231-a4d1-16ca00c0c7a4.jpeg?h=365&w=240&dpr=2"
+        ],
+        "description": "Lightweight linen dresses this casual woven shirt with short sleeves and a spread collar.",
+        "rating": 4,
+        "categories":["men","adult","tshirt","shortsleeve"],
+        "colors":["red","black","white"],
+        "size":["S","M","L"]
+    },
+    {
+        "id": 15,
+        "name": "Crew Neck T-Shirt",
+        "brand": "BROOKS BROTHERS",
+        "price": 5505.48,
+        "origPrice": 6605.48,
+        "images": [
+            "https://n.nordstrommedia.com/id/sr3/50c5a6e5-712f-4d41-8d01-f6cd61200757.jpeg?h=365&w=240&dpr=2"
+        ],
+        "description": "A classic crew neck t-shirt made from breathable cotton is great for styling an effortless look.",
+        "rating": 4.3,
+        "categories":["men","adult","tshirt","shortsleeve"],
+        "colors":["red","black","white"],
+        "size":["S","M","L"]
+    },
+    {
+        "id": 16,
+        "name": "Short Sleeve V-Neck Classic Fit T-Shirt - Pack of 3",
+        "brand": "CALVIN KLEIN",
+        "price": 1505.48,
+        "origPrice": 3405.48,
+        "images": [
+            "https://n.nordstrommedia.com/id/sr3/3516c0c4-c2d8-40c1-bedb-e4ba75dd689b.jpeg?h=365&w=240&dpr=2"
+        ],
+        "description": "Pack of 3 - V-neck - Short sleeves - Solid color - Classic fit - Added stretch for comfort and shape retention - Imported",
+        "rating": 4,
+        "categories":["men","adult","tshirt","shortsleeve"],
+        "colors":["red","black","white"],
+        "size":["S","M","L"]
+    },
+    {
+        "id": 17,
+        "name": "MA-1 Bomber Jacket",
+        "brand": "MICHAEL KORS",
+        "price": 4405.48,
+        "origPrice": 5505.48,
+        "images": [
+            "https://n.nordstrommedia.com/id/sr3/cc6d3740-30d5-47f1-bfdc-fc2f56f6f2eb.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196"
+        ],
+        "description": "A devilishly handsome bomber jacket is the perfect way to bring casually-cool style to your ensemble.",
+        "rating": 4.5,
+        "categories":["men","adult","tshirt","longsleeve"],
+        "colors":["red","black","white"],
+        "size":["S","M","L"]
+    },
+    {
+        "id": 18,
+        "name": "Ballona Shirt",
+        "brand": "LUCKY BRAND",
+        "price": 2205.48,
+        "origPrice": 3305.48,
+        "images": [
+            "https://n.nordstrommedia.com/id/sr3/e76dcde6-fa5b-4825-a221-5b0c8cd0c7e1.jpeg?h=365&w=240&dpr=2"
+        ],
+        "description": "A textured button front shirt in breathable cotton offers polished style with essential comfort.",
+        "rating": 3.8,
+        "categories":["men","adult","tshirt","shortsleeve"],
+        "colors":["red","black","white"],
+        "size":["S","M","L"]
+    },
+    {
+        "id": 19,
+        "name": "Notch Lapel Suit",
+        "brand": "ALTON LANE",
+        "price": 3805.48,
+        "origPrice": 3805.48,
+        "images": [
+            "https://n.nordstrommedia.com/id/sr3/f8e9440c-821d-48d5-923d-5f4b8e5adc78.jpeg?h=365&w=240&dpr=2"
+        ],
+        "description": "A solid notch lapel suit proves as a classic, wardrobe staple offering elevated style whenever you need it.",
+        "rating": 4,
+        "categories":["men","adult","tshirt","longsleeve"],
+        "colors":["red","black","white"],
+        "size":["S","M","L"]
+    },
+    {
+        "id": 20,
+        "name": "Zip Front Lounge Hoodie",
+        "brand": "RICHER POORER",
+        "price": 3005.48,
+        "origPrice": 5405.48,
+        "images": [
+            "https://n.nordstrommedia.com/id/sr3/d874df81-7671-4d61-90b0-41555a6b10dc.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196"
+        ],
+        "description": "A classic zip up lounge hoodie is a comfy wardrobe addition for casual styling.",
+        "rating": 3.5,
+        "categories":["men","adult","tshirt","shortsleeve"],
+        "colors":["red","black","white"],
+        "size":["S","M","L"]
+    }
+    ]
+}

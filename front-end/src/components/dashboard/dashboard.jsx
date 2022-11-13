@@ -1,9 +1,12 @@
 import style from "./dashboard.module.css";
 import React from "react";
 import {Link} from "react-router-dom";
+
 import Index from "./Carosal/Index";
 import Index2 from "./Carosal2/Index2";
 import AutoCarosal from "./AutoPlayCarosal/AutoPlayCarosal";
+
+
 
 
 const Dashboard = () => {
@@ -20,7 +23,11 @@ const Dashboard = () => {
                         <p className={style.p1}>Shop what you love—faster and easier.</p>
                         <Link to={"#"}><p className={style.p2}><u>Sign In or Create an Account</u></p></Link>
                      </div>
+
                      <div className={style.leftimg}><img className={style.img1} src="https://n.nordstrommedia.com/id/01471914-5c74-4e79-a258-af5f398b1a73.png?h=22&w=536" alt="" /></div>
+
+                     //<div className={style.leftimg}><img className={style.img1} src="https://n.nordstrommedia.com/id/c30eb052-a9da-4529-95ed-0d1568cc55ad.png?h=22&w=536" alt="" /></div>
+
                         
                 </div>
              </div>
@@ -57,7 +64,9 @@ const Dashboard = () => {
                 </div>
              </div>
 
+
              {/* carosalNavbar */}
+
 
              <div className={style.fourth_div}>
                 <div>
@@ -67,6 +76,7 @@ const Dashboard = () => {
 
 
              </div>
+
 
              {/* carosalNavbar */}
 
@@ -160,6 +170,7 @@ const Dashboard = () => {
                 <img src="https://n.nordstrommedia.com/id/5ec3d3de-9e8c-4317-bc28-3b42b503268e.png?h=17&w=1608" alt="" />
 
              </div>
+
 
              <div className={style.title}>
                <p className={style.p3}>GIFTS BY RECIPIENT</p>
@@ -284,7 +295,11 @@ const Dashboard = () => {
                 <img src="https://n.nordstrommedia.com/id/5ec3d3de-9e8c-4317-bc28-3b42b503268e.png?h=17&w=1608" alt="" />
 
              </div>
+
              </div>
+
+
+
         
         
         
