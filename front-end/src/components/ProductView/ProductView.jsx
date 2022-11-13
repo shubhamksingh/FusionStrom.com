@@ -124,10 +124,10 @@ const ProductView = () => {
             {/* UGG <sup>&#174;</sup> */}
           </p>
           <p className="product-price">
-            INR <span>{productData.price}</span>
+            INR <span>{Math.ceil(productData.price-0.2*productData.price)}</span>
           </p>
           <p className="origin-p">
-            INR <span>{productData.origPrice}</span>
+            INR <span>{productData.price}</span>
           </p>
           <p className="product-desc">{productData.description}</p>
           <select name="product-size" id="p-size">
