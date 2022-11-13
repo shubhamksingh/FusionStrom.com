@@ -15,7 +15,7 @@ const wishlistSchema = mongoose.Schema(
       },
     ],
   },
-  { timeStamps: true },
+  { timestamps : true },
 );
 
-module.exports = mongoose.model("cart", wishlistSchema);
+module.exports = mongoose.model("wishlist", wishlistSchema);
