@@ -77,9 +77,9 @@ export default function BasicUsage({
                   {data.name}
                 </Text>
                 <Text fontSize={"20px"} fontFamily="inherit" color={"red"}>
-                  INR {data.price}
+                  INR {Math.ceil(data.price-0.2*data.price) }   (Extra 20% off)
                 </Text>
-               <Text fontSize={"20px"} textDecoration="line-through">INR {data.strprice}</Text>
+               <Text fontSize={"20px"} textDecoration="line-through">INR {data.price}</Text>
                <Text  color={"red"} >Limited-Time Sale</Text>
                <Text fontSize={"10px"} color={"black"}>{data.description}</Text>
                <br/>
@@ -90,7 +90,7 @@ export default function BasicUsage({
               </Select>
               <br/>
               <br/>
-             <button style={{backgroundColor:"black",color:"white",width:"100%",height:"50px"}}> Add to Beg</button>
+             <button style={{backgroundColor:"black",color:"white",width:"100%",height:"50px"}}> Add to Bag</button>
 
 
 
