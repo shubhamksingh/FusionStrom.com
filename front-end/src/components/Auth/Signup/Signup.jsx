@@ -28,10 +28,10 @@ const Signup = () => {
     // console.log(username, email, password);
 
     if (username && email && password) {
-      // axios.post("http://localhost:8080/api/auth/register", user)
-      // .then(res=>{
-      //   // console(res)
-        // alert("Login Successfull")
+      axios.post("https://fusionstrom-backend-production.up.railway.app/api/auth/register", user)
+      .then(res=>{
+        // console(res)
+      })
         toast({
           title: 'Account created.',
           description: "We've created your account for you.",

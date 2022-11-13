@@ -25,14 +25,15 @@ const Signin = () => {
     const handlelogin=()=>{
         const {email,password} = user
     
-        if(email && password ){
-        //   axios.post("http://localhost:8080/api/auth/login", user)
-        //   .then(res=>{
-        //     // console(res)
-        //     alert("Login Successfull")
+        if(email && password){
+          axios.post("https://fusionstrom-backend-production.up.railway.app/api/auth/login", user)
+          .then(res=>{
+            console.log(res.data)
+            localStorage.setItem("accessToken",res.data.accessToken)
+            localStorage.setItem("login_user_id",res.data._id)
           
-        //   }
-        //     )
+          }
+            )
 
         toast({
             title: 'Login Successfull.',

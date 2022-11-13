@@ -47,68 +47,74 @@ const viewed = [
 
 const CartPage = () => {
   const navigate = useNavigate();
-  var userid = useSelector((store) => store.user._id);
+  // let userid = useSelector((store) => store.user._id);
+  let userid = "6370d4a3e1f43c6a4d114ed1";
   const [items, setItems] = useState([]);
   const [wishList, setWishlists] = useState([]);
-  const [count,setCount]=useState(1);
+  const [count, setCount] = useState(1);
   let totalCart;
 
-  const url1 = `http://localhost:8080/carts/find/${userid}`;
+  const url1 = `http://localhost:8080/api/carts/find/${userid}`;
   const getCartItems = () => {
-    axios.get(url1).then((res) => {
-      setItems(res.data);
-      console.log(res.data);
+    axios.get(`http://localhost:8080/api/carts/find/${userid}`).then((res) => {
+      console.log(res);
+      let pid = res.data.products[0].productId;
+      console.log(pid);
+      // axios.get(`http://localhost:8080/api/products/find/${pid}`).then((res)=>{
+      //   console.log(res)
+      // })
+      // console.log(res.data);
     });
   };
   getCartItems();
 
-  const url2 = `http://localhost:8080/whislist/find/:userid`;
+  const url2 = `http://localhost:8080/whislist/find/${userid}`;
   const getWishListitem = () => {
-    axios.get(url2).then((res) => {
-      setWishlists(res.data);
-      console.log(res.data);
-    });
+    // axios.get(url2).then((res) => {
+    //   setWishlists(res.data);
+    //   console.log(res.data);
+    // });
   };
 
   getWishListitem();
 
-  const handleCitemRemove = (id) => {
-    const url = `http://localhost:8080/carts/find/${id}`;
-    axios.delete(url).then((res) => {
-      alert("Item removed successfully");
-    });
+  const handleCitemRemove = () => {
+    // const url = `http://localhost:8080/carts/find/${id}`;
+    // axios.delete(url).then((res) => {
+    //   alert("Item removed successfully");
+    // });
   };
 
   const handleWishlist = (data) => {
-    let url="http://localhost:8080/whislist";
-    axios
-      .post(url, data)
-      .then((res) => {
-        console.log(res.data);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
+    let url = "http://localhost:8080/whislist";
+    // axios
+    //   .post(url, data)
+    //   .then((res) => {
+    //     console.log(res.data);
+    //   })
+    //   .catch((err) => {
+    //     console.log(err);
+    //   });
   };
 
-  const handleWishRemove=(id)=>{
-    const url = `http://localhost:8080/whislist/find/${id}`;
-    axios.delete(url).then((res) => {
-      alert("Item removed successfully");
-    });
-  }
+  const handleWishRemove = () => {
+    // const url = `http://localhost:8080/whislist/find/${id}`;
+    // axios.delete(url).then((res) => {
+    //   alert("Item removed successfully");
+    // });
+  };
 
-  const handleMovebag=(data)=>{
-  let url="http://localhost:8080/carts";
-    axios
-      .post(url, data)
-      .then((res) => {
-        console.log(res.data);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  }
+  const handleMovebag = (data) => {
+    let url = "http://localhost:8080/carts";
+    // axios
+    //   .post(url, data)
+    //   .then((res) => {
+    //     console.log(res.data);
+    //   })
+    //   .catch((err) => {
+    //     console.log(err);
+    //   });
+  };
 
   const handleCheckout = () => {
     navigate(`/checkout`);
@@ -129,7 +135,7 @@ const CartPage = () => {
               }}
               className="cart-tab-head"
             >
-              Shopping Bag <span>()</span>
+              Shopping Bag <span>(2)</span>
             </Tab>
             <Tab
               _selected={{
@@ -141,10 +147,255 @@ const CartPage = () => {
               }}
               className="cart-tab-head"
             >
-              Saved for Later<span>()</span>
+              Saved for Later<span>(1)</span>
             </Tab>
           </TabList>
           <TabPanels>
+            <TabPanel>
+              <div className="ct-info-one">
+                <div className="bag-gift">
+                  <h3>Shopping Bag</h3>
+                  <p>Items in your bag are not on hold.</p>
+                  <p>
+                    <ImGift id="c-gift" />
+                    <span>Choose gift options when you check out.</span>
+                  </p>
+                </div>
+                <hr />
+                <div className="cart-delivery">
+                  <h4>
+                    <BsTruck id="c-truck" />
+                    <p>
+                      Delivery (1 item) to <span>India</span>
+                    </p>
+                  </h4>
+                  <p>International shipping</p>
+                </div>
+                <hr />
+                <div className="cart-items">
+                  <div className="c-img">
+                    <img src="https://n.nordstrommedia.com/id/sr3/ea872fc8-9371-4add-9971-983c516d8261.jpeg?h=365&w=240&dpr=2" alt="img" />
+                  </div>
+                  <div className="c-info">
+                    <p>LUCKY BRAND</p>
+                    <p>Karl Lagerfeld Paris</p>
+                    <p>Size: M</p>
+                    <p>Color: Gray</p>
+                    <p>Item: 6031488</p>
+                    <select name="c-qty" id="c-qty">
+                      <option value="1">Qty 1</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                    </select>
+                    <div className="c-actions">
+                      <button onClick={handleCitemRemove()}>Remove</button>
+                      <button onClick={handleWishlist()}>
+                        Save for later
+                      </button>
+                    </div>
+                  </div>
+                  <div className="c-delivery">
+                    <div>
+                      <p>
+                        <MdDoNotDisturbAlt id="d-logo" />{" "}
+                        <span>Not available for pickup</span>
+                      </p>
+                      <p>
+                        <FaRegDotCircle id="d-logo" /> <span>Delivery</span>
+                      </p>
+                    </div>
+                    <p>
+                      Delivery International orders usually arrive within 5–13
+                      business days. We'll give you delivery dates in checkout.
+                    </p>
+                  </div>
+                  <div className="c-price">
+                    <p>2241.08</p>
+                  </div>
+                </div>
+                <hr />
+                <div className="cart-items">
+                  <div className="c-img">
+                    <img src="https://n.nordstrommedia.com/id/sr3/788e718d-52fa-4041-98b1-6cf80eb0b9d2.jpeg?h=365&w=240&dpr=2" alt="img" />
+                  </div>
+                  <div className="c-info">
+                    <p>BROOKS BROTHERS</p>
+                    <p>Essentials Oversize Long Sleeve Logo T-Shirt</p>
+                    <p>Size: L</p>
+                    <p>Color: Red</p>
+                    <p>Item: 6031488</p>
+                    <select name="c-qty" id="c-qty">
+                      <option value="1">Qty 1</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                    </select>
+                    <div className="c-actions">
+                      <button onClick={handleCitemRemove()}>Remove</button>
+                      <button onClick={handleWishlist()}>
+                        Save for later
+                      </button>
+                    </div>
+                  </div>
+                  <div className="c-delivery">
+                    <div>
+                      <p>
+                        <MdDoNotDisturbAlt id="d-logo" />{" "}
+                        <span>Not available for pickup</span>
+                      </p>
+                      <p>
+                        <FaRegDotCircle id="d-logo" /> <span>Delivery</span>
+                      </p>
+                    </div>
+                    <p>
+                      Delivery International orders usually arrive within 5–13
+                      business days. We'll give you delivery dates in checkout.
+                    </p>
+                  </div>
+                  <div className="c-price">
+                    <p>3869.86</p>
+                  </div>
+                </div>
+                <hr />
+                <div className="c-check-part">
+                  <div className="c-payments">
+                    <p>Accepted Payment Methods</p>
+                    <div className="payImgDiv">
+                      <img
+                        src="https://constant.myntassets.com/checkout/assets/img/footer-bank-mc.png"
+                        alt=""
+                      />
+                      <img
+                        src="https://constant.myntassets.com/checkout/assets/img/footer-bank-visa.png"
+                        alt=""
+                      />
+                      <img
+                        src="https://constant.myntassets.com/checkout/assets/img/footer-bank-ae.png"
+                        alt=""
+                      />
+                      <img
+                        src="https://constant.myntassets.com/checkout/assets/img/footer-bank-rupay.png"
+                        alt=""
+                      />
+                    </div>
+                    <p>
+                      Need help? Call 1.888.282.6060 or{" "}
+                      <span>chat with us</span>
+                    </p>
+                    <p>Shipping internationally?</p>
+                  </div>
+                  <div className="c-checkout">
+                    <div className="c-total">
+                      <p>Subtotal</p>
+                      <p>6110.94</p>
+                    </div>
+                    <hr />
+                    <button onClick={handleCheckout}>Check Out</button>
+                  </div>
+                </div>
+              </div>
+            </TabPanel>
+            <TabPanel>
+              <div className="ct-info-one">
+                <div className="bag-gift">
+                  <h3>Shopping Bag</h3>
+                </div>
+                <hr />
+                <div className="cart-items">
+                  <div className="c-img">
+                    <img src="https://n.nordstrommedia.com/id/sr3/4664a52d-25f1-443e-9c97-38183c9e0c46.jpeg?h=365&w=240&dpr=2" alt="img" />
+                  </div>
+                  <div className="c-info">
+                    <p>LUCKY BRAND</p>
+                    <p>121 Heritage Slim Straight Leg Jeans</p>
+                    <p>Size: L</p>
+                    <p>Color: Black</p>
+                    <p>Item: 6031488</p>
+                    <select name="c-qty" id="c-qty">
+                      <option value="1">Qty 1</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                    </select>
+                    <div className="c-actions">
+                      <button onClick={handleCitemRemove()}>Remove</button>
+                      <button onClick={handleWishlist()}>
+                        Save for later
+                      </button>
+                    </div>
+                  </div>
+                  <div className="c-delivery">
+                    <div>
+                      <p>
+                        <MdDoNotDisturbAlt id="d-logo" />{" "}
+                        <span>Not available for pickup</span>
+                      </p>
+                      <p>
+                        <FaRegDotCircle id="d-logo" /> <span>Delivery</span>
+                      </p>
+                    </div>
+                    <p>
+                      Delivery International orders usually arrive within 5–13
+                      business days. We'll give you delivery dates in checkout.
+                    </p>
+                  </div>
+                  <div className="c-price">
+                    <p>3405.48</p>
+                  </div>
+                </div>
+                <hr />
+                   
+                <div className="c-check-part">
+                  <div className="c-payments">
+                    <p>Accepted Payment Methods</p>
+                    <div className="payImgDiv">
+                      <img
+                        src="https://constant.myntassets.com/checkout/assets/img/footer-bank-mc.png"
+                        alt=""
+                      />
+                      <img
+                        src="https://constant.myntassets.com/checkout/assets/img/footer-bank-visa.png"
+                        alt=""
+                      />
+                      <img
+                        src="https://constant.myntassets.com/checkout/assets/img/footer-bank-ae.png"
+                        alt=""
+                      />
+                      <img
+                        src="https://constant.myntassets.com/checkout/assets/img/footer-bank-rupay.png"
+                        alt=""
+                      />
+                    </div>
+                    <p>Need help? Call 1.888.282.6060 or chat with us</p>
+                    <p>Shipping internationally?</p>
+                  </div>
+                </div>
+              </div>
+            </TabPanel>
+          </TabPanels>
+          {/* <TabPanels>
             <TabPanel>
               <div className="ct-info-one">
                 <div className="bag-gift">
@@ -332,7 +583,7 @@ const CartPage = () => {
                 </div>
               </div>
             </TabPanel>
-          </TabPanels>
+          </TabPanels> */}
         </Tabs>
       </div>
       <div className="cart-left">
