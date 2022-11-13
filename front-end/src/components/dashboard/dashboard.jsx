@@ -47,7 +47,7 @@ const Dashboard = () => {
 
              <div className={style.thirdDiv}>
                 <div>
-                    <img src="https://cdn.smartnordstrom.com/s3/csp/1666988189993/Nordstrom_Homepage_Display_Dyson.jpg" alt="" />
+                    <img className={style.imgmove} src="https://cdn.smartnordstrom.com/s3/csp/1666988189993/Nordstrom_Homepage_Display_Dyson.jpg" alt="" />
                 </div>
                 <div className={style.blackbackground}>
                     <p className={style.p1}>Gift with Style</p>
@@ -103,14 +103,16 @@ const Dashboard = () => {
                 </div>
 
              </div>
-             <div className={style.line}>
+             <div className={style.line1}>
                 <img src="https://n.nordstrommedia.com/id/5ec3d3de-9e8c-4317-bc28-3b42b503268e.png?h=17&w=1608" alt="" />
 
              </div>
 
              <div className={style.sixth_div}>
                 <div>
+                  <div className={style.move}>
                 <p className={style.fifth_Div_text}>The best gifts for everyone you love, all in one place.</p>
+                </div>
                 <div className={style.buttons}>
                     <button>Shop Gifts</button>
                     <button>Explore Our Gifts Guides</button>
@@ -277,9 +279,11 @@ const Dashboard = () => {
                </div>
                </div>
 
+                  <div className={style.linemove} >
                <div className={style.line}>
                 <img src="https://n.nordstrommedia.com/id/5ec3d3de-9e8c-4317-bc28-3b42b503268e.png?h=17&w=1608" alt="" />
 
+             </div>
              </div>
         
         
