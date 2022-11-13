@@ -11,12 +11,14 @@ import Footer from "../components/Footer/Footer";
 import ProductView from "../components/ProductView/ProductView";
 import MenPage from "../components/ProductPage/MenPage";
 import Crewneck from "../components/ProductPage/item/Crewneck";
+import Womens from "../components/ProductPage/Womens";
 
 const MainRoutes = () => {
   return (
     <>
       {/* <Navbar /> */}
-      {/* <Navbar2 /> */}
+      <Navbar2 />
+      <br/>
       <br/>
       <Routes>
         <Route path="/" element={<h3></h3>} />
@@ -25,6 +27,7 @@ const MainRoutes = () => {
         <Route path="signin" element={<h3>Singin</h3>} />
         <Route path="createacc" element={<h3>Createacc</h3>} />
         <Route path="mens" element={<MenPage/>} />
+        <Route path="womens" element={<Womens/>} />
         <Route
           path="cart"
           element={

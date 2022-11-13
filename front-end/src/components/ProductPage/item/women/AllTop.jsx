@@ -1,12 +1,11 @@
 
-import Product_card from '../card_page/Product_card';
-import "../../ProductPage/product-page.css";
-import { mendata } from "./womens_data";
-import React, { useState, useEffect } from "react";
-import ModalComponent from '../Model/ModalComponent';
-import MensAccordion from '../MensAccordion';
 
-const Alltshirt = () => {
+import "../../../ProductPage/product-page.css";
+import {womendata } from "../womens_data";
+import React, { useState, useEffect } from "react";
+import Product_card from "../../card_page/Product_card";
+
+const AllTop = () => {
     const [data, setData] = useState([]);
     const [sortType, setSortType] = useState("");
     const [isModalVisible, setIsModalVisible] = useState(false);
@@ -20,7 +19,7 @@ const Alltshirt = () => {
           Newest: "id",
         };
         const sortProperty = types[type];
-        const sorted = [...mendata].sort(
+        const sorted = [...womendata].sort(
           (a, b) => b[sortProperty] - a[sortProperty]
         );
         setData(sorted);
@@ -31,6 +30,7 @@ const Alltshirt = () => {
     //   setData(mendata)
     // }
     //
+    console.log(womendata)
   return (
     <>
       <div className="total_item">
@@ -69,4 +69,4 @@ const Alltshirt = () => {
   )
 }
 
-export default Alltshirt
+export default AllTop

@@ -52,10 +52,10 @@ const Product_card = (props) => {
             <p className='discription'>{props.description}</p>
           </div>
           <div className='price_info'>
-            <p className='price'>INR {Math.ceil(props.strprice-0.2*props.strprice)}</p>
+            <p className='price'>INR {Math.ceil(props.price-0.2*props.price)}   (Extra 20% off)</p>
           </div>
           <div className='strike_price_div'>
-            <p className='strike_price'>INR {props.strprice}</p>
+            <p className='strike_price'>INR {props.price}</p>
             <p className='rating'>
               <span className='no_rating'>{props.rating}</span>
             </p>
