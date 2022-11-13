@@ -6,6 +6,7 @@ import Graphictree from './item/Graphictree'
 import Henly from './item/Henly'
 import Oversized from './item/Oversized'
 import Vneck from './item/Vneck'
+import AllTop from './item/women/AllTop'
 
 const Mensitem = () => {
   return (
@@ -16,7 +17,8 @@ const Mensitem = () => {
       </div>
      
       <div className='item2'>
-        <Alltshirt/>
+      <Alltshirt/>
+        
        
 
       </div>

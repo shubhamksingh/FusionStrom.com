@@ -54,7 +54,7 @@ const Dashboard = () => {
 
              <div className={style.thirdDiv}>
                 <div>
-                    <img src="https://cdn.smartnordstrom.com/s3/csp/1666988189993/Nordstrom_Homepage_Display_Dyson.jpg" alt="" />
+                    <img className={style.imgmove} src="https://cdn.smartnordstrom.com/s3/csp/1666988189993/Nordstrom_Homepage_Display_Dyson.jpg" alt="" />
                 </div>
                 <div className={style.blackbackground}>
                     <p className={style.p1}>Gift with Style</p>
@@ -113,14 +113,16 @@ const Dashboard = () => {
                 </div>
 
              </div>
-             <div className={style.line}>
+             <div className={style.line1}>
                 <img src="https://n.nordstrommedia.com/id/5ec3d3de-9e8c-4317-bc28-3b42b503268e.png?h=17&w=1608" alt="" />
 
              </div>
 
              <div className={style.sixth_div}>
                 <div>
+                  <div className={style.move}>
                 <p className={style.fifth_Div_text}>The best gifts for everyone you love, all in one place.</p>
+                </div>
                 <div className={style.buttons}>
                     <button>Shop Gifts</button>
                     <button>Explore Our Gifts Guides</button>
@@ -168,6 +170,135 @@ const Dashboard = () => {
                 <img src="https://n.nordstrommedia.com/id/5ec3d3de-9e8c-4317-bc28-3b42b503268e.png?h=17&w=1608" alt="" />
 
              </div>
+
+
+             <div className={style.title}>
+               <p className={style.p3}>GIFTS BY RECIPIENT</p>
+             </div>
+
+             <div className={style.seventh_div}>
+               <div>
+                  <div className={style.img_div}>
+                     <img src="https://n.nordstrommedia.com/id/0c7312a9-d6ec-4235-bdf4-15b01fc042be.jpeg?h=395&w=1608" alt="" />
+                  </div>
+                  <div className={style.content_div}>
+                     <p className={style.p3}>For Her</p>
+                     <p className={style.p3}>For Him</p>
+                     <p className={style.p3}>For Kid</p>
+                     <p className={style.p3}>For Teen</p>
+                     <p className={style.p3}>All Gifts</p>
+                  </div>
+               </div>
+             </div>
+
+             <div className={style.line}>
+                <img src="https://n.nordstrommedia.com/id/5ec3d3de-9e8c-4317-bc28-3b42b503268e.png?h=17&w=1608" alt="" />
+
+             </div>
+
+             <div className={style.theThread}>
+               <p className={style.p3}>THE THREAD</p>
+               <p>Your go-to destination for all things fashion, beauty and lifestyle at Nordstrom, from how-tos and style inspiration to exclusive interviews and more.</p>
+               <Link to={"#"}><p><u>Get Inspired</u></p></Link>
+             </div>
+             <div className={style.threadImg_div}>
+               <div>
+                  <div className={style.threadImg}>
+                     <img className={style.imgset} src="https://n.nordstrommedia.com/id/7a88667d-2b47-4e18-9a09-64d6e45cbeff.jpeg?h=516&w=536" alt="" />
+                  </div>
+                  <div className={style.text_div}>
+                  <p className={style.p4}>26 Gift Ideas for the Women in Your Life</p>
+                     <p><u>Read More</u></p>
+                  </div>
+                  
+               </div>
+               <div>
+                  <div className={style.threadImg}>
+                     <img className={style.imgset}  src="https://n.nordstrommedia.com/id/8133ea12-7377-4e1c-a8d7-f6e21b4492ad.jpeg?h=516&w=536" alt="" />
+                  </div>
+                  <div className={style.text_div}>
+                  <p className={style.p4}>Buyer's Picks: 11 Unique Gifts from Pop-In@Nordstrom</p>
+                     <p><u>Read More</u></p>
+                  </div>
+                  
+               </div>
+               <div>
+                  <div className={style.threadImg}>
+                     <img className={style.imgset}  src="https://n.nordstrommedia.com/id/44ff78f2-0b0e-4da5-8a8a-a09088ff7ca5.jpeg?h=516&w=536" alt="" />
+                  </div>
+                  <div className={style.text_div}>
+                     <p className={style.p4}>The 5 Outerwear Styles to Shop for This Season, According to a Fashion Director</p>
+                     <p><u>Read More</u></p>
+                </div>
+                  </div>
+                  </div>
+
+                  <div className={style.line}>
+                <img src="https://n.nordstrommedia.com/id/5ec3d3de-9e8c-4317-bc28-3b42b503268e.png?h=17&w=1608" alt="" />
+
+             </div>
+
+             <div className={style.title}>
+               <p className={style.p3}>SERVICES & EVENTS</p>
+             </div>
+
+             <div className={style.serviceImg_div}>
+               <div>
+                  <div className={style.serviceImg}>
+                     <img className={style.serviceimgs} src="https://n.nordstrommedia.com/id/55525828-6ec1-4b50-9792-c556171a7525.jpeg?h=365&w=402" alt="" />
+                  </div>
+                  <div className={style.servicetext_div}>
+                  <p className={style.p4}>The Gift of Choice</p>
+                  <p className={style.p5}>Get them what they really want with a Nordstrom Gift Card</p>
+                     <p className={style.p5}><u>Gift Cards & eGift Cards</u></p>
+                  </div>
+                  
+               </div>
+               <div>
+                  <div className={style.serviceImg}>
+                     <img className={style.serviceimgs} src="https://n.nordstrommedia.com/id/1eded89e-7279-4606-8944-93e354595e87.jpeg?h=365&w=402" alt="" />
+                  </div>
+                  <div className={style.servicetext_div}>
+                  <p className={style.p4}>Gift Wrapping</p>
+                  <p className={style.p5}>We make it easy with festive options. Shop in store or online to see your choices.</p>
+                     
+                     <p className={style.p5}><u>Learn More</u></p>
+                  </div>
+                  
+               </div>
+               <div>
+                  <div className={style.serviceImg}>
+                     <img className={style.serviceimgs} src="https://n.nordstrommedia.com/id/3f887915-678c-4577-8593-4ac43d234133.jpeg?h=365&w=402" alt="" />
+                  </div>
+                  <div className={style.servicetext_div}>
+                  <p className={style.p4}>Make Memories Together</p>
+                  <p className={style.p5}>Festivities are in full swing with events like Santa Greetings, Holiday Breakfasts, Letters to Santa, virtual livestreams and more.</p>
+                     <p className={style.p5}><u>Explore Events</u></p>
+                  </div>
+                  
+               </div>
+               <div>
+                  <div className={style.serviceImg}>
+                     <img className={style.serviceimgs} src="https://n.nordstrommedia.com/id/69aae2cc-f5dd-408b-b99b-a20a9bc7c8bc.jpeg?h=365&w=402" alt="" />
+                  </div>
+                  <div className={style.servicetext_div}>
+                  <p className={style.p4}>Free Style Help—in Stores or Online</p>
+                  <p className={style.p5}>Get festive fashion advice from our stylists.</p>
+                     <p className={style.p5}><u>Learn More</u></p> 
+                  </div>
+                  
+               </div>
+               </div>
+
+                  <div className={style.linemove} >
+               <div className={style.line}>
+                <img src="https://n.nordstrommedia.com/id/5ec3d3de-9e8c-4317-bc28-3b42b503268e.png?h=17&w=1608" alt="" />
+
+             </div>
+
+             </div>
+
+
 
         
         

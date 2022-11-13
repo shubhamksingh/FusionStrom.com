@@ -41,7 +41,7 @@ const Alltshirt = () => {
         >
           <option value="">Custom Sorting</option>
           <option value="CustomerRating">Sort by customer rating</option>
-          <option value="Newest">Sort by newest</option>
+          <option value="Newest">Sort by NewArrival</option>
           <option value="PriceHighToLow">Sort by price: high to low</option>
           <option value="PriceLowToHigh">Sort by price: low to high</option>
         </select>

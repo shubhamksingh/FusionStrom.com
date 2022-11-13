@@ -24,7 +24,7 @@ const Adminlogin = () => {
 
         Setadmin("")
         alert("Login successfully")
-        navigate("/profile")
+
     }
 
     return (

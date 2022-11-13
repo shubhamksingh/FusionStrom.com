@@ -67,9 +67,13 @@ display:flex;
 .save70{
 position: absolute;
 
-  top: 18%;
+  top: 10%;
+
+
+ 
 
  /* // top: 39%; */
+
 
   left: 32%;
 
@@ -205,6 +209,12 @@ border: 1px solid white
     margin-top: 5%;
 
 }
+.line1{
+    width: 100%;
+    height: 12px;
+    margin-top: 5%;
+
+}
 .line>img{
     width: 100%;
     height: 100%;
@@ -246,6 +256,338 @@ border: 1px solid white;
 .AutoCarosal{
     margin-top: 5%;
 }
+
+.title{
+    /* border: 1px solid; */
+    width: 50%;
+    height: 5rem;
+    margin: auto;
+    text-align: center;
+    margin-top: 4%;
+}
+
+.seventh_div{
+    /* border: 1px solid; */
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    justify-content: space-between;
+}
+.seventh_div>div{
+    /* border: 1px solid; */
+    height: 100%;
+    width: 100%;
+   
+}
+
+.img_div{
+    /* border: 1px solid; */
+    width: 100%;
+    height: 90%;
+}
+.content_div{
+    display: flex;
+    /* border: 1px solid red; */
+    width: 100%;
+    height: auto;
+    justify-content: space-around;
+}
+.theThread{
+    /* border: 1px solid; */
+    width: 100%;
+    height: 7rem;
+    margin-top: 5%;
+    text-align: center;
+}
+.threadImg_div{
+    /* margin-top: 2%; */
+    /* border: 1px solid; */
+    width: 100%;
+    height: 29rem;
+    display: flex;
+    justify-content: space-between;
+}
+.threadImg_div>div{
+    
+   
+    /* border: 1px solid red; */
+    width: 34%;
+    height: 100%;
+}
+.threadImg{
+    /* border: 1px solid teal; */
+    width: 100%;
+    height: 78%;
+}
+/* .text_div{
+  
+    
+} */
+.imgset{
+    width: 100%;
+    height: 100%;
+}
+.p4{
+    color: #393939;
+    font-size: 21px;
+    font-weight: 600;
+}
+.serviceImg_div{
+       /* border: 1px solid; */
+       width: 100%;
+       height: 25rem;
+       display: flex;
+       justify-content: space-between;
+
+}
+.serviceImg_div>div{
+     /* border: 1px solid red; */
+     width: 25%;
+     height: 100%;
+
+}
+.servicetext_div{
+      /* border: 1px solid teal; */
+      width: 95%;
+      height: 30%;
+
+}
+.serviceImg{
+    /* border: 1px solid teal; */
+    width: 100%;
+    height: 70%;
+
+}
+.p5{
+    font-size: 15px;
+    color: #393939;
+}
+@media screen and (min-width:950px) and (max-width:1200px) {
+    .fst_div_start{
+        display: block;
+        /* border: 1px solid black; */
+    }
+    .fst_div{
+        width: 90%;
+    }
+    .save70{
+        display: block;
+        top: 10%;
+        left: 29%;
+        text-align: center;
+    }
+    .link{
+        display: block;
+        top: 90%;
+    }
+    .thirdDiv{
+        display: block;
+        margin: auto;
+        /* border: 1px solid; */
+        width: 100%;
+        margin-top: 18%;
+    }
+    .thirdDiv>div{
+        width: 100%;
+    }
+    .imgmove{
+        width: 100%;
+    }
+    /* .fourth_div{
+            border: 1px solid;
+    } */
+    /* .fifth_Div{
+        border: 1px solid;
+    } */
+    .fifth_Div_text_two{
+        width: 100%;
+        /* border: 1px solid; */
+
+
+    }
+    /* .sixth_div{
+        border: 1px solid;
+       
+       
+        
+    } */
+    .sixth_div>div{
+        width: 70%;
+        margin-top: 15%;
+
+    }
+    .move{
+        /* border: 1px solid; */
+        width: 100%;
+    }
+    .carosalNavbar{
+        /* border: 1px solid; */
+        width: 70%;
+    }
+    .threadImg_div{
+        /* border: 1px solid; */
+        /* display: block; */
+        height: auto;
+        margin-top: 2%;
+    }
+    .linemove{
+        margin-top: 12%;
+        /* border: 1px solid; */
+    }
+
+
+
+}
+
+@media screen and (min-width:350px) and (max-width:950px) {
+
+    .fst_div_start{
+        display: block;
+        /* border: 1px solid black; */
+    }
+    .fst_div{
+        width: 90%;
+        /* border: 1px solid; */
+    }
+    /* .middlediv{
+        border: 1px solid;
+        width: 60%;
+    } */
+    .save70{
+        display: block;
+        /* border: 1px solid; */
+        width: 90%;
+        top: 7.5%;
+        left: 5%;
+        text-align: center;
+    }
+    .link{
+        display: block;
+        top: 90%;
+    }
+    .thirdDiv{
+        display: block;
+        margin: auto;
+        /* border: 1px solid; */
+        width: 100%;
+        margin-top:45%;
+    }
+    .thirdDiv>div{
+        width: 100%;
+    }
+    .imgmove{
+        width: 100%;
+    }
+    .fifth_Div{
+        /* border: 1px solid; */
+        /* width: 100%; */
+    }
+    .fifth_Div>div{
+        /* border: 1px solid; */
+        width: 100%;
+        margin-left: -1.02%;
+        margin-top: 30%;
+    }
+
+    .fifth_Div_text{
+        font-size: 18px;
+    }
+    .fifth_Div_text_two{
+        display: block;
+        text-align: center;
+        /* border: 1px solid red; */
+        margin-top: 7%;
+    }
+    .line1{
+        margin-top: 50%;
+    }
+    /* .fourth_div{
+            border: 1px solid;
+    } */
+    /* .fifth_Div{
+        border: 1px solid;
+    } */
+    .fifth_Div_text_two{
+        width: 100%;
+        /* border: 1px solid; */
+
+
+    }
+    .sixth_div{
+        /* border: 1px solid; */
+        margin-top: -20%;
+       
+       
+        
+    }
+    .AutoCarosal{
+        /* border: 1px solid; */
+        margin-top: 20%;
+    }
+    .sixth_div>div{
+        width: 100%;
+        height: auto;
+        margin-top: 47%;
+        /* border: 1px solid; */
+
+    }
+    .move{
+        /* border: 1px solid; */
+        width: 100%;
+    }
+    .carosalNavbar{
+        /* border: 1px solid; */
+        width: 100%;
+        margin-top: 2%;
+    }
+    .threadImg_div{
+        /* border: 1px solid; */
+        display: block;
+        height: auto;
+        margin-top: 15%;
+        
+    }
+    .threadImg_div>div{
+        width: 100%;
+        margin-top: 5%;
+    }
+    .threadImg{
+        /* border: 1px solid; */
+        width: 100%;
+    }
+    .linemove{
+        margin-top: 12%;
+        /* border: 1px solid; */
+    }
+    .content_div{
+        /* border: 1px solid; */
+        margin-top: -52%;
+    }
+    /* .p3{
+        font-weight: 600;
+        font-size: 15px;
+    } */
+    .title{
+        /* border: 1px solid; */
+        width: 100%;
+    }
+    .serviceImg_div{
+        /* border: 1px solid; */
+        height: auto;
+        display: block;
+    }
+    .serviceImg_div>div{
+        /* border: 1px solid; */
+        width: 100%;
+        height: auto;
+        /* display: block; */
+        margin-top: 5%;
+    }
+
+
+
+}
+
 
 
 

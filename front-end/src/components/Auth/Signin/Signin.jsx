@@ -1,11 +1,12 @@
 import React, { useState } from 'react'
-import { Button, Flex, Text, Stack, Center, Input, Box, Link } from '@chakra-ui/react'
+import { Button, Flex, Text, Stack, Center, Input, Box, Link, useToast } from '@chakra-ui/react'
 import { useNavigate,useHistory } from "react-router-dom"
 import axios from "axios"
 
 
 const Signin = () => {
     const navigate = useNavigate()
+    const toast = useToast()
 
     const [user, Setuser] = useState({
         email: "",
@@ -20,21 +21,40 @@ const Signin = () => {
         })
     }
 
-
+    
     const handlelogin=()=>{
         const {email,password} = user
     
-        if(email && password ){
-          axios.post("http://localhost:8080/signin", user)
+        if(email && password){
+          axios.post("https://fusionstrom-backend-production.up.railway.app/api/auth/login", user)
           .then(res=>{
-            // console(res)
-            alert("Login Successfull")
-           navigate("/profile")
+            console.log(res.data)
+            localStorage.setItem("accessToken",res.data.accessToken)
+            localStorage.setItem("login_user_id",res.data._id)
+          
           }
             )
+
+        toast({
+            title: 'Login Successfull.',
+            description: "We've Login your account",
+            status: "success",
+            position: "top",
+            duration: 1000,
+            isClosable: true,
+          })
+             setTimeout(()=>{
+          navigate("/profile")
+        },1000) 
         }
         else{
-          alert("Fill all inputs")
+            toast({
+                title: "Fill all details",
+                status: "warning",
+                position: "top",
+                duration: 1000,
+                isClosable: true,
+              });
         }
       }
 
