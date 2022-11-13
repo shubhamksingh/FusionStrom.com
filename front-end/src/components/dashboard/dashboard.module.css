@@ -67,9 +67,13 @@ display:flex;
 .save70{
 position: absolute;
 
-  top: 18%;
+  top: 10%;
+
+
+ 
 
  top: 39%;
+
 
   left: 32%;
 
@@ -245,6 +249,112 @@ border: 1px solid white;
 }
 .AutoCarosal{
     margin-top: 5%;
+}
+
+.title{
+    /* border: 1px solid; */
+    width: 50%;
+    height: 5rem;
+    margin: auto;
+    text-align: center;
+    margin-top: 4%;
+}
+
+.seventh_div{
+    /* border: 1px solid; */
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    justify-content: space-between;
+}
+.seventh_div>div{
+    /* border: 1px solid; */
+    height: 100%;
+    width: 100%;
+   
+}
+
+.img_div{
+    /* border: 1px solid; */
+    width: 100%;
+    height: 90%;
+}
+.content_div{
+    display: flex;
+    /* border: 1px solid red; */
+    width: 100%;
+    height: auto;
+    justify-content: space-around;
+}
+.theThread{
+    /* border: 1px solid; */
+    width: 100%;
+    height: 7rem;
+    margin-top: 5%;
+    text-align: center;
+}
+.threadImg_div{
+    /* margin-top: 2%; */
+    /* border: 1px solid; */
+    width: 100%;
+    height: 29rem;
+    display: flex;
+    justify-content: space-between;
+}
+.threadImg_div>div{
+    
+   
+    /* border: 1px solid red; */
+    width: 34%;
+    height: 100%;
+}
+.threadImg{
+    /* border: 1px solid teal; */
+    width: 100%;
+    height: 78%;
+}
+.text_div{
+  
+    
+}
+.imgset{
+    width: 100%;
+    height: 100%;
+}
+.p4{
+    color: #393939;
+    font-size: 21px;
+    font-weight: 600;
+}
+.serviceImg_div{
+       /* border: 1px solid; */
+       width: 100%;
+       height: 25rem;
+       display: flex;
+       justify-content: space-between;
+
+}
+.serviceImg_div>div{
+     /* border: 1px solid red; */
+     width: 25%;
+     height: 100%;
+
+}
+.servicetext_div{
+      /* border: 1px solid teal; */
+      width: 95%;
+      height: 30%;
+
+}
+.serviceImg{
+    /* border: 1px solid teal; */
+    width: 100%;
+    height: 70%;
+
+}
+.p5{
+    font-size: 15px;
+    color: #393939;
 }
 
 
