@@ -36,7 +36,7 @@ const viewed = [
     avail: 10,
   },
   {
-    img: "https://n.nordstrommedia.com/id/sr3/8fca7188-4bb4-47fb-9dc2-4430088d267d.jpeg?q=45&dpr=2&h=135.8&w=88",
+    img: "https://n.nordstrommedia.com/id/sr3/ba8b5555-165d-4def-a47b-199a42f73493.jpeg?h=365&w=240&dpr=2",
     tag: "Limited-Time Sale",
     brand: "Zella",
     price: "2,799.65",
