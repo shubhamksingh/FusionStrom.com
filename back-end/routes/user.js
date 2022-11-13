@@ -43,7 +43,9 @@ router.delete("/:id", verifyTokenAndAuthorization, async (req, res) => {
 
 router.get("/find/:id", verifyTokenAndAdmin, async (req, res) => {
   try {
+    console.log('entered')
     var user = await User.findById(req.params.id);
+    console.log(user);
 
     const { password, ...userInfo } = user._doc;
 
