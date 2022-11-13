@@ -10,7 +10,7 @@ const router = require("express").Router();
 
 // CREATE
 
-router.post("/", verifyToken , async (req, res) => {
+router.post("/" , async (req, res) => {
   console.log("welcome");
   try {
     const newCart = await Cart.create(req.body);

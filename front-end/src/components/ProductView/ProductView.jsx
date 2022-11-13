@@ -72,7 +72,7 @@ const ProductView = () => {
 
   //for getting single product from db after deployment
 
-  // let url="http://localhost:8080/cart";
+  // let url="http://localhost:8080/carts";
   const handleCart = (e) => {
     e.preventDefault();
     setCartItem([...cartItem, productData]);
