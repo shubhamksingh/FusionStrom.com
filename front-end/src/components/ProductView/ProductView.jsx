@@ -47,7 +47,7 @@ const ProductView = () => {
   //this code is used for before the deployment
 
   //for getting single product from db after deployment
-  // let url=`http://localhost:8080/product/${id}`
+  // let url=`http://localhost:8080/api/products/find/${id}`
   // const getData=()=>{
   //   fetch(url)
   //     .then((res) => res.json())

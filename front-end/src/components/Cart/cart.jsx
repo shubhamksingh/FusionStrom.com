@@ -47,67 +47,74 @@ const viewed = [
 
 const CartPage = () => {
   const navigate = useNavigate();
-  var userid = useSelector((store) => store.user._id);
+  // let userid = useSelector((store) => store.user._id);
+  let userid="6370d4a3e1f43c6a4d114ed1";
   const [items, setItems] = useState([]);
   const [wishList, setWishlists] = useState([]);
   const [count,setCount]=useState(1);
   let totalCart;
 
-  const url1 = `http://localhost:8080/carts/find/${userid}`;
+
+  const url1 = `http://localhost:8080/api/carts/find/${userid}`;
   const getCartItems = () => {
-    axios.get(url1).then((res) => {
-      setItems(res.data);
-      console.log(res.data);
-    });
+    axios.get(`http://localhost:8080/api/carts/find/${userid}`).then((res) => {
+      let pid=res.data.products[0].productId;
+      console.log(pid)
+      axios.get(`http://localhost:8080/api/products/find/${pid}`).then((res)=>{
+        console.log(res)
+      })
+      // console.log(res.data);
+    }
+    );
   };
   getCartItems();
 
-  const url2 = `http://localhost:8080/whislist/find/:userid`;
+  const url2 = `http://localhost:8080/whislist/find/${userid}`;
   const getWishListitem = () => {
-    axios.get(url2).then((res) => {
-      setWishlists(res.data);
-      console.log(res.data);
-    });
+    // axios.get(url2).then((res) => {
+    //   setWishlists(res.data);
+    //   console.log(res.data);
+    // });
   };
 
   getWishListitem();
 
   const handleCitemRemove = (id) => {
     const url = `http://localhost:8080/carts/find/${id}`;
-    axios.delete(url).then((res) => {
-      alert("Item removed successfully");
-    });
+    // axios.delete(url).then((res) => {
+    //   alert("Item removed successfully");
+    // });
   };
 
   const handleWishlist = (data) => {
     let url="http://localhost:8080/whislist";
-    axios
-      .post(url, data)
-      .then((res) => {
-        console.log(res.data);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
+    // axios
+    //   .post(url, data)
+    //   .then((res) => {
+    //     console.log(res.data);
+    //   })
+    //   .catch((err) => {
+    //     console.log(err);
+    //   });
   };
 
   const handleWishRemove=(id)=>{
-    const url = `http://localhost:8080/whislist/find/${id}`;
-    axios.delete(url).then((res) => {
-      alert("Item removed successfully");
-    });
+    // const url = `http://localhost:8080/whislist/find/${id}`;
+    // axios.delete(url).then((res) => {
+    //   alert("Item removed successfully");
+    // });
   }
 
   const handleMovebag=(data)=>{
   let url="http://localhost:8080/carts";
-    axios
-      .post(url, data)
-      .then((res) => {
-        console.log(res.data);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
+    // axios
+    //   .post(url, data)
+    //   .then((res) => {
+    //     console.log(res.data);
+    //   })
+    //   .catch((err) => {
+    //     console.log(err);
+    //   });
   }
 
   const handleCheckout = () => {
