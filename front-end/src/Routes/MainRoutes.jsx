@@ -1,31 +1,20 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-
-
 import Navbar from "../components/Navbar/navbar";
 import Footer from "../components/Footer/Footer";
 import ProductView from "../components/ProductView/ProductView";
-
-
 import Dashboard from "../components/dashboard/dashboard";
-
-
-// import Navbar2 from "../components/Navbar/Navbar2";
-//import Navbar from "../components/Navbar/navbar";
-//import Footer from "../components/Footer/Footer";
-//import ProductView from "../components/ProductView/ProductView";
-// import dashboard from "../components/dashboard/dashboard";
-//import Dashboard from "../components/dashboard/dashboard";
-
-//import Navbar2 from "../components/Navbar/Navbar2";
-//import Footer from "../components/Footer/Footer";
-//import ProductView from "../components/ProductView/ProductView";
 import CartPage from "../components/Cart/cart";
-
 import MenPage from "../components/ProductPage/MenPage";
+
+
+
 import Signin from "../components/Auth/Signin/Signin"
 import Signup from "../components/Auth/Signup/Signup"
 import Profile from "../components/Auth/Profile/Profile"
+import Checkout from "../components/Checkout/Checkout"
+import Flash from "../components/Flash/Flash";
+import Adminlogin from "../components/Auth/AdminLogin/Adminlogin";
 
 
 
@@ -95,6 +84,7 @@ const MainRoutes = () => {
             // </RequiredAuth>
           }
         />
+       
         <Route path="gift" element={<h3>Gift</h3>} />
         <Route path="mens/products/:id" element={<ProductView />} />
         {/* <Route path="flash/women" element={<Flash />} />

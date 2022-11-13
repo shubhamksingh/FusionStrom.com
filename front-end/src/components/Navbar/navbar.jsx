@@ -32,7 +32,7 @@ const Navbar = () => {
         </div>
         <div className='navbar_cart'>
           <Link
-            to={"/login"}
+            to={"/signin"}
             style={{ textDecoration: "none", color: "rgb(60, 57, 57)" }}
           >
             <span>{"Sign In"}</span>
