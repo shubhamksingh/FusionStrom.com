@@ -13,7 +13,8 @@ const wishlistRoute = require('./routes/wishlist')
 dotenv.config();
 
 const app = express();
-
+var cors = require('cors');
+app.use(cors());
 
 
 
@@ -42,13 +43,14 @@ app.get('/', (req, res) => {
 
 
 
-mongoose.connect(process.env.MONGO_URL)
+// mongoose.connect(process.env.MONGO_URL)
+mongoose.connect("mongodb://localhost:27017/fusionstrom")
 .then(()=> console.log('DB connection successfull !'))
 .catch((err)=> {
   console.log(err);
 })
 
-app.listen(process.env.PORT || 8080, () => {
+app.listen(process.env.PORT || 8000, () => {
   // dbconnect.then(x=> console.log('dbconnected and server started at http://localhost:8080'))
 //   console.log(`Example app listening on port ${port}`)
 
