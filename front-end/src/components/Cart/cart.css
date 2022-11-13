@@ -178,6 +178,15 @@
     padding: 15px 20px;
     font-size: 13px;
 }
+#bb{
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 15px 20px;
+    font-size: 13px;   
+}
 .ct-info-one>.c-check-part>.c-payments>.payImgDiv{
     display: flex;
 }
