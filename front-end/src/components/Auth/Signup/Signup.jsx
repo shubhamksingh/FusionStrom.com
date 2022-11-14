@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
-import { Button, Flex, Text, Stack, Center, Input, Box, Link, useToast } from '@chakra-ui/react'
+import { Button, Flex, Text, Stack, Center, Input, Box, useToast } from '@chakra-ui/react'
 import { useNavigate } from "react-router-dom"
 import axios from "axios"
+import { Link } from 'react-router-dom'
 
 const Signup = () => {
   const toast = useToast()

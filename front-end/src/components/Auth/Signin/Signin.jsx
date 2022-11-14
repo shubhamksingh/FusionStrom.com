@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import { Button, Flex, Text, Stack, Center, Input, Box, Link, useToast } from '@chakra-ui/react'
+import { Button, Flex, Text, Stack, Center, Input, Box, useToast } from '@chakra-ui/react'
 import { useNavigate,useHistory } from "react-router-dom"
 import axios from "axios"
-
+import {Link} from"react-router-dom"
 
 const Signin = () => {
     const navigate = useNavigate()
@@ -63,7 +63,7 @@ const Signin = () => {
             <Box mt={"1.5rem"} w={"fit-content"}  >
                 <Stack>
                     <Text fontSize='1.6rem'>Sign In</Text>
-                    <Text fontSize='0.8rem'>New to Nordstrom? <Text as={"u"}><Link href='/signup'>Create an account.</Link></Text></Text>
+                    <Text fontSize='0.8rem'>New to Nordstrom? <Text as={"u"}><Link to ='/signup'>Create an account.</Link></Text></Text>
                 </Stack>
                 <br />
 
