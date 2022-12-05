@@ -10,14 +10,10 @@
 <img  width="700px"  src="https://i.ibb.co/drjbgvS/fusion-men.png"/>
 <h5>Women product page</h5>
 <img  width="700px"  src="https://i.ibb.co/r25wGNN/f-woment.png"/>
-<h5>Add Task</h5>
-<img  width="700px"  src="https://i.imgur.com/BP537VK.png"/>
-<h5>Create Project</h5>
-<img  width="700px"  src="https://i.imgur.com/8mLHWpz.png"/>
-<h5>Clients</h5>
-<img  width="700px"  src="https://i.imgur.com/Ij8GsI3.png"/>
-<h5>Team Members</h5>
-<img  width="700px"  src="https://i.imgur.com/0i71qkc.png"/>
+<h5>Cart Page</h5>
+<img  width="700px"  src="https://i.ibb.co/McCLfbL/cart-fusion.png"/>
+<h5>Payment component</h5>
+<img  width="700px"  src="https://i.ibb.co/q170ZHr/payment-fusion.png"/>
 <h5>Update Profile</h5>
 <img  width="700px"  src="https://i.imgur.com/5kgT6qb.png"/>
 </div>
@@ -27,7 +23,7 @@
 <h3>Deployed netlify Link</h3>
 <ul>
 <li>
-<a  href="https://the-great-pravhatray-site.netlify.app/">🔗 Visit Site Everhour 🌐</a>
+<a  href="https://fusion-strom.vercel.app/">🔗 Visit Site Fusion Strom 🌐</a>
 </li>
 </ul>
 
@@ -35,12 +31,12 @@
 <ul>
 <li>Login/signup Authentication.</li>
 <li>Landing page with functionality.</li>
-<li>Schedule slot for overiview or demo</li>
+<li>Product page with differenct category</li>
 <li>Footer linked with social media sites.</li>
 <li>Add tasks on calender</li>
-<li>Create Project,add,create,update projects</li>
-<li>Clients management,add,create,update clients</li>
-<li>Team memebers management</li>
+<li>Filter the products on products page</li>
+<li>Sort the products on the product page</li>
+<li>add products to cart and do payment on payment page</li>
 <li>Responsive for all screen sizes.</li>
 <li>Skeleton Loading for User Interface(UI)</li>
 </ul>
