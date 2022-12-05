@@ -1,6 +1,6 @@
 <div>
 <h3 >Clone website of Everhour.com</h3>
-<img width="700px" src="blob:https://imgur.com/d154d733-dbae-47ee-8890-3548bda36015"/>
+<img width="700px" src="https://imgur.com/d154d733-dbae-47ee-8890-3548bda36015"/>
 <p>Everhour is a time management system with a strong focus on integration. If you're managing all your tasks in a specialized system, such as Asana, Trello, Basecamp, where there is no native time tracking functionality (or it's limited), you'll need to use a third-party service..</p>
 <h5>Sign up Page</h5>
 <img width="700px"   src="https://i.imgur.com/ekXtmHF.png"/>
