@@ -1,7 +1,7 @@
 <div>
 <h3 >Clone website of FusionStrom.com</h3>
 <img width="700px" src="https://i.ibb.co/1vK2WJx/fusion.png"/>
-<p>Everhour is a time management system with a strong focus on integration. If you're managing all your tasks in a specialized system, such as Asana, Trello, Basecamp, where there is no native time tracking functionality (or it's limited), you'll need to use a third-party service..</p>
+<p>A full fledged e-commerce website where users can shop variety of items. It also has admin panel for creating new products and removing them.</p>
 <h5>Sign up Page</h5>
 <img width="700px"   src="https://i.ibb.co/Z8KtvJY/signup-fusion.png"/>
 <h5>Log in Page</h5>
