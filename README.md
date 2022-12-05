@@ -14,8 +14,7 @@
 <img  width="700px"  src="https://i.ibb.co/McCLfbL/cart-fusion.png"/>
 <h5>Payment component</h5>
 <img  width="700px"  src="https://i.ibb.co/q170ZHr/payment-fusion.png"/>
-<h5>Update Profile</h5>
-<img  width="700px"  src="https://i.imgur.com/5kgT6qb.png"/>
+
 </div>
 
 <h3>Description of Tech stack Team</h3>
