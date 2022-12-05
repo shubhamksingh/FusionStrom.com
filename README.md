@@ -3,7 +3,7 @@
 <img width="700px" src="https://i.ibb.co/1vK2WJx/fusion.png"/>
 <p>Everhour is a time management system with a strong focus on integration. If you're managing all your tasks in a specialized system, such as Asana, Trello, Basecamp, where there is no native time tracking functionality (or it's limited), you'll need to use a third-party service..</p>
 <h5>Sign up Page</h5>
-<img width="700px"   src="https://i.imgur.com/ekXtmHF.png"/>
+<img width="700px"   src="https://i.ibb.co/Z8KtvJY/signup-fusion.png"/>
 <h5>Log in Page</h5>
 <img  width="700px"  src="https://i.ibb.co/8jyM3j4/fusion-signin.png"/>
 <h5>Book Slot</h5>
