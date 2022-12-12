@@ -53,11 +53,11 @@
 <h4>Authors</h4>
 
 <ul>
-<li>Pravhat Ray</li>
+<li>Om Prakash Gupta</li>
 <ul>
-<li><a href="https://github.com/pravhatray"  >Github</a></li>
-<li><a href="linkedin.com/in/pravhat-ray-842851236"  >LinkedIn Profile </a></li>
-<li><a href="pravhatray@gmail.com "  >G-mail</a></li>
+<li><a href="https://github.com/Omgupta12"  >Github</a></li>
+<li><a href="linkedin.com/in/om-prakash-gupta-43885b1b7"  >LinkedIn Profile </a></li>
+<li><a href="omprakash1997242@gmail.com"  >G-mail</a></li>
 </ul>
 <li>Shubham Singh</li>
 <ul>
