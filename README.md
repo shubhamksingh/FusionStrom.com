@@ -56,26 +56,26 @@
 <li>Om Prakash Gupta</li>
 <ul>
 <li><a href="https://github.com/Omgupta12"  >Github</a></li>
-<li><a href="linkedin.com/in/om-prakash-gupta-43885b1b7"  >LinkedIn Profile </a></li>
-<li><a href="omprakash1997242@gmail.com"  >G-mail</a></li>
+<li><a href="https://www.linkedin.com/in/om-prakash-gupta-43885b1b7"  >LinkedIn Profile </a></li>
+
 </ul>
 <li>Shubham Singh</li>
 <ul>
 <li><a href="https://github.com/shubhamksingh"  >Github</a></li>
 <li><a href="https://www.linkedin.com/in/shubham-singh-b54376247/"  >LinkedIn Profile </a></li>
-<li><a href="shubhsingh0795@gmail.com"  >G-mail</a></li>
+
 </ul>
 <li>Alisha Mohasin</li>
 <ul>
 <li><a href="https://github.com/AlishaMohasin"  >Github</a></li>
 <li><a href="https://www.linkedin.com/in/alishamohasin/"  >LinkedIn Profile </a></li>
-<li><a href="alishamohasin859@gmail.com"  >G-mail</a></li>
+
 </ul>
 <li>Vivek Rana</li>
 <ul>
 <li><a href="https://github.com/vivek13420"  >Github</a></li>
 <li><a href="https://www.linkedin.com/in/vivek-rana-74bb9a220/"  >LinkedIn Profile </a></li>
-<li><a href="vivekrana13420@gmail.com"  >G-mail</a></li>
+
 </ul>
 
 </ul>
