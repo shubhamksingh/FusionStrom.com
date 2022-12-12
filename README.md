@@ -57,32 +57,27 @@
 <ul>
 <li><a href="https://github.com/Omgupta12"  >Github</a></li>
 <li><a href="https://www.linkedin.com/in/om-prakash-gupta-43885b1b7"  >LinkedIn Profile </a></li>
-
 </ul>
 <li>Shubham Singh</li>
 <ul>
 <li><a href="https://github.com/shubhamksingh"  >Github</a></li>
 <li><a href="https://www.linkedin.com/in/shubham-singh-b54376247/"  >LinkedIn Profile </a></li>
-
 </ul>
-<li>Janki </li>
+<li>Janaki Kangalgouda</li>
 <ul>
 <li><a href="https://github.com/janakigouda"  >Github</a></li>
-<li><a href="https://www.linkedin.com/in/alishamohasin/"  >LinkedIn Profile </a></li>
-
+<li><a href="https://www.linkedin.com/in/janaki-kangalgouda-809936169/"  >LinkedIn Profile </a></li>
 </ul>
 <li>Kundan Kumar Keshri </li>
 <ul>
 <li><a href="https://github.com/kundan799"  >Github</a></li>
-<li><a href="https://www.linkedin.com/in/vivek-rana-74bb9a220/"  >LinkedIn Profile </a></li>
-
+<li><a href="https://www.linkedin.com/in/kundan-kumar-keshri-04621b238"  >LinkedIn Profile </a></li>
 </ul>
 </ul>
 <li>Sumit Kumar </li>
 <ul>
 <li><a href="https://github.com/SumitKDSarkar"  >Github</a></li>
-<li><a href="https://www.linkedin.com/in/vivek-rana-74bb9a220/"  >LinkedIn Profile </a></li>
-
+<li><a href="https://www.linkedin.com/in/sumit-kumar-dey-sarkar-09a1a0220/"  >LinkedIn Profile </a></li>
 </ul>
 
 </ul>
