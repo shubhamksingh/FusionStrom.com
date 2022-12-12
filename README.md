@@ -19,7 +19,7 @@
 
 <h3>Description of Tech stack Team</h3>
 
-<h3>Deployed netlify Link</h3>
+<h3>Deployed vercel Link</h3>
 <ul>
 <li>
 <a  href="https://fusion-strom.vercel.app/">🔗 Visit Site Fusion Strom 🌐</a>
@@ -73,7 +73,7 @@
 <li><a href="https://github.com/kundan799"  >Github</a></li>
 <li><a href="https://www.linkedin.com/in/kundan-kumar-keshri-04621b238"  >LinkedIn Profile </a></li>
 </ul>
-</ul>
+
 <li>Sumit Kumar </li>
 <ul>
 <li><a href="https://github.com/SumitKDSarkar"  >Github</a></li>
