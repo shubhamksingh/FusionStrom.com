@@ -1,3 +1,4 @@
+require("dotenv").config();
 const { urlencoded } = require('express');
 const express = require('express');
 const mongoose = require('mongoose');
@@ -10,7 +11,7 @@ const orderRoute = require('./routes/order')
 const wishlistRoute = require('./routes/wishlist')
 const cors = require('cors');
 
-dotenv.config();
+const api = process.env.api
 
 const app = express();
 app.use(cors());
