@@ -21,12 +21,12 @@ const Dashboard = () => {
                      <div className={style.righttimg}><img  className={style.img1} src="https://n.nordstrommedia.com/id/c30eb052-a9da-4529-95ed-0d1568cc55ad.png?h=22&w=536" alt="" /></div>
                      <div className={style.middlediv}>
                         <p className={style.p1}>Shop what you love—faster and easier.</p>
-                        <Link to={"#"}><p className={style.p2}><u>Sign In or Create an Account</u></p></Link>
+                        <Link to={"/signin"}><p className={style.p2}><u>Sign In or Create an Account</u></p></Link>
                      </div>
 
                      <div className={style.leftimg}><img className={style.img1} src="https://n.nordstrommedia.com/id/01471914-5c74-4e79-a258-af5f398b1a73.png?h=22&w=536" alt="" /></div>
 
-                     //<div className={style.leftimg}><img className={style.img1} src="https://n.nordstrommedia.com/id/c30eb052-a9da-4529-95ed-0d1568cc55ad.png?h=22&w=536" alt="" /></div>
+                     {/* <div className={style.leftimg}><img className={style.img1} src="https://n.nordstrommedia.com/id/c30eb052-a9da-4529-95ed-0d1568cc55ad.png?h=22&w=536" alt="" /></div> */}
 
                         
                 </div>
@@ -40,8 +40,8 @@ const Dashboard = () => {
                 <div className={style.link}>
 
                     <Link to={"#"}><p className={style.p2}><u>New Markdowns</u> </p></Link>
-                    <Link to={"#"}><p className={style.p2}><u>Women's Sale </u></p></Link>
-                    <Link to={"#"}><p className={style.p2}><u>Men's Sale  </u></p></Link>
+                    <Link to={"/womens"}><p className={style.p2}><u>Women's Sale </u></p></Link>
+                    <Link to={"./mens"}><p className={style.p2}><u>Men's Sale  </u></p></Link>
                     <Link to={"#"}><p className={style.p2}><u>Kids' Sale</u> </p></Link>
                     <Link to={"#"}><p className={style.p2}><u>Home Sale </u> </p></Link>
                     <Link to={"#"}><p className={style.p2}><u>Beauty & Fragrance Sale </u></p></Link>
@@ -59,7 +59,7 @@ const Dashboard = () => {
                 <div className={style.blackbackground}>
                     <p className={style.p1}>Gift with Style</p>
                     <p className={style.p2}>The special-edition Dyson Supersonic™ hair dryer is here!</p>
-                    <Link to={"#"}><p className={style.p2}><u>Shop Now</u></p></Link>
+                    <Link to={"/womens"}><p className={style.p2}><u>Shop Now</u></p></Link>
 
                 </div>
              </div>
@@ -72,7 +72,7 @@ const Dashboard = () => {
                 <div>
                     <p className={style.p3}>Deals You’ll Love</p>
                 </div>
-                <div className={style.viewProducts}><Link to={"#"}><button><p className={style.p2}>View All Women</p></button></Link></div>
+                <div className={style.viewProducts}><Link to={"/womens"}><button><p className={style.p2}>View All Women</p></button></Link></div>
 
 
              </div>
@@ -145,7 +145,7 @@ const Dashboard = () => {
                 <div>
                     <p className={style.p3}>Gifts by Recipient</p>
                 </div>
-                <div className={style.viewProducts}><Link to={"#"}><button><p className={style.p2}>View All Gift's For Her</p></button></Link></div>
+                <div className={style.viewProducts}><Link to={"./womens"}><button><p className={style.p2}>View All Gift's For Her</p></button></Link></div>
 
 
              </div>
@@ -182,8 +182,8 @@ const Dashboard = () => {
                      <img src="https://n.nordstrommedia.com/id/0c7312a9-d6ec-4235-bdf4-15b01fc042be.jpeg?h=395&w=1608" alt="" />
                   </div>
                   <div className={style.content_div}>
-                     <p className={style.p3}>For Her</p>
-                     <p className={style.p3}>For Him</p>
+                     <Link to={"./womens"}><p className={style.p3}>For Her</p></Link>
+                     <Link to={"./womens"}><p className={style.p3}>For Him</p></Link>
                      <p className={style.p3}>For Kid</p>
                      <p className={style.p3}>For Teen</p>
                      <p className={style.p3}>All Gifts</p>
