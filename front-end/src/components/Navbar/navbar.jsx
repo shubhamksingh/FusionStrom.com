@@ -5,48 +5,62 @@ import { useContext } from "react";
 import Flash from "../Flash/Flash";
 import logo from "../../images/logoName.png";
 
-
 const Navbar = () => {
- 
   const nav = useNavigate();
-  
-  return (
-    
-    <div className='navBarDiv'>
-      <div className="fstDiv">
-        <p><b>Holiday Deals are on now!</b>Up to 60% off. Deals</p>
+  const user = JSON.parse(localStorage.getItem("user_info"));
+  // console.log("user", user);
 
+  const handleLogout = () => {
+       localStorage.removeItem("user_info");
+       nav("/signin")
+  };
+
+  return (
+    <div className="navBarDiv">
+      <div className="fstDiv">
+        <p>
+          <b>Holiday Deals are on now!</b>Up to 60% off. Deals
+        </p>
       </div>
       <nav>
-        <div className='navbar_logo'>
+        <div className="navbar_logo">
           <Link to={"/"}>
-            <img
-              src={logo}
-              alt=''
-            />
+            <img src={logo} alt="" />
           </Link>
         </div>
-        <div className='navbar_search'>
+        <div className="navbar_search">
           {/* <input type='text' placeholder=' Search for products or brands' /> */}
           <input type="text" placeholder="Search for products or brands" />
         </div>
-        <div className='navbar_cart'>
+        <div className="navbar_cart">
+          {/* <Link
+            // to={"/signin"}
+            style={{ textDecoration: "none", color: "rgb(60, 57, 57)" }}
+          > */}
+            {user?user.user.username:null}
+            {user? (
+              <span onClick={handleLogout}>LogOut</span>
+            ) : (
+              <span
+                onClick={() => {
+                  nav("/signin");
+                }}
+              >
+                SignIn
+              </span>
+            )}
+            {/* <span>{"Sign In"}</span> */}
+          {/* </Link> */}
           <Link
-            to={"/signin"}
+            to="/cart"
             style={{ textDecoration: "none", color: "rgb(60, 57, 57)" }}
           >
-            <span>{"Sign In"}</span>
-          </Link>
-          <Link
-            to='/cart'
-            style={{ textDecoration: "none", color: "rgb(60, 57, 57)" }}
-          >
-            <i className='uil uil-bag'></i>
+            <i className="uil uil-bag"></i>
           </Link>
         </div>
       </nav>
       <hr />
-      <div className='menu_div'>
+      <div className="menu_div">
         <span
           onClick={() => {
             nav("/clearance");
@@ -103,16 +117,21 @@ const Navbar = () => {
         >
           Beauty
         </span>
-        <span onClick={() => {
+        <span
+          onClick={() => {
             nav("/gift");
           }}
         >
           Gifts
         </span>
         <span>Home</span>
-        <span onClick={() => {
+        <span
+          onClick={() => {
             nav("flash/women");
-          }}>Flash Events</span>
+          }}
+        >
+          Flash Events
+        </span>
       </div>
     </div>
   );
