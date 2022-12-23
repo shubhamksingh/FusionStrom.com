@@ -14,10 +14,7 @@
   box-sizing: border-box;
 }
 
-a {
-  text-decoration: none;
-  color: #222;
-}
+
 
 html {
   -webkit-font-smoothing: antialiased;
@@ -286,6 +283,13 @@ body {
             font-size: 25px;
             margin-top: -3px;
         }
+        .signin{
+            font-size: 15px;
+            font-weight: 500;
+            /* margin-top: 100%; */
+            
+        }
+        
         
          hr {
             width: 100%;

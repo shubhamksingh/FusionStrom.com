@@ -24,7 +24,7 @@
 @media screen and (min-width:350px) and (max-width:950px) {
 
     .fstDiv{
-        border: 1px solid;
+        /* border: 1px solid; */
         /* margin-top: 10%; */
     }
 }

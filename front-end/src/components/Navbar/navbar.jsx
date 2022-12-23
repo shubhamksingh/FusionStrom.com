@@ -82,7 +82,7 @@ const handleClick = () => {
           <div class="site-header__en">
           <span><Link
             to="/cart"
-            style={{ textDecoration: "none", color: "rgb(60, 57, 57)" , fontSize:"30px"}}
+            style={{ textDecoration: "none", color: "rgb(60, 57, 57)" , fontSize:"25px"}}
           >
             <i className="uil uil-bag"></i> 
           </Link></span>
@@ -93,7 +93,7 @@ const handleClick = () => {
             {user? (
               <span onClick={handleLogout}>LogOut</span>
             ) : (
-            <a href="/signin" class="#">SignIn</a>
+            <a href="/signin" class="signin">SignIn</a>
             )}
           </div>
           

@@ -6,6 +6,7 @@
     height: auto;
     /* border: 1px solid black; */
     margin: auto;
+    /* margin-top: 10px; */
 }
 .fst_div_start{
     display: flex;
@@ -67,7 +68,7 @@ display:flex;
 .save70{
 position: absolute;
 
-  top: 10%;
+  top: 9.5%;
 
 
  
@@ -131,19 +132,19 @@ position: absolute;
     font-weight: 700;
 }
 .viewProducts{
-
-    border: 1px solid;
-
+        
     /* border: 1px solid; */
 
+   
+
     text-decoration: none;
-    padding: 10px 20px 10px 10px;
+    /* padding: 10px 20px 10px 10px;  */
 }
 .viewProducts:hover{
-    cursor: pointer;
+    /* cursor: pointer;
     border: none;
     background-color: rgb(179, 178, 178);
-   text-decoration-color: black;
+   text-decoration-color: black; */
 }
 
 
@@ -372,7 +373,7 @@ border: 1px solid white;
     }
     .save70{
         display: block;
-        top: 10%;
+        top: 5%;
         left: 29%;
         text-align: center;
     }
@@ -438,9 +439,12 @@ border: 1px solid white;
 
 
 }
+@media screen and (min-width:768px) and (max-width:949px) {
 
-@media screen and (min-width:350px) and (max-width:950px) {
 
+    .fst_div{
+        margin-top: 15px;
+    }
     .fst_div_start{
         display: block;
         /* border: 1px solid black; */
@@ -457,9 +461,12 @@ border: 1px solid white;
         display: block;
         /* border: 1px solid; */
         width: 90%;
-        top: 7.5%;
+        top: 5.5%;
         left: 5%;
         text-align: center;
+    }
+    .p2{
+       font-size: 14px; 
     }
     .link{
         display: block;
@@ -470,7 +477,7 @@ border: 1px solid white;
         margin: auto;
         /* border: 1px solid; */
         width: 100%;
-        margin-top:45%;
+        margin-top:28%;
     }
     .thirdDiv>div{
         width: 100%;
@@ -491,15 +498,25 @@ border: 1px solid white;
 
     .fifth_Div_text{
         font-size: 18px;
+        margin-top: -22%;
+        margin-left: 5%;
+        /* border: 1px solid blue; */
+    }
+    .fifth_Div_text2{
+        margin-left: 5%;   
     }
     .fifth_Div_text_two{
         display: block;
         text-align: center;
         /* border: 1px solid red; */
         margin-top: 7%;
+        
     }
     .line1{
-        margin-top: 50%;
+         margin-top: 30%;
+        /* border: 1px solid red; */
+        display: none;
+
     }
     /* .fourth_div{
             border: 1px solid;
@@ -514,8 +531,8 @@ border: 1px solid white;
 
     }
     .sixth_div{
-        /* border: 1px solid; */
-        margin-top: -20%;
+        /* border: 1px solid black; */
+        margin-top: 20%;
        
        
         
@@ -539,6 +556,197 @@ border: 1px solid white;
         /* border: 1px solid; */
         width: 100%;
         margin-top: 2%;
+    }
+    .threadImg_div{
+        /* border: 1px solid; */
+        display: block;
+        height: auto;
+        margin-top: 15%;
+        
+    }
+    .threadImg_div>div{
+        width: 100%;
+        margin-top: 5%;
+    }
+    .threadImg{
+        /* border: 1px solid; */
+        width: 100%;
+    }
+    .linemove{
+        margin-top: 12%;
+        /* border: 1px solid; */
+    }
+    .content_div{
+        /* border: 1px solid; */
+        margin-top: -17%;
+    }
+    .p3{
+        font-weight: 600;
+        font-size: 20px;
+    }
+    .title{
+        /* border: 1px solid; */
+        width: 100%;
+    }
+    .serviceImg_div{
+        /* border: 1px solid; */
+        height: auto;
+        display: block;
+        /* margin: auto; */
+    }
+    .serviceImg_div>div{
+        /* border: 1px solid; */
+        width: 100%;
+        height: auto;
+        /* display: block; */
+        margin-top: 5%;
+    }
+    .serviceImg{
+        /* border: 1px solid black; */
+        width: 50%;
+        margin: auto;
+    }
+    .servicetext_div{
+        text-align: center;
+        /* border: 1px solid red; */
+    }
+
+}
+
+@media screen and (min-width:350px) and (max-width:720px) {
+
+    .fst_div{
+        margin-top: 15px;
+    }
+    .fst_div_start{
+        display: block;
+        /* border: 1px solid black; */
+    }
+    .fst_div{
+        width: 90%;
+        /* border: 1px solid; */
+    }
+    .secondDiv{
+        margin-top: -20%;
+    }
+    /* .middlediv{
+        border: 1px solid;
+        width: 60%;
+    } */
+    .save70{
+        display: block;
+        /* border: 1px solid; */
+        width: 90%;
+        top: 5.5%;
+        left: 5%;
+        text-align: center;
+    }
+    .p1{
+        font-size: 15px;
+        font-weight: 600;
+    }
+    .p2{
+       font-size: 9px; 
+    }
+    .p3{
+        font-size: 15px;
+    }
+    .link{
+        display: block;
+        top: 70%;
+    }
+    .thirdDiv{
+        display: block;
+        margin: auto;
+        /* border: 1px solid; */
+        width: 100%;
+        margin-top:15%;
+    }
+    .thirdDiv>div{
+        width: 100%;
+    }
+    .imgmove{
+        width: 100%;
+    }
+    .fifth_Div{
+        /* border: 1px solid; */
+        /* width: 100%; */
+    }
+    .fifth_Div>div{
+        /* border: 1px solid; */
+        width: 100%;
+        margin-left: -1.02%;
+        margin-top: 30%;
+    }
+
+    .fifth_Div_text{
+        font-size: 13px;
+        margin-top: -10%;
+        margin-left: 5%;
+    }
+    .fifth_Div_text2{
+        font-size: 9px;
+        /* margin-top: -10%; */
+        margin-left: 5%;
+    }
+    .fifth_Div_text_two{
+        display: block;
+        text-align: center;
+        /* border: 1px solid red; */
+        margin-top: 7%;
+    }
+    .fifth_Div_text_two p{
+            font-size: 10px;
+    }
+    .line1{
+        margin-top: 30%;
+    }
+    .line2{
+        margin-top: -30%;
+    }
+    
+    /* .fourth_div{
+            border: 1px solid;
+    } */
+    /* .fifth_Div{
+        border: 1px solid;
+    } */
+    .fifth_Div_text_two{
+        width: 100%;
+        /* border: 1px solid; */
+
+
+    }
+    .sixth_div{
+        /* border: 1px solid; */
+        margin-top: -20%;
+       
+       
+        
+    }
+    .AutoCarosal{
+        /* border: 1px solid; */
+        margin-top: 20%;
+        display: none;
+    }
+    .sixth_div>div{
+        width: 100%;
+        height: auto;
+        margin-top: 47%;
+        /* border: 1px solid; */
+
+    }
+    .move{
+        /* border: 1px solid; */
+        width: 100%;
+    }
+    .carosalNavbar{
+        /* border: 1px solid; */
+        width: 100%;
+        margin-top: 2%;
+    }
+    .carosalNavbar p{
+        font-size: 11px;
     }
     .threadImg_div{
         /* border: 1px solid; */
