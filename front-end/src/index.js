@@ -1,17 +1,12 @@
-
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { ChakraProvider } from '@chakra-ui/react'
-
-
 import { BrowserRouter } from "react-router-dom";
 // import Provider from 'react-redux';
 import { store } from "./Redux/store";
-
-
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Provider } from "react-redux";
 import AuthProvider from './components/Private/AuthProvider';
@@ -19,16 +14,15 @@ import AuthProvider from './components/Private/AuthProvider';
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
 
-
-   <ChakraProvider>
+    //  <AuthProvider>
+  <ChakraProvider>
     <BrowserRouter>
-      {/* <Provider store={store}> */}
-      <AuthProvider>
+      <Provider store={store}>
         <App />
-        </AuthProvider>
-      {/* </Provider> */}
+      </Provider>
     </BrowserRouter>
     </ChakraProvider>
+        // </AuthProvider>
  
 
 );

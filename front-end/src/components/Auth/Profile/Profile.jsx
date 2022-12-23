@@ -7,8 +7,7 @@ import { useNavigate } from 'react-router-dom'
 
 const Profile = () => {
     const userInfo =JSON.parse(localStorage.getItem("user_info"))
-    const {username} = userInfo.user
-    console.log(username);
+    // console.log(userInfo);
 
     const navigate = useNavigate()
 
@@ -22,7 +21,7 @@ const Profile = () => {
             <Box  style={{ display: "flex", flexDirection: "column", width: "fit-content" }}>
                 <Center>
                 <Stack>
-                    <Text fontSize='1.6rem' >Welcome {username} !</Text>
+                    <Text fontSize='1.6rem' >Welcome! {userInfo? <span style={{color:"red"}}>{userInfo.user.username}</span>:null} </Text>
                     <Text fontSize='0.8rem'>Use your new account to shop at:</Text>
 
                     <Image src={nody1} alt="logo"  w ={"300px"}  />

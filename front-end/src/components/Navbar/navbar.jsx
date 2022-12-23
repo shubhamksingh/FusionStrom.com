@@ -37,7 +37,7 @@ const Navbar = () => {
             // to={"/signin"}
             style={{ textDecoration: "none", color: "rgb(60, 57, 57)" }}
           > */}
-            {user?user.user.username:null}
+            {user?(user.user.username):null}
             {user? (
               <span onClick={handleLogout}>LogOut</span>
             ) : (
