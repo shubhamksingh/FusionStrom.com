@@ -14,6 +14,7 @@ import Checkout from "../components/Checkout/Checkout"
 import Flash from "../components/Flash/Flash";
 import Adminlogin from "../components/Auth/AdminLogin/Adminlogin";
 import Womens from "../components/ProductPage/Womens";
+import AuthProvider from "../components/Private/AuthProvider";
 
 const MainRoutes = () => {
   return (
@@ -29,11 +30,11 @@ const MainRoutes = () => {
         <Route path="/signup" element={<Signup />} />
         <Route path="/profile" element={<Profile />} />
         <Route
-          path="cart"
+          path="/cart"
           element={
-            // <RequiredAuth>
+            // <AuthProvider>
             <CartPage />
-            // {/* </RequiredAuth> */}
+            //  </AuthProvider>
           }
         />
         <Route

@@ -14,19 +14,22 @@ import { store } from "./Redux/store";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Provider } from "react-redux";
+import AuthProvider from './components/Private/AuthProvider';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
 
-  <React.StrictMode>
+
    <ChakraProvider>
     <BrowserRouter>
-      <Provider store={store}>
+      {/* <Provider store={store}> */}
+      <AuthProvider>
         <App />
-      </Provider>
+        </AuthProvider>
+      {/* </Provider> */}
     </BrowserRouter>
     </ChakraProvider>
-  </React.StrictMode>
+ 
 
 );
 
