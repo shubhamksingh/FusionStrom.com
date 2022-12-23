@@ -48,15 +48,17 @@ const viewed = [
 const CartPage = () => {
   const navigate = useNavigate();
   // let userid = useSelector((store) => store.user._id);
-  let userid = "6370d4a3e1f43c6a4d114ed1";
+  let userid = "63702410f7967c7e1768f4f0";
   const [items, setItems] = useState([]);
   const [wishList, setWishlists] = useState([]);
   const [count, setCount] = useState(1);
   let totalCart;
 
+  console.log(`https://fusionstrom-backend-production.up.railway.app/api/carts/find/${userid}`)
+
   const url1 = `http://localhost:8080/api/carts/find/${userid}`;
   const getCartItems = () => {
-    axios.get(`http://localhost:8080/api/carts/find/${userid}`).then((res) => {
+    axios.get(`https://fusionstrom-backend-production.up.railway.app/api/carts/find/${userid}`).then((res) => {
       console.log(res);
       let pid = res.data.products[0].productId;
       console.log(pid);

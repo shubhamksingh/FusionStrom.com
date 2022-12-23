@@ -26,7 +26,7 @@ const Dashboard = () => {
 
                      <div className={style.leftimg}><img className={style.img1} src="https://n.nordstrommedia.com/id/01471914-5c74-4e79-a258-af5f398b1a73.png?h=22&w=536" alt="" /></div>
 
-                     //<div className={style.leftimg}><img className={style.img1} src="https://n.nordstrommedia.com/id/c30eb052-a9da-4529-95ed-0d1568cc55ad.png?h=22&w=536" alt="" /></div>
+                     {/* <div className={style.leftimg}><img className={style.img1} src="https://n.nordstrommedia.com/id/c30eb052-a9da-4529-95ed-0d1568cc55ad.png?h=22&w=536" alt="" /></div> */}
 
                         
                 </div>

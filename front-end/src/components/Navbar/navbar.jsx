@@ -4,11 +4,19 @@ import "./navbar.css";
 import { useContext } from "react";
 import Flash from "../Flash/Flash";
 import logo from "../../images/logoName.png";
+import { Button } from "@chakra-ui/react";
 
 
 const Navbar = () => {
+
+  const userLogged=sessionStorage.getItem("username") || "";
  
   const nav = useNavigate();
+
+  const handleLogout=()=>{
+    sessionStorage.setItem("username",""); 
+    nav("/");
+  }
   
   return (
     
@@ -31,12 +39,14 @@ const Navbar = () => {
           <input type="text" placeholder="Search for products or brands" />
         </div>
         <div className='navbar_cart'>
+        {userLogged=="" ?
           <Link
             to={"/signin"}
             style={{ textDecoration: "none", color: "rgb(60, 57, 57)" }}
           >
             <span>{"Sign In"}</span>
           </Link>
+          : <div>{userLogged} <Button onClick={handleLogout}>Logout</Button> </div>   }
           <Link
             to='/cart'
             style={{ textDecoration: "none", color: "rgb(60, 57, 57)" }}
