@@ -9,6 +9,7 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { useState } from "react";
 import { useSelector } from "react-redux";
+import StripeCheckout from "react-stripe-checkout";
 
 const viewed = [
   {
@@ -119,9 +120,11 @@ const CartPage = () => {
   };
 
   const handleCheckout = () => {
-    navigate(`/checkout`);
+   
   };
-
+ const onToken = (token)=>{
+  navigate(`/`);
+ }
   return (
     <div className="cart-part">
       <div className="cart-right">
@@ -307,7 +310,20 @@ const CartPage = () => {
                       <p>6110.94</p>
                     </div>
                     <hr />
-                    <button onClick={handleCheckout}>Check Out</button>
+                    <StripeCheckout
+                     
+                     name = "FusionStrom"
+                     image = "https://cdn.freebiesupply.com/logos/large/2x/nordstrom-logo-png-transparent.png"
+                     billingAddress
+                     shippingAddress
+                     description={`Your total is RS 50000`}
+                     amount = {50000}
+                     token = {onToken}
+                     stripeKey = {`pk_test_51M3UvKSJRcG25NZVdrV6dtiT8qLQZnxvHRg7mE2F1HPu3dC0wDL3VnqUF0mpTaeDMMOoPs0vxRU5o9fq3remWHPi00Sk3wOLKi`}
+                    >
+                    <button id="bb" onClick={handleCheckout}>Check Out</button>
+                    </StripeCheckout>
+                    {/* <button onClick={handleCheckout}>Check Out</button> */}
                   </div>
                 </div>
               </div>

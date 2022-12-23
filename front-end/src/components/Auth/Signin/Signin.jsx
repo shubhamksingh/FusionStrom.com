@@ -7,20 +7,20 @@ import {
   Center,
   Input,
   Box,
-  Link,
   useToast,
 } from "@chakra-ui/react";
 import { useNavigate, useHistory } from "react-router-dom";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 const Signin = () => {
   const navigate = useNavigate();
   const toast = useToast();
-
-  const [user, Setuser] = useState({
-    username: "",
+const initalInput ={
+    email: "",
     password: "",
-  });
+}
+  const [user, Setuser] = useState(initalInput);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -30,46 +30,57 @@ const Signin = () => {
     });
   };
 
-//   console.log(user)
-
-  const handlelogin = () => {
-    const { username, password } = user;
-    if (username && password) {
-    //   console.log(username, password, user);
-      axios
-        .post(
-          "https://fusionstrom-backend-production.up.railway.app/api/auth/login",
-          user
-        )
-        .then((res) => {
-          console.log("data", res.data);
-          localStorage.setItem("accessToken", res.data.accessToken);
-          localStorage.setItem("login_user_id", res.data._id);
-        })
-        .catch((e) => {
-          console.log(e);
+  // <<<<<<<<<<< LOGIN FUNCTION >>>>>>>>>>>>>
+  const handlelogin = async (e) => {
+    e.preventDefault();
+    const { email, password } = user;
+    try {
+      if (email && password) {
+        const {data} = await axios.post("http://localhost:8080/api/auth/login", {
+          email,
+          password,
         });
-        sessionStorage.setItem("username",username)
-      toast({
-        title: "Login Successfull.",
-        description: "We've Login your account",
-        status: "success",
-        position: "top",
-        duration: 1000,
-        isClosable: true,
-      });
-      setTimeout(() => {
-        navigate("/profile");
-      }, 1000);
-    } else {
-      toast({
-        title: "Fill all details",
-        status: "warning",
-        position: "top",
-        duration: 1000,
-        isClosable: true,
-      });
+        // console.log("data", data);
+        if (data.message == "Wrong credentials") {
+            toast({
+                title: data.message,
+                description: "We've not Login your account",
+                status: "error",
+                position: "top",
+                duration: 1000,
+                isClosable: true,
+              });
+        }else{
+          toast({
+            title: "Login Successfull.",
+            description: "We've Login your account",
+            status: "success",
+            position: "top",
+            duration: 1000,
+            isClosable: true,
+          });
+          
+          setTimeout(() => {
+            navigate("/profile");
+          }, 1000);
+        
+        // localStorage.setItem("accessToken", data.accessToken);
+        localStorage.setItem("user_info", JSON.stringify(data));
+        }
+
+      } else {
+        toast({
+          title: "Fill all details",
+          status: "warning",
+          position: "top",
+          duration: 1000,
+          isClosable: true,
+        });
+      }
+    } catch (e) {
+      console.log("error", e);
     }
+    Setuser(initalInput)
   };
 
   return (
@@ -80,7 +91,7 @@ const Signin = () => {
           <Text fontSize="0.8rem">
             New to Nordstrom?{" "}
             <Text as={"u"}>
-              <Link href="/signup">Create an account.</Link>
+              <Link to="/signup">Create an account.</Link>
             </Text>
           </Text>
         </Stack>
@@ -90,15 +101,15 @@ const Signin = () => {
           w={["300px", "400px", "500px"]}
           style={{ display: "flex", flexDirection: "column" }}
         >
-          <Text fontSize="0.8rem">Username*</Text>
+          <Text fontSize="0.8rem">Email*</Text>
           <Input
             style={{ border: "1px solid black" }}
             w={["300px", "300px", "400px"]}
             mb={5}
             type="email"
-            placeholder="username"
-            value={user.username}
-            name="username"
+            placeholder="Email"
+            value={user.email}
+            name="email"
             onChange={handleChange}
           />
           <Text fontSize="0.8rem">Password*</Text>

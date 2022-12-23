@@ -6,13 +6,7 @@ import ProductView from "../components/ProductView/ProductView";
 import Dashboard from "../components/dashboard/dashboard";
 import CartPage from "../components/Cart/cart";
 import MenPage from "../components/ProductPage/MenPage";
-
 import Crewneck from "../components/ProductPage/item/Crewneck";
-
-
-
-
-
 import Signin from "../components/Auth/Signin/Signin"
 import Signup from "../components/Auth/Signup/Signup"
 import Profile from "../components/Auth/Profile/Profile"
@@ -20,44 +14,27 @@ import Checkout from "../components/Checkout/Checkout"
 import Flash from "../components/Flash/Flash";
 import Adminlogin from "../components/Auth/AdminLogin/Adminlogin";
 import Womens from "../components/ProductPage/Womens";
-
-
-
-
+import AuthProvider from "../components/Private/AuthProvider";
 
 const MainRoutes = () => {
   return (
     <>
-
-     
-
       <Navbar />
-     
-
       <Routes>
         <Route path="/" element={<Dashboard />} />
         <Route path="/checkout" element={<h3>Checkout</h3>} />
         <Route path="payment" element={<h3>Payment </h3>} />
-
-       
         <Route path="mens" element={<MenPage/>} />
         <Route path="womens" element={<Womens/>} />
-
-        {/* //<Route path="signin" element={<h3>Singin</h3>} />
-        //<Route path="createacc" element={<h3>Createacc</h3>} /> */}
-        {/* <Navbar2 /> */}
-        //<Route path="/" element={<h3></h3>} />
         <Route path="/signin" element={<Signin />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/profile" element={<Profile />} />
-      
-
         <Route
-          path="cart"
+          path="/cart"
           element={
-            // <RequiredAuth>
+            // <AuthProvider>
             <CartPage />
-            // {/* </RequiredAuth> */}
+            //  </AuthProvider>
           }
         />
         <Route
