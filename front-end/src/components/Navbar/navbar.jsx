@@ -67,24 +67,6 @@ const handleClick = () => {
           <b>Holiday Deals are on now!</b>Up to 60% off. Deals
         </p>
       </div>
-
-      <nav>
-        <div className="navbar_logo">
-          <Link to={"/"}>
-            <img src={logo} alt="" />
-          </Link>
-        </div>
-        <div className="navbar_search">
-          {/* <input type='text' placeholder=' Search for products or brands' /> */}
-          <input type="text" placeholder="Search for products or brands" />
-        </div>
-        <div className="navbar_cart">
-          {/* <Link
-            // to={"/signin"}
-            style={{ textDecoration: "none", color: "rgb(60, 57, 57)" }}
-          > */}
-    
-
       <div class="site-header__top">
         <div class="wrapper site-header__wrapper">
           <div class="site-header__start">
@@ -100,7 +82,7 @@ const handleClick = () => {
           <div class="site-header__en">
           <span><Link
             to="/cart"
-            style={{ textDecoration: "none", color: "rgb(60, 57, 57)" , fontSize:"25px"}}
+            style={{ textDecoration: "none", color: "rgb(60, 57, 57)" , fontSize:"30px"}}
           >
             <i className="uil uil-bag"></i> 
           </Link></span>
@@ -108,11 +90,10 @@ const handleClick = () => {
           </div>
           <div class="site-header__end">
           {user?user.user.username:null}
-
             {user? (
               <span onClick={handleLogout}>LogOut</span>
             ) : (
-            <a href="/signin" class="signin">SignIn</a>
+            <a href="/signin" class="#">SignIn</a>
             )}
           </div>
           
@@ -174,47 +155,3 @@ const handleClick = () => {
 };
 
 export default Navbar;
-
-
-
-//how to replace classList.toggle in react?
-// const Header = (props) => {
-//  const [isContainerActive, setIsContainerActive] = React.useState(false);
-//   const signUpButton = () => {
-//      setIsContainerActive(false);
-//   };  
-//   const signInButton = () => {
-//      setIsContainerActive(true);
-//   };
-
-//   return (
-//     <div className="header">
-//       <div id="container" className={`container${isContainerActive ? " right-panel-active" : ""}`}>
-//          <button className="ghost" id="signIn" onClick={signInButton}>Sign In</button>
-//       </div>
-//       <div className="overlay-panel overlay-right">
-//        <p>Enter your personal details and start journey with us</p>
-//        <button className="ghost" id="signUp" onClick={signUpButton}>Sign Up</button>
-//       </div>
-//     </div>
-//   );
-// }
-
-// ReactDOM.render(<Header />, document.getElementById("root"));
-
-// .header {height: 120px;}
-// .container {float:left;}
-// .overlay-right {display: none;background: red;float:right;height:100%;}
-// .right-panel-active ~ .overlay-right {display: inline-block;}
-
-// <div id="root"></div>
-// <script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.8.4/umd/react.production.min.js"></script>
-// <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.8.4/umd/react-dom.production.min.js"></script>
-
-
-
-
-
-
-
-
