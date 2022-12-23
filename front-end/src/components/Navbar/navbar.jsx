@@ -67,6 +67,24 @@ const handleClick = () => {
           <b>Holiday Deals are on now!</b>Up to 60% off. Deals
         </p>
       </div>
+
+      <nav>
+        <div className="navbar_logo">
+          <Link to={"/"}>
+            <img src={logo} alt="" />
+          </Link>
+        </div>
+        <div className="navbar_search">
+          {/* <input type='text' placeholder=' Search for products or brands' /> */}
+          <input type="text" placeholder="Search for products or brands" />
+        </div>
+        <div className="navbar_cart">
+          {/* <Link
+            // to={"/signin"}
+            style={{ textDecoration: "none", color: "rgb(60, 57, 57)" }}
+          > */}
+    
+
       <div class="site-header__top">
         <div class="wrapper site-header__wrapper">
           <div class="site-header__start">
@@ -90,6 +108,7 @@ const handleClick = () => {
           </div>
           <div class="site-header__end">
           {user?user.user.username:null}
+
             {user? (
               <span onClick={handleLogout}>LogOut</span>
             ) : (

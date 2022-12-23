@@ -16,10 +16,10 @@ import { Link } from "react-router-dom";
 const Signin = () => {
   const navigate = useNavigate();
   const toast = useToast();
-const initalInput ={
+  const initalInput = {
     email: "",
     password: "",
-}
+  };
   const [user, Setuser] = useState(initalInput);
 
   const handleChange = (e) => {
@@ -34,54 +34,61 @@ const initalInput ={
   const handlelogin = async (e) => {
     e.preventDefault();
     const { email, password } = user;
+
+    if(!email ||!password){
+      toast({
+        title: "Fill all inputs",
+        description: "We've not Login your account",
+        status: "error",
+        position: "top",
+        duration: 1000,
+        isClosable: true,
+      });
+    }
+else{
     try {
-      if (email && password) {
-        const {data} = await axios.post("http://localhost:8080/api/auth/login", {
+      const { data } = await axios.post(
+        "http://localhost:8080/api/auth/login",
+        {
           email,
           password,
-        });
-        // console.log("data", data);
-        if (data.message == "Wrong credentials") {
-            toast({
-                title: data.message,
-                description: "We've not Login your account",
-                status: "error",
-                position: "top",
-                duration: 1000,
-                isClosable: true,
-              });
-        }else{
-          toast({
-            title: "Login Successfull.",
-            description: "We've Login your account",
-            status: "success",
-            position: "top",
-            duration: 1000,
-            isClosable: true,
-          });
-          
-          setTimeout(() => {
-            navigate("/profile");
-          }, 1000);
-        
-        // localStorage.setItem("accessToken", data.accessToken);
-        localStorage.setItem("user_info", JSON.stringify(data));
         }
-
-      } else {
+      );
+      // console.log("data", data);
+      if (data === "User Unauthorired") {
         toast({
-          title: "Fill all details",
-          status: "warning",
+          title: "User Unauthorired",
+          description: "We've not Login your account",
+          status: "error",
           position: "top",
           duration: 1000,
           isClosable: true,
         });
+      } else {
+        toast({
+          title: "Login Success",
+          description: "We've Login your account",
+          status: "success",
+          position: "top",
+          duration: 1000,
+          isClosable: true,
+        });
+
+        // SET DATA IN LOCAL STORAGE
+        
+        setTimeout(() => {
+          navigate("/profile");
+        }, 1000);
       }
+      // console.log("data", data);
+      localStorage.setItem("user_info", JSON.stringify(data));
     } catch (e) {
       console.log("error", e);
     }
-    Setuser(initalInput)
+    Setuser(initalInput);
+  }
   };
+
 
   return (
     <Center>

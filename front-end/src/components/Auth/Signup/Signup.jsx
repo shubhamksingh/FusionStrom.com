@@ -44,7 +44,7 @@ const Signup = () => {
         );
 
         // console.log("data", data);
-        if (data.message == "Email and Username already Exit") {
+        if (data.message == "User already Exit") {
           toast({
             title: data.message,
             description: "We've not Signup your account",
