@@ -5,6 +5,7 @@ import {Link} from "react-router-dom";
 import Index from "./Carosal/Index";
 import Index2 from "./Carosal2/Index2";
 import AutoCarosal from "./AutoPlayCarosal/AutoPlayCarosal";
+import { Button, ButtonGroup } from '@chakra-ui/react';
 
 
 
@@ -72,9 +73,9 @@ const Dashboard = () => {
                 <div>
                     <p className={style.p3}>Deals You’ll Love</p>
                 </div>
-                <div className={style.viewProducts}><Link to={"/womens"}><button><p className={style.p2}>View All Women</p></button></Link></div>
+                <div className={style.viewProducts}><Link to={"/womens"}><button type="button" class="btn btn-outline-dark"><p className={style.p2}>View All Women</p></button></Link></div>
 
-
+      
              </div>
 
 
@@ -99,7 +100,7 @@ const Dashboard = () => {
                 <div>
 
                 <p className={style.fifth_Div_text}><b>Earn 3X the points!</b> Ends November 13.</p>
-                <p>Shop gifts for them—earn triple points for you!</p>
+                <p className={style.fifth_Div_text2}>Shop gifts for them—earn triple points for you!</p>
                 <div className={style.fifth_Div_text_two}>
                     <p>Gifts :</p>
                 <Link><p><u>For Her</u></p></Link>
@@ -124,9 +125,16 @@ const Dashboard = () => {
                 <p className={style.fifth_Div_text}>The best gifts for everyone you love, all in one place.</p>
                 </div>
                 <div className={style.buttons}>
-                    <button>Shop Gifts</button>
-                    <button>Explore Our Gifts Guides</button>
-                    <button>Shop Holiday Dressing</button>
+                    {/* <button>Shop Gifts</button> */}
+                    {/* <button>Explore Our Gifts Guides</button> */}
+                    {/* <button>Shop Holiday Dressing</button> */}
+                    <Link to={"/womens"}><button type="button" class="btn btn-outline-dark"><p className={style.p2}>Shop Gifts</p></button></Link> 
+                    <Link to={"/womens"}><button type="button" class="btn btn-outline-dark"><p className={style.p2}>Explore Our Gifts Guides</p></button></Link> 
+                    <Link to={"/womens"}><button type="button" class="btn btn-outline-dark"><p className={style.p2}>Shop Holiday Dressing</p></button></Link> 
+                    {/* <Link to={"/womens"}><ButtonGroup variant='outline' spacing='6' border="1px solid black"><Button><p className={style.p2}>Shop Gifts</p></Button></ButtonGroup></Link> */}
+                    {/* <Link to={"/womens"}><ButtonGroup variant='outline' spacing='6' border="1px solid black"><Button><p className={style.p2}>Explore Our Gifts Guides</p></Button></ButtonGroup></Link> */}
+                    {/* <Link to={"/womens"}><ButtonGroup variant='outline' spacing='6' border="1px solid black"><Button><p className={style.p2}>Shop Holiday Dressing</p></Button></ButtonGroup></Link> */}
+                    {/* <button type="button" class="btn btn-outline-dark">Dark</button> */}
                 </div>
                 </div>
              </div>
@@ -145,8 +153,8 @@ const Dashboard = () => {
                 <div>
                     <p className={style.p3}>Gifts by Recipient</p>
                 </div>
-                <div className={style.viewProducts}><Link to={"./womens"}><button><p className={style.p2}>View All Gift's For Her</p></button></Link></div>
-
+                <div className={style.viewProducts}><Link to={"./womens"}><button type="button" class="btn btn-outline-dark"><p className={style.p2}>View All Gift's For Her</p></button></Link></div>
+                                       
 
              </div>
 
@@ -191,7 +199,7 @@ const Dashboard = () => {
                </div>
              </div>
 
-             <div className={style.line}>
+             <div className={style.line2}>
                 <img src="https://n.nordstrommedia.com/id/5ec3d3de-9e8c-4317-bc28-3b42b503268e.png?h=17&w=1608" alt="" />
 
              </div>
@@ -233,7 +241,7 @@ const Dashboard = () => {
                   </div>
                   </div>
 
-                  <div className={style.line}>
+                  <div className={style.line1}>
                 <img src="https://n.nordstrommedia.com/id/5ec3d3de-9e8c-4317-bc28-3b42b503268e.png?h=17&w=1608" alt="" />
 
              </div>
