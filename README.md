@@ -22,7 +22,7 @@
 <h3>Deployed vercel Link</h3>
 <ul>
 <li>
-<a  href="https://fusion-strom.vercel.app/">🔗 Visit Site Fusion Strom 🌐</a>
+<a  href="https://fusion-strome-clone.vercel.app/">🔗 Visit Site Fusion Strom 🌐</a>
 </li>
 </ul>
 
