@@ -71,6 +71,7 @@ body {
 }
 
 
+
 .brand {
     font-weight: bold;
     font-size: 27px; }
@@ -165,18 +166,23 @@ body {
     appearance: none;
     order: 1;
     font-size: 0;
+    
     width: 34px;
     height: 34px;
-    background: url("https://www.cssscript.com/demo/header-navbar-templates/img/header-3/search.svg") center/22px no-repeat;
+    background: url("https://www.pngarts.com/files/12/Cross-Cancel-Button-PNG-Download-Image.png") center/22px no-repeat;
     border: 0; }
+    
     @media (max-width: 939px) {
       .search__toggle {
+      
         position: absolute;
         right: 5.5rem;
-        top: 0.65rem; } }
+        top: 0.65rem; }
+      } 
     .search__toggle.active {
       /* background: url("../img/header-5/close.svg") center/22px no-repeat;  */
     }
+   
   
   .search__form {
     display: none; }
@@ -210,6 +216,7 @@ body {
             
             
          }
+         
         }
 
 
@@ -275,7 +282,7 @@ body {
         .extradiv{
             /* border: 1px solid red; */
             display: flex;
-            width: 30%;
+            width: 25%;
             justify-content: space-around;
         }
         
@@ -286,7 +293,7 @@ body {
         .signin{
             font-size: 15px;
             font-weight: 500;
-            /* margin-top: 100%; */
+            /* margin-top: 10%; */
             
         }
         
@@ -329,6 +336,31 @@ body {
         .menu_div span:last-child {
             color: rgb(29, 116, 188);
         }
+
+
+
+
+
+        @media screen and (min-width:768px) and (max-width:949px) {
+          .navbar_search{
+            display: none;
+          }
+        }
+
+        @media screen and (min-width:350px) and (max-width:720px) {
+          .navbar_search{
+            display: none;
+          }
+          .cart{
+            font-size: 15px;
+          }
+        }
+
+        /* @media screen and (min-width:950px) and (max-width:1200px) {
+          .search{
+            display: none;
+          }
+        } */
 
 
        

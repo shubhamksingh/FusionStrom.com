@@ -78,23 +78,32 @@ const handleClick = () => {
           <div class="site-header__middle">
             <a href="/" class="brand">FUSIONSTROM</a>
           </div>
+
+          <div className="navbar_search">
+          {/* <input type='text' placeholder=' Search for products or brands' /> */}
+          <input type="text" placeholder="Search for products or brands" />
+        </div>
+
+
           <div className="extradiv">
-          <div class="site-header__en">
-          <span><Link
-            to="/cart"
-            style={{ textDecoration: "none", color: "rgb(60, 57, 57)" , fontSize:"30px"}}
-          >
-            <i className="uil uil-bag"></i> 
-          </Link></span>
-           
-          </div>
+          
           <div class="site-header__end">
           {user?user.user.username:null}
             {user? (
               <span onClick={handleLogout}>LogOut</span>
             ) : (
-            <a href="/signin" class="#">SignIn</a>
+            <a href="/signin" class="signin">SignIn</a>
             )}
+          </div>
+
+          <div class="site-header__en">
+          <span><Link className="cart"
+            to="/cart"
+            style={{ textDecoration: "none", color: "rgb(60, 57, 57)" , fontSize:"25px"}}
+          >
+            <i className="uil uil-bag"></i> 
+          </Link></span>
+           
           </div>
           
           </div>
@@ -108,7 +117,7 @@ const handleClick = () => {
         <div class="wrapper site-header__wrapper">
           <div class="site-header__start">
             <div class="search">
-              <button class="search__toggle" aria-label="Open search" onClick={()=>handleClick()}>
+              <button class="search__toggle" aria-label="Open search" onClick={handleClick}>
                 Search
                 
               </button>
@@ -126,7 +135,7 @@ const handleClick = () => {
 
           <div class="site-header__middle">
             <nav class="nav">
-              <button class="nav__toggle" aria-expanded="false" type="button" onClick={() => handlenavClick()}>
+              <button class="nav__toggle" aria-expanded="false" type="button" onClick={ handlenavClick}>
                 menu
               </button>
               <ul class="nav__wrapper">
