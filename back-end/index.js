@@ -2,7 +2,7 @@ require("dotenv").config();
 const { urlencoded } = require('express');
 const express = require('express');
 const mongoose = require('mongoose');
-const dotenv = require('dotenv')
+// const dotenv = require('dotenv')
 const userRouter = require('./routes/user')
 const authRoute = require('./routes/auth')
 const productRouter = require('./routes/product')
@@ -11,7 +11,8 @@ const orderRoute = require('./routes/order')
 const wishlistRoute = require('./routes/wishlist')
 const cors = require('cors');
 
-const api = process.env.api
+let port=process.env.PORT||8080
+
 
 const app = express();
 app.use(cors());
@@ -31,14 +32,14 @@ app.get('/', (req, res) => {
   res.send('Hello World!')
 })
 
-// mongoose.connect(process.env.MONGO_URL)
-mongoose.connect("mongodb://localhost:27017/fusionstrom")
+// mongoose.connect("mongodb://localhost:27017/fusionstrom")
+mongoose.connect(process.env.MONGO_URL)
 .then(()=> console.log('DB connection successfull !'))
 .catch((err)=> {
   console.log(err);
 })
 
-app.listen( 8080, () => {
+app.listen( port, () => {
   // dbconnect.then(x=> console.log('dbconnected and server started at http://localhost:8080'))
 //   console.log(`Example app listening on port ${port}`)
 
