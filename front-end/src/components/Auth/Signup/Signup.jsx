@@ -39,7 +39,7 @@ const Signup = () => {
     try {
       if (username, password, email) {
         const { data } = await axios.post(
-          "http://localhost:8080/api/auth/register",
+          "https://fusion-strom.onrender.com/api/auth/register",
           { username, email, password }
         );
 
